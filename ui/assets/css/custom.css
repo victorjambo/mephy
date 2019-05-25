@@ -1,0 +1,80 @@
+.background-1 {
+  background: url('../images/background/background-1.png') no-repeat 0 0 / cover;
+  background-position: center center;
+  background-size: cover;
+}
+
+.background-2 {
+  background: url('../images/background/background-2.png') no-repeat 0 0 / cover;
+  background-position: center center;
+  background-size: cover;
+}
+.background-3 {
+  background: url('../images/background/background-3.png') no-repeat 0 0 / cover;
+}
+.background-4 {
+  background-image: url('../images/background/4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background-5 {
+  background: url('../images/background/5.html') no-repeat 30px bottom;
+  background-size: 42%;
+}
+.background-6:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: -50%;
+  top: 0;
+  background-image: url('../images/background/6.png');
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.background-7 {
+  background: url('../images/background/background-7.html') no-repeat right bottom;
+}
+.background-8 {
+  background: url(../images/appionment/doctor-hand1.png) no-repeat 81% bottom/ 35%;
+}
+.background-9 {
+  background: url('../images/background/background-9.png') no-repeat 0 0 / cover;
+  background-position: center center;
+  background-size: cover;
+}
+
+.side_video {
+  background: url('../images/background/background-1.png') no-repeat 0 0 / cover;
+}
+.intro-video.intro-mini {
+  background: url(../images/about_us/o.jpg) no-repeat 0 0 / cover;
+}
+.banner {
+  background: url('../images/banner/1.png') no-repeat 0 0 / cover;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+}
+.flexing {
+  display: flex;
+}
+.company-name {
+  margin: 15px 10px;
+  color: #fff;
+  font-weight: 700;
+  font-family: Poppins;
+  font-size: 35px;
+}
+.company-name span {
+  color: #01a1d5
+}
+.more-products {
+  padding-top: 45px;
+}
+.more-products div a,
+.help_area_2 {
+  width: 100%;
+}

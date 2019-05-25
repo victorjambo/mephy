@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mephys</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Flaticon CSS -->
+  <link rel="stylesheet" href="./assets/css/plugins/flaticon/flaticon.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Template Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <!-- LayerSlider CSS -->
+  <link rel="stylesheet" href="./assets/css/plugins/layerslider.css">
+  <!-- Inner Page Style CSS -->
+  <link rel="stylesheet" href="./assets/css/inner_page.css">
+  <!-- Reponsive CSS -->
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <!-- Color CSS -->
+  <link rel="stylesheet" href="./assets/css/color.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="./assets/css/plugins/default-animation.css">
+  <link rel="stylesheet" href="./assets/css/plugins/loaders.css">
+  <link rel="stylesheet" href="./assets/css/plugins/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/css/plugins/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="./assets/css/setting.css">
+  <link rel="stylesheet" href="./assets/css/preloader.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body class="page-wrapper page-load">
+
+  <!-- Page preloader -->
+  <div class="preloader">
+    <div class="loader-animation"></div>
+  </div>
+  <!-- End page preloader -->
+
+  <header id="header" class="header_4 nav-on-banner">
+    <!-- Nav Header Start -->
+    <div class="nav_header bg_secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ">
+            <div class="nav_menu ">
+              <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand my_brand flexing" href="/">
+                    <img class="img-responsive" id="logo" src="./assets/images/logo.png" alt="mephys">
+                    <div class="company-name">
+                      ME<span>PHYS</span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="navbar-nav nav-contact pull-right">
+                    <li><a class="btn btn-primary" href="#">Track Order</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right nav_item">
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">Home</a>
+                    </li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">Products</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="products.html">Top seller</a></li>
+                        <li><a href="products.html">Top brands</a></li>
+                        <li><a href="products.html">View All Products</a></li>
+                        <li><a href="products.html">View All Brands</a></li>
+                        <li><a href="products.html">View Healthcare Solutions</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+                <!-- /.container-fluid -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Header Start -->
+  </header><!-- Slider Start -->
+
+  <section class="banner overlay-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner_info position_relative">
+            <h1 class="inner_title color_primary pb_20">Medical Gloves</h1>
+            <ul class="color_white_a">
+              <li><a href="index.html">Home</a>
+              </li>
+              <li><a href="#">.</a>
+              </li>
+              <li><a href="products.html">Products</a>
+              </li>
+              <li><a href="#">.</a>
+              </li>
+              <li>Medical Gloves</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="bg_gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar_style3">
+            <div class="sidebar-widget mb_30">
+              <form action="#" class="search_form2">
+                <input type="text" class="form-control" placeholder="Search Products...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+            <div class="price-filter sidebar-widget mb_50">
+              <h5 class="inner-title down_line_left">Filter By Price</h5>
+              <div class="filter">
+                <div id="pricing-range">
+                  <div class="filter-range"> </div>
+                </div>
+                <div class="pricing-value">
+                  <p>Price: <span id="pricing">Ksh. 30 - Ksh. 62</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="shop-category sidebar-widget mb_30">
+              <h5 class="inner-title down_line_left">Categories</h5>
+              <ul>
+                <li><a href="#">Children’s Health (01)</a>
+                </li>
+                <li><a href="#">Geriatrics (07)</a>
+                </li>
+                <li><a href="#">Health (20)</a>
+                </li>
+                <li><a href="#">Oftamology (02)</a>
+                </li>
+                <li><a href="#">Psychology (03)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="shop-product sidebar-widget mb_30">
+              <h5 class="inner-title down_line_left">Products</h5>
+              <ul>
+                <li>
+                  <img src="assets/images/products/1.png" alt="Image not found!">
+                  <div class="d_table pull-left">
+                    <h6>Disital Monitor</h6>
+                    <div class="stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-empty"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <del>Ksh. 170</del>
+                    <span>Ksh. 150</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/images/products/2.png" alt="Image not found!">
+                  <div class="d_table pull-left">
+                    <h6>Medical Gloves</h6>
+                    <div class="stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-empty"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <del>Ksh. 170</del>
+                    <span>Ksh. 150</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/images/products/1.png" alt="Image not found!">
+                  <div class="d_table pull-left">
+                    <h6>Disital Monitor</h6>
+                    <div class="stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-empty"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <del>Ksh. 170</del>
+                    <span>Ksh. 150</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/images/products/3.png" alt="Image not found!">
+                  <div class="d_table pull-left">
+                    <h6>Injection</h6>
+                    <div class="stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-empty"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <del>Ksh. 170</del>
+                    <span>Ksh. 150</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="single-product-image">
+                <a href="#"><img src="assets/images/products/24.png" alt="Image not found!"></a>
+                <ul>
+                  <li><img src="assets/images/products/24.png" alt="Image not found!"></li>
+                  <li><img src="assets/images/products/24.png" alt="Image not found!"></li>
+                  <li><img src="assets/images/products/24.png" alt="Image not found!"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="single-product-info">
+                <h5 class="single_product_title">Medical Gloves</h5>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="price-box">
+                  <del>Ksh. 145</del>
+                  <span>Ksh. 125</span>
+                </div>
+
+                <div class="short-description">
+                  <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
+                    quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet
+                    nibh. Donec sodales sagittis magna. Sed consequat leo.</p>
+                </div>
+                <form action="#">
+                  <div class="quantity">
+                    <input value="1" type="number">
+                    <button type="submit" class="btn btn-primary">Add to cart</button>
+                  </div>
+                </form>
+                <table class="about_product">
+                  <tr>
+                    <td>CATEGORIES : </td>
+                    <td>Geriatrics, Health</td>
+                  </tr>
+                  <tr>
+                    <td>TAGS : </td>
+                    <td>Digital, Monitors, Tools</td>
+                  </tr>
+                </table>
+                <div class="social_icon color_secondary_a">
+                  <span>Social Media Share</span>
+                  <ul>
+                    <li><a href="https://www.facebook.com/mephys.ke"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/MephysK"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://instagram.com/mephys.ke"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="my_50 p_30 bg_white">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                      data-toggle="tab">Description</a></li>
+                  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                      data-toggle="tab">Description</a></li>
+                  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                      data-toggle="tab">Description</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="home">1. Aliquam lorem ante, dapibus in, viverra
+                    quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                    rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                    adipiscing sem neque sed ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Nullam quis ante.</div>
+                  <div role="tabpanel" class="tab-pane" id="profile">2. Aliquam lorem ante, dapibus in, viverra quis,
+                    feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                    rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                    adipiscing sem neque sed ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Nullam quis ante.</div>
+                  <div role="tabpanel" class="tab-pane" id="messages">3. Aliquam lorem ante, dapibus in, viverra quis,
+                    feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                    rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                    adipiscing sem neque sed ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Nullam quis ante.</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="inner_title down_line_left">Related Product</h4>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item position_relative mb_30">
+                <div class="sale position_absolute">Sale</div>
+                <a href="product-details.html"><img src="assets/images/products/12.png" alt="Image not found!"></a>
+                <h5><a href="product-details.html">Medichine</a></h5>
+                <div class="tag">Geriatrics, Health, Psychology</div>
+                <div class="price-box">
+                  <del>Ksh. 145</del>
+                  <span>Ksh. 125</span>
+                </div>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item position_relative mb_30">
+                <div class="new position_absolute">New</div>
+                <a href="product-details.html"><img src="assets/images/products/13.png" alt="Image not found!"></a>
+                <h5><a href="product-details.html">Vitamin Tablet</a></h5>
+                <div class="tag">Geriatrics, Health, Psychology</div>
+                <div class="price-box">
+                  <del>Ksh. 145</del>
+                  <span>Ksh. 125</span>
+                </div>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item position_relative mb_30">
+                <div class="sale position_absolute">Sale</div>
+                <a href="product-details.html"><img src="assets/images/products/14.png" alt="Image not found!"></a>
+                <h5><a href="product-details.html">Digital Monitor</a></h5>
+                <div class="tag">Geriatrics, Health, Psychology</div>
+                <div class="price-box">
+                  <del>Ksh. 145</del>
+                  <span>Ksh. 125</span>
+                </div>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item position_relative mb_30">
+                <a href="product-details.html"><img src="assets/images/products/15.png" alt="Image not found!"></a>
+                <h5><a href="product-details.html">Injection</a></h5>
+                <div class="tag">Geriatrics, Health, Psychology</div>
+                <div class="price-box">
+                  <del>Ksh. 145</del>
+                  <span>Ksh. 125</span>
+                </div>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item position_relative mb_30">
+                <a href="product-details.html"><img src="assets/images/products/16.png" alt="Image not found!"></a>
+                <h5><a href="product-details.html">Surgical Set</a></h5>
+                <div class="tag">Geriatrics, Health, Psychology</div>
+                <div class="price-box">
+                  <del>Ksh. 145</del>
+                  <span>Ksh. 125</span>
+                </div>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-item position_relative mb_30">
+                <a href="product-details.html"><img src="assets/images/products/17.png" alt="Image not found!"></a>
+                <h5><a href="product-details.html">Vitamin Tablets</a></h5>
+                <div class="tag">Geriatrics, Health, Psychology</div>
+                <div class="price-box">
+                  <del>Ksh. 145</del>
+                  <span>Ksh. 125</span>
+                </div>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg_gray extra_padding pb_80"></div>
+
+  <!-- Footer Start -->
+  <footer class="pt_80 bg_gray">
+    <div class="container">
+      <div class="footer_full">
+        <div class="position_relative">
+          <div class="help_area_2 p_30 color_white bg_secondary">
+            <div class="row">
+              <div class="col-md-3 col-sm-4">
+                  <div class="footer_minititle">Office Hours</div>
+                  <div class="color_white_a padding_top_30">
+                    <ul>
+                      <li>Monday - Friday: 8am - 5pm</li>
+                      <li>Saturday: 8am – 12pm</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                  <div class="footer_box">
+                    <div class="footer_minititle">Contact</div>
+                    <span class="icon_number">
+                      <i class="fa fa-tty color_primary" aria-hidden="true"></i>+254720095236
+                      <br />
+                      <i class="fa fa-tty color_primary" aria-hidden="true"></i>+254734095236
+                    </span>
+                    <br />
+                    <span class="email">
+                      <i class="fa fa-envelope color_primary"></i>
+                      mephysclinicltd@gmail.com
+                    </span>
+                  </div>
+
+                </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="footer_box">
+                  <div class="footer_minititle">Location</div>
+                  <p>Nairobi, Kenya</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="footer_box">
+                  <div class="footer_minititle">Social Media Share</div>
+                  <div class="social_icon color_white_a padding_top_30">
+                    <ul>
+                      <li><a href="https://www.facebook.com/mephys.ke"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="https://twitter.com/MephysK"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="https://instagram.com/mephys.ke"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="footer_widget color_secondary_a">
+              <h5 class="widget_title">HELP</h5>
+              <ul class="footer_content">
+                <li><a href="#">Make an order</a></li>
+                <li><a href="#">Track your order</a></li>
+                <li><a href="#">Help and Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="footer_widget color_secondary_a">
+              <h5 class="widget_title">COMPANY INFO</h5>
+              <ul class="footer_content">
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="#">Our services</a></li>
+                <li><a href="#">Products</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="footer_widget color_secondary_a">
+              <h5 class="widget_title">LEGAL</h5>
+              <ul class="footer_content">
+                <li><a href="#">Legal Notice</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="footer_widget">
+              <h5 class="widget_title">Newsletter</h5>
+              <div class="footer_content">
+                <p>Get notified on arrival of new products</p>
+                <form class="pt_15 form_3">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter email">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg_white unicoder_copy py_20 text-center">
+      © Copyright 2019. All Rights Reserved by Mephys
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <div class="scroll-to-top bg_primary">
+    <a href="#" class="scroll-btn" data-target="body"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+  </div>
+
+  <!-- jQuery -->
+  <script src="./assets/js/plugins/jquery.min.js"></script>
+  <script src="./assets/js/plugins/greensock.js"></script>
+  <!-- LayerSlider script files -->
+  <script src="./assets/js/plugins/layerslider.transitions.js"></script>
+  <script src="./assets/js/plugins/layerslider.kreaturamedia.jquery.js"></script>
+  <!-- Bootstrap -->
+  <script src="./assets/js/plugins/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/jquery.fancybox.pack.js"></script>
+  <script src="./assets/js/plugins/owl.js"></script>
+  <script src="./assets/js/plugins/wow.js"></script>
+  <script src="./assets/js/plugins/mixitup.js"></script>
+  <script src="./assets/js/plugins/validate.js"></script>
+  <script src="./assets/js/plugins/loaders.css.js"></script>
+  <script src="./assets/js/plugins/jquery-ui.js"></script>
+  <script src="./assets/js/plugins/jquery.timepicker.min.js"></script>
+  <script src="./assets/js/plugins/jquery.cookie.js"></script>
+  <script src="./assets/js/settings.js"></script>
+  <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

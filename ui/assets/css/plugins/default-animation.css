@@ -1,0 +1,84 @@
+.overlay:before, a, .gallery-section .filter-btns li, .hover_zoom img, 
+.according_title:after, .according_title:before, .according_title.active:after, 
+.member_profile:hover .social_boxicon, .pricing_block_1, .image_gallery:before, 
+.service_block_1, .service_block_3, [class^="flaticon-"]:before, .features .text_block_3,
+.image_gallery i, .btn, .owl-prev, .owl-next, .service_block_4 span,
+.month_table table td .date, .thumbnail_block_1 .read_more i.fa,
+.dropdown-menu{
+    transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out
+}
+
+.thumbnail_name p, .social_area ul,
+.instagram_text, .info, .middle {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%)
+}
+.middle_x {
+	transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%)
+}
+.carousel-caption , .carousel-control, 
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-next, .middle_y {
+	transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%)
+}
+
+.appoinment_img {
+    transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    -ms-transform: translateY(-3px)
+}
+.hover_zoom:hover img, .pricing_block_1.bg_primary{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1)
+}
+
+.according_title.active::after {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -moz-transform: rotate(0deg)
+}
+.according_title::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg)
+}
+.middle_header_icon, 
+.middle_header_icon {
+    transform: rotate(45deg);
+	-moz-transition: rotate(45deg);
+	-ms-transition: rotate(45deg);
+	-o-transition: rotate(45deg);
+	-webkit-transition: rotate(45deg)
+}
+.middle_header_icon i,
+.middle_header_icon i{
+	transform: rotate(-45deg);
+	-moz-transition: rotate(-45deg);
+	-ms-transition: rotate(-45deg);
+	-o-transition: rotate(-45deg);
+	-webkit-transition: rotate(-45deg)
+}
