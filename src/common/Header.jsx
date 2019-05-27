@@ -44,7 +44,7 @@ const Header = () => (
                         aria-expanded="false"
                       >
                         Home
-                          </a>
+                      </a>
                     </li>
                     <li><a href="about-us.html">About us</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -58,7 +58,7 @@ const Header = () => (
                         aria-expanded="false"
                       >
                         Products
-                          </a>
+                      </a>
                       <ul className="dropdown-menu">
                         <li><a href="products.html">Top seller</a></li>
                         <li><a href="products.html">Top brands</a></li>
