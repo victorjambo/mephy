@@ -1,0 +1,896 @@
+/*==================
+	25. Date and Time Picker CSS
+===================*/
+.ui-widget{
+	font-family: 'Barlow', sans-serif
+}
+.ui-datepicker{
+	width: 300px !important;
+	padding: 30px 7px 7px 7px !important
+}
+.ui-widget-content,
+.ui-widget-header, .ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight{
+	border: none !important
+}
+.ui-datepicker .ui-datepicker-title{
+	line-height: 35px !important
+}
+/*==================
+	25. About Us CSS
+===================*/
+.list_style_3 li {
+	font-family: 'Barlow', sans-serif;
+	list-style: decimal;
+	font-size: 16px;
+	line-height: 40px;
+	margin-left: 15px
+}
+.image_slider{
+	height: auto;
+	overflow: hidden
+}
+.text_block_4 span {
+	font-size: 24px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin-bottom: 30px;
+	display: block
+}
+/*==================
+	26. About Hospital
+===================*/
+.hospital_opportunity {
+	height: 1390px
+}
+.hospital_info{
+	padding-top: 80px
+}
+.thumbnail_block_2{
+	display: inline-block
+}
+.hospital_opportunity .background-4 {
+	padding: 80px 0 190px 0
+}
+.gallery .overlay:before {
+	top: 100%
+}
+.gallery .overlay:hover:before {
+	top: 0px
+}
+/*==================
+	27. Our service_block_2
+===================*/
+.service_block_3{
+	padding: 40px 50px;
+	margin: 0 2px 2px 0
+}
+.discount_icon .glyph-icon:before{
+	font-size: 60px
+}
+.pricing_block_1 {
+	padding: 50px 30px;
+	width: 100%
+}
+.service_block_3 span{
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	display: block
+}
+.service_block_3 a{
+	display: inline-block
+}
+.ask_question .inner_title{
+	font-family: 'Barlow', sans-serif;
+	font-weight: normal
+}
+.ask_question .btn {
+	float: right
+}
+.discount span{
+	display: table;
+	font-size: 21px
+}
+.testimonial_info i {
+	font-size: 35px
+}
+.testimonial_info .commented {
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right: 15px
+}
+.testimonial_2 .owl-nav{
+	font-size: 30px;
+	display: -webkit-inline-box
+}
+.testimonial_2 .owl-next {
+	right: 10px
+}
+.testimonial_2 .owl-prev {
+	right: 30px
+}
+/*==================
+	28. Our Service Details
+===================*/
+.box_image .hover_zoom{
+	width: 48%;
+	margin: 0px 10px 30px 0;
+	display: inline-block
+}
+.box_image img:last-child {
+	margin-right: 0px
+}
+.category_block_1 li{
+	margin-bottom: 10px;
+	font-weight: 500
+	}
+.category_block_1 a{
+	border-bottom: 1px solid transparent;
+	font-size: 16px
+}
+/*=========================
+	13. Why Choose Us css start
+==========================*/
+.text_block_4 .icon_block_4 {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	float: left
+}
+.text_block_4 .icon_block_4 [class^="flaticon-"]:before{
+	line-height: 60px
+}
+.working_time ul li {
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.working_time ul li:last-child {
+	padding-bottom: 0
+}
+.working_time ul li span {
+    text-align: right;
+    float: right;
+}
+/*=========================
+	13. Intro Video css start
+==========================*/
+.intro-video {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    position: relative;
+}
+.intro-video, .intro-video a {
+	position: relative;
+	z-index: 1
+}
+.intro-video:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1
+}
+.video-popup i.fa {
+	position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    padding-left: 3px;
+    z-index: 2;
+}
+/*==================
+	29. Our Doctors Details
+===================*/
+.filter-list .mix {
+	display: none
+}
+.filters {
+	position: relative;
+	text-align: center;
+	margin-bottom: 50px
+}
+.filter-btns {
+	position: relative;
+	text-align: center
+}
+.filter-btns li {
+	position: relative;
+	display: inline-block;
+	padding: 0 25px;
+	line-height: 44px;
+	border: 2px solid transparent;
+	border-radius: 25px;
+	cursor: pointer;
+	margin: 10px 5px;
+	font-weight: 500;
+    font-size: 17px;
+}
+.member_skills label, .doctor_info label {
+	float: left;
+	width: 100px
+}
+.time_table_2 li {
+	font-weight: 600;
+	margin-bottom: 10px
+}
+.time_table_2 li span{
+	float: right
+}
+.doctor_description span {
+	line-height: 35px
+}
+/*==================================
+	29. Blog Page css
+===================================*/
+.thumbnail_content {
+    min-height: 170px;
+    padding: 15px 20px;
+}
+.thumbnail_content .inner_title {
+    font-weight: 600;
+    padding: 10px 0 20px;
+    font-size: 21px;
+}
+.sidebar-widget {
+	display: inline-block;
+	width: 100%
+}
+.sidebar-widget .inner-title{
+	padding-bottom: 20px;
+	margin-bottom: 30px
+}
+.sidebar-widget li {
+	margin-top: 15px;
+	font-size: 16px
+}
+.sidebar-widget li:first-child {
+	margin-top: 0px
+}
+.tags li a {
+    float: left;
+    padding: 4px 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 3px;
+	font-size: 14px
+}
+.pagination li a {
+	margin-right: 25px;
+	font-size: 20px;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 600
+}
+.recent-news span {
+	display: block
+}
+.blog_content h1, .blog_content h2, .blog_content h3, 
+.blog_content h4, .blog_content h5, .blog_content h6 {
+	padding-top: 30px;
+	padding-bottom: 15px;
+	display: inline-block
+}
+.blog_content img {
+	margin-top: 20px
+}
+.blog_content .half_width {
+	width: 50%;
+}
+.blog_content .align_left {
+	float: left;
+	display: inline-block;
+	padding-right: 15px
+}
+.pagination_style1 {
+	padding-top: 20px;
+	display: inline-block;
+	width: 100%
+}
+.pagination li {
+	display: inline-block
+}
+/*=====================================
+	30. Blog Details css
+=====================================*/
+.post_status ul li{
+	display: inline-block;
+	margin-right: 10px;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 500
+}
+.post_status{
+	border-bottom: 1px solid
+}
+blockquote{
+	padding: 30px;
+	border-left: 4px solid;
+	font-size: 17px;
+	font-weight: 500;
+	font-family: 'Barlow', sans-serif;
+	margin: 30px 0
+}
+.blog_details .list_style_1 {
+	border-top: 1px solid;
+	border-bottom: 1px solid
+}
+.thumbnail_block_details{
+	padding: 10px 0
+}
+.thumbnail_block_details .admin{
+	font-family: 'Barlow', sans-serif;
+	font-weight: 500;
+	font-size: 17px;
+	margin-bottom: 5px;
+	display: block
+}
+.thumbnail_block_details p {
+	margin-bottom: 17px
+}
+.recent-news.sidebar-widget li {
+	font-size: 18px;
+	font-weight: 500
+}
+.recent-news.sidebar-widget li a {
+	padding-bottom: 10px
+}
+.recent-news.sidebar-widget li span{
+	font-size: 14px
+}
+.comment_block_1, .comment-detail > span {
+  display: inline-block
+}
+.comment_block_1:nth-child(odd){
+	margin-left: 50px
+}
+.comment_block_1:nth-child(2){
+	margin-top: 0
+}
+.comment_block_1 > img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+  width: 100px
+}
+.comment-detail {
+  display: table
+}
+.comment-detail > span{
+	font-size: 16px;
+	margin: 5px 0;
+}
+.comment-detail > span i,
+.comment-detail > span a{
+	font-family: 'Barlow', sans-serif;
+	font-style: normal;	
+}
+.comment-detail > span i, .comment-detail > span a{
+	margin-right: 5px
+}
+.error-handel {
+	bottom: -30px;
+	display: table;
+	height: 35px;
+	left: 15px;
+	margin: auto 0;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+}
+#success, #error {
+	display: none;
+	line-height: 34px;
+}
+/*====================================================================
+	31. Timeshedule css
+====================================================================*/
+.timeshedule tr td{
+	font-family: 'Barlow', sans-serif;
+}
+.timeshedule th:first-child{
+	width: 15.5%
+}
+.timeshedule th:first-child span{
+	display: block;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 500;
+	font-size: 16px
+}
+.timeshedule th:first-child span:last-child{
+	font-size: 14px;
+	color: #a5a5a5
+}
+.timeshedule td, .timeshedule th {
+	font-family: 'Poppins', sans-serif;
+	padding: 15px 13px;
+	text-align: center;
+	width: 12.25%;
+	border: 1px solid
+}
+.timeshedule .doctor_name{
+	font-weight: 500;
+	font-size: 16px
+}
+/*====================================================================
+	32. Department css
+====================================================================*/
+.departments {
+	border-bottom: 1px solid;
+	display: inline-block
+}
+.sidebar_style2 .form_3 .btn{
+	width: 100%
+}
+.doctor_timetabe.sidebar-widget p{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.services.sidebar-widget .item{
+	width: 179px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	float: left;
+	text-align: center
+}
+.services.sidebar-widget .item:nth-child(even){
+	margin-right: 0
+}
+.services.sidebar-widget i{
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: #4cbff0;
+	display: block
+}
+.services.sidebar-widget a{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+.text_box_2 .color_gray {
+	line-height: normal
+}
+/*====================================================================
+	33. Appointment Page css
+====================================================================*/
+.department_select span{
+	float: left;
+    margin-right: 30px;
+    line-height: 45px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.department_select .form_2{
+	display: table;
+	width: 300px
+}
+.month_table .available_appoinment {
+	font-family: 'Barlow', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 5px 10px;
+	background: #f5f5f5;
+	color: #818181;
+	line-height: normal;
+	width: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -38px;
+	display: none
+}
+.month_table table td:hover .available_appoinment{
+	display: block
+}
+.month_table .available_appoinment::after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #f5f5f5;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	content: "";
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.month_table table {
+	background: #fff;
+	margin-top: -1px;
+	width: 100%
+}
+.month_table th{
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	border-top-color: transparent
+}
+.month_table table th,
+.month_table table td{
+	border: 1px solid #eeeeee;	
+}
+.month_table td {
+	height: 163px;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #818181
+}
+.month_table .date {
+	width: 52px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 2px solid transparent;
+}
+.month_table .top_opt a{
+	color: #fff;
+	display: table;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-size: 16px
+}
+.month_table .top_opt .month{
+	color: #fff;
+	font-weight: 500;
+	font-size: 24px;
+	font-family: 'Barlow', sans-serif;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+}
+/*====================================================================
+	34. Error Page css
+====================================================================*/
+.error{
+	width: 650px;
+	padding-top: 170px;
+	padding-bottom: 250px;
+}
+.error h1{
+	font-size: 100px
+}
+.error p{
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #818181
+}
+/*====================================================================
+	35. Contact Page css
+====================================================================*/
+#map{
+	height: 500px
+}
+.doctors img{
+	width: auto;
+	float: left
+}
+.doctors .details{
+	padding: 8px 0
+}
+.designation{
+	color: #a5a5a5;
+	font-size: 13px
+}
+.doctor_contact li strong{
+	font-size: 15px;
+	margin-right: 5px
+}
+.doctor_contact li{
+	font-family: 'Barlow', sans-serif
+}
+/*==============================
+	Shop Page CSS Start
+===============================*/
+.search_form2{
+	position: relative;
+}
+.search_form2 input{
+	line-height: 50px;
+	border-radius: 25px;
+	background: #fff;
+	padding-left: 20px;
+	padding-right: 40px
+}
+.search_form2 input::placeholder{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400
+}
+.search_form2 button {
+	position: absolute;
+	background: none;
+	right: 20px;
+	top: 9px;
+	padding: 0;
+	font-size: 16px;
+	border: 0;
+	color: #afafaf;
+}
+.price-filter.sidebar-widget #pricing-range {
+	height: 3px;
+	margin: 20px 0;
+	background: #fff
+}
+.price-filter.sidebar-widget .filter-range {
+	height: 100%;
+	position:relative;
+	width: 65%
+}
+.price-filter.sidebar-widget .filter-range::before,
+.price-filter.sidebar-widget .filter-range::after {
+	border-radius: 50%;
+	content: "";
+	height: 15px;
+	position: absolute;
+	top: -6px;
+	width: 15px
+}
+.price-filter.sidebar-widget .filter-range::before{
+	left:0
+}
+ .price-filter.sidebar-widget .filter-range::after{
+  right: 0
+}
+.price-filter.sidebar-widget .pricing-value p{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	float: right
+}
+.price-filter.sidebar-widget .filter {
+  display: inline-block;
+  width: 100%
+}
+.shop-category ul li a{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+}
+.shop-product ul li{
+	display: inline-block;
+	margin: 5px 0
+}
+.shop-product img {
+	width: 60px;
+	height: 60px;
+	border: 1px solid;
+	float: left;
+	margin-right: 15px;
+	border-radius: 50%;
+}
+.price-box{
+	display: inline-block
+}
+.price-box del,
+.price-box span{
+}
+.shop-add a.btn {
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	width: 68%;
+	text-align: center;
+	border-radius: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: capitalize
+}
+.instagrame ul{
+	display: inline-block
+}
+.instagrame ul li{
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-top: 0
+}
+.instagrame ul li:nth-child(-n+3){
+	margin-right: 0
+}
+.instagrame ul li img{
+	width: 80px;
+	height: 80px;
+}
+.tags2.sidebar-widget li{
+	display: inline-block;
+	float: left;
+	margin-top: 0;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.tags2.sidebar-widget a{
+	font-family: 'Poppins', sans-serif;
+	padding: 6px 14px;
+	font-size: 13px
+}
+.product_title{
+	font-size: 17px;
+	margin-top: 20px;
+	margin-bottom: 5px
+}
+.product-item .tag,
+.price-box del{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	
+}
+.price-box span{
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	margin-left: 10px
+}
+.product-item .sale,
+.product-item .new{
+	top: 20px;
+	left: -10px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	padding: 0 10px;
+}
+.quantity input[type="number"] {
+	padding: 10px;
+	width: 50px;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	margin-right: 20px
+}
+.pagination_style2 {
+	padding-top: 20px;
+	display: inline-block;
+	width: 100%
+}
+.pagination_style2 ul li  {
+	text-align: center;
+}
+.pagination_style2 ul li a{
+	padding: 10px 20px;
+	background: #fff;
+	margin-right: 5px;
+	border-radius: 30px;
+	font-size: 15px
+}
+.pagination_style2 ul li a:hover,
+.pagination_style2 ul li.active a {
+	color: #fff 
+}
+/*==============================
+	Product details CSS Start
+===============================*/
+.single-product-image ul{
+	margin-top: 20px
+}
+.single-product-image ul li {
+	float: left;
+	width: 129px;
+	margin-right: 10px;
+}
+.single-product-image ul li:last-child{
+	margin-right: 0;
+}
+.short-description p{
+	margin: 30px 0;
+	font-family: 'Poppins', sans-serif;
+}
+.single-product-info .about_product{
+	margin: 20px 0
+}
+.single-product-info .about_product tr td{
+	font-family: 'Poppins', sans-serif;
+}
+.single-product-info .about_product tr td:first-child{
+	padding-right: 20px;
+	font-weight: 600
+}
+.single-product-info .about_product tr td:last-child{
+	font-weight: 400
+}
+.single-product-info .social_icon span{
+	font-size: 16px;
+	color: #a5a5a5;
+	margin-bottom: 20px
+}
+.single-product-info .social_icon ul{
+	margin-top: 10px
+}
+.nav-tabs{
+	border: none;
+	margin-bottom: 30px
+}
+.nav-tabs > li > a{
+	padding: 0 20px;
+	line-height: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	background: #fff;
+	border-radius: 25px;
+	border: none;
+	margin-right: 15px
+}
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li > a:hover {
+	border: none
+}
+.tab-pane{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+}
+/*==============================
+	Cart CSS Start
+===============================*/
+table.shop_table th{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 21px
+}
+table.shop_table td{
+	padding: 20px 0
+}
+table.shop_table {
+	width: 100%;
+}
+.cart_item .product-thumbnail a {
+	display: block;
+}
+.cart_item .product-thumbnail img{
+	width: 100px;
+	height: 100px;
+}
+.cart_item .product-name a{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 16px
+}
+.cart_item .product-price,
+.cart_item .product-subtotal,
+.cart_item .product-remove .remove{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+.cart_item .product-remove .remove{
+	font-size: 30px
+}
+.cart_item .quantity input[type="number"]{
+	margin-right: 0
+}
+table.shop_table .actions .coupon{
+	display: table;
+	float: left
+}
+table.shop_table .actions button{
+	float: right
+}
+table.shop_table .actions #coupon_code{
+	border: none;
+	background: #fff;
+	height: 50px;
+	padding: 0 20px;
+	border-radius: 25px;
+	margin-right: 20px;
+	width: auto
+}
+.cart_totals{
+	margin: 50px 0
+}
+.cart_totals table.shop_table{
+	width: 300px
+}

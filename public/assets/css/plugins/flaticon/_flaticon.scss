@@ -1,0 +1,207 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 24/09/2018 08:30
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-play-button:before { content: "\f100"; }
+.flaticon-human-lungs-outline:before { content: "\f101"; }
+.flaticon-male-hips-and-quadriceps:before { content: "\f102"; }
+.flaticon-bone:before { content: "\f103"; }
+.flaticon-bone-structure-tip:before { content: "\f104"; }
+.flaticon-women-eye-care:before { content: "\f105"; }
+.flaticon-neurology:before { content: "\f106"; }
+.flaticon-roof:before { content: "\f107"; }
+.flaticon-fit:before { content: "\f108"; }
+.flaticon-tick:before { content: "\f109"; }
+.flaticon-receipt:before { content: "\f10a"; }
+.flaticon-offer:before { content: "\f10b"; }
+.flaticon-headphones:before { content: "\f10c"; }
+.flaticon-microscope:before { content: "\f10d"; }
+.flaticon-teddy-bear:before { content: "\f10e"; }
+.flaticon-atomic:before { content: "\f10f"; }
+.flaticon-blocks-with-angled-cuts:before { content: "\f110"; }
+.flaticon-straight-quotes:before { content: "\f111"; }
+.flaticon-phone-call:before { content: "\f112"; }
+.flaticon-maps-and-flags:before { content: "\f113"; }
+.flaticon-view:before { content: "\f114"; }
+.flaticon-laser:before { content: "\f115"; }
+.flaticon-binoculars:before { content: "\f116"; }
+.flaticon-eye:before { content: "\f117"; }
+.flaticon-testing-glasses:before { content: "\f118"; }
+.flaticon-laser-1:before { content: "\f119"; }
+.flaticon-laser-2:before { content: "\f11a"; }
+.flaticon-round-eyeglasses:before { content: "\f11b"; }
+.flaticon-treatment:before { content: "\f11c"; }
+.flaticon-medical-operation:before { content: "\f11d"; }
+.flaticon-ear:before { content: "\f11e"; }
+.flaticon-pregnant:before { content: "\f11f"; }
+.flaticon-laboratory:before { content: "\f120"; }
+.flaticon-breast:before { content: "\f121"; }
+.flaticon-treatment-1:before { content: "\f122"; }
+.flaticon-pill:before { content: "\f123"; }
+.flaticon-human:before { content: "\f124"; }
+.flaticon-tooth:before { content: "\f125"; }
+.flaticon-transfusion:before { content: "\f126"; }
+.flaticon-eye-1:before { content: "\f127"; }
+.flaticon-physical:before { content: "\f128"; }
+.flaticon-pin:before { content: "\f129"; }
+.flaticon-doctor:before { content: "\f12a"; }
+.flaticon-first-aid-kit:before { content: "\f12b"; }
+.flaticon-folder:before { content: "\f12c"; }
+.flaticon-speech-bubble:before { content: "\f12d"; }
+.flaticon-incoming-phone:before { content: "\f12e"; }
+.flaticon-24-hours-support:before { content: "\f12f"; }
+.flaticon-old-typical-phone:before { content: "\f130"; }
+.flaticon-cardiogram:before { content: "\f131"; }
+.flaticon-white-cross:before { content: "\f132"; }
+.flaticon-drop:before { content: "\f133"; }
+.flaticon-dentist:before { content: "\f134"; }
+.flaticon-dentist-1:before { content: "\f135"; }
+.flaticon-tooth-1:before { content: "\f136"; }
+.flaticon-phone:before { content: "\f137"; }
+.flaticon-doctor-1:before { content: "\f138"; }
+.flaticon-clock:before { content: "\f139"; }
+.flaticon-play-button-1:before { content: "\f13a"; }
+.flaticon-doctor-2:before { content: "\f13b"; }
+.flaticon-play-button-2:before { content: "\f13c"; }
+.flaticon-car:before { content: "\f13d"; }
+.flaticon-speech-bubbles-comment-option:before { content: "\f13e"; }
+.flaticon-question:before { content: "\f13f"; }
+.flaticon-drug:before { content: "\f140"; }
+.flaticon-ambulance:before { content: "\f141"; }
+.flaticon-doctor-stethoscope:before { content: "\f142"; }
+.flaticon-pawprint:before { content: "\f143"; }
+.flaticon-rat:before { content: "\f144"; }
+.flaticon-baby-boy:before { content: "\f145"; }
+.flaticon-pregnant-1:before { content: "\f146"; }
+.flaticon-dna:before { content: "\f147"; }
+.flaticon-pharmacy:before { content: "\f148"; }
+.flaticon-patient:before { content: "\f149"; }
+.flaticon-woman:before { content: "\f14a"; }
+.flaticon-shield:before { content: "\f14b"; }
+.flaticon-doctor-3:before { content: "\f14c"; }
+.flaticon-handicap:before { content: "\f14d"; }
+.flaticon-report:before { content: "\f14e"; }
+.flaticon-pet:before { content: "\f14f"; }
+.flaticon-sheep:before { content: "\f150"; }
+.flaticon-horse-head:before { content: "\f151"; }
+.flaticon-chicken:before { content: "\f152"; }
+.flaticon-play-button-3:before { content: "\f153"; }
+    
+    $font-Flaticon-play-button: "\f100";
+    $font-Flaticon-human-lungs-outline: "\f101";
+    $font-Flaticon-male-hips-and-quadriceps: "\f102";
+    $font-Flaticon-bone: "\f103";
+    $font-Flaticon-bone-structure-tip: "\f104";
+    $font-Flaticon-women-eye-care: "\f105";
+    $font-Flaticon-neurology: "\f106";
+    $font-Flaticon-roof: "\f107";
+    $font-Flaticon-fit: "\f108";
+    $font-Flaticon-tick: "\f109";
+    $font-Flaticon-receipt: "\f10a";
+    $font-Flaticon-offer: "\f10b";
+    $font-Flaticon-headphones: "\f10c";
+    $font-Flaticon-microscope: "\f10d";
+    $font-Flaticon-teddy-bear: "\f10e";
+    $font-Flaticon-atomic: "\f10f";
+    $font-Flaticon-blocks-with-angled-cuts: "\f110";
+    $font-Flaticon-straight-quotes: "\f111";
+    $font-Flaticon-phone-call: "\f112";
+    $font-Flaticon-maps-and-flags: "\f113";
+    $font-Flaticon-view: "\f114";
+    $font-Flaticon-laser: "\f115";
+    $font-Flaticon-binoculars: "\f116";
+    $font-Flaticon-eye: "\f117";
+    $font-Flaticon-testing-glasses: "\f118";
+    $font-Flaticon-laser-1: "\f119";
+    $font-Flaticon-laser-2: "\f11a";
+    $font-Flaticon-round-eyeglasses: "\f11b";
+    $font-Flaticon-treatment: "\f11c";
+    $font-Flaticon-medical-operation: "\f11d";
+    $font-Flaticon-ear: "\f11e";
+    $font-Flaticon-pregnant: "\f11f";
+    $font-Flaticon-laboratory: "\f120";
+    $font-Flaticon-breast: "\f121";
+    $font-Flaticon-treatment-1: "\f122";
+    $font-Flaticon-pill: "\f123";
+    $font-Flaticon-human: "\f124";
+    $font-Flaticon-tooth: "\f125";
+    $font-Flaticon-transfusion: "\f126";
+    $font-Flaticon-eye-1: "\f127";
+    $font-Flaticon-physical: "\f128";
+    $font-Flaticon-pin: "\f129";
+    $font-Flaticon-doctor: "\f12a";
+    $font-Flaticon-first-aid-kit: "\f12b";
+    $font-Flaticon-folder: "\f12c";
+    $font-Flaticon-speech-bubble: "\f12d";
+    $font-Flaticon-incoming-phone: "\f12e";
+    $font-Flaticon-24-hours-support: "\f12f";
+    $font-Flaticon-old-typical-phone: "\f130";
+    $font-Flaticon-cardiogram: "\f131";
+    $font-Flaticon-white-cross: "\f132";
+    $font-Flaticon-drop: "\f133";
+    $font-Flaticon-dentist: "\f134";
+    $font-Flaticon-dentist-1: "\f135";
+    $font-Flaticon-tooth-1: "\f136";
+    $font-Flaticon-phone: "\f137";
+    $font-Flaticon-doctor-1: "\f138";
+    $font-Flaticon-clock: "\f139";
+    $font-Flaticon-play-button-1: "\f13a";
+    $font-Flaticon-doctor-2: "\f13b";
+    $font-Flaticon-play-button-2: "\f13c";
+    $font-Flaticon-car: "\f13d";
+    $font-Flaticon-speech-bubbles-comment-option: "\f13e";
+    $font-Flaticon-question: "\f13f";
+    $font-Flaticon-drug: "\f140";
+    $font-Flaticon-ambulance: "\f141";
+    $font-Flaticon-doctor-stethoscope: "\f142";
+    $font-Flaticon-pawprint: "\f143";
+    $font-Flaticon-rat: "\f144";
+    $font-Flaticon-baby-boy: "\f145";
+    $font-Flaticon-pregnant-1: "\f146";
+    $font-Flaticon-dna: "\f147";
+    $font-Flaticon-pharmacy: "\f148";
+    $font-Flaticon-patient: "\f149";
+    $font-Flaticon-woman: "\f14a";
+    $font-Flaticon-shield: "\f14b";
+    $font-Flaticon-doctor-3: "\f14c";
+    $font-Flaticon-handicap: "\f14d";
+    $font-Flaticon-report: "\f14e";
+    $font-Flaticon-pet: "\f14f";
+    $font-Flaticon-sheep: "\f150";
+    $font-Flaticon-horse-head: "\f151";
+    $font-Flaticon-chicken: "\f152";
+    $font-Flaticon-play-button-3: "\f153";
