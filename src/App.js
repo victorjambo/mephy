@@ -5,6 +5,7 @@ import scriptLoader from 'react-async-script-loader';
 import Home from './pages/Home';
 import Header from './common/Header';
 import Footer from './common/Footer';
+import Products from './pages/Products';
 
 const url = window.location.origin;
 const scripts = [
@@ -30,6 +31,7 @@ const App = () => (
 
     <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/products" exact component={Products} />
     </Switch>
 
     <Footer />

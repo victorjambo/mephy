@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header id="header" className="header_4 nav-on-banner">
@@ -21,54 +22,54 @@ const Header = () => (
                     <span className="icon-bar" />
                     <span className="icon-bar" />
                   </button>
-                  <a className="navbar-brand my_brand flexing" href="/">
+                  <Link className="navbar-brand my_brand flexing" to="/">
                     <img className="img-responsive" id="logo" src="./assets/images/logo.png" alt="mephys" />
                     <div className="company-name">
                       ME<span>PHYS</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul className="navbar-nav nav-contact pull-right">
-                    <li><a className="btn btn-primary" href="/">Track Order</a></li>
+                    <li><Link className="btn btn-primary" to="/">Track Order</Link></li>
                   </ul>
                   <ul className="nav navbar-nav navbar-right nav_item">
                     <li className="dropdown">
-                      <a
+                      <Link
+                        to="/"
                         className="dropdown-toggle"
                         data-toggle="dropdown"
-                        href="/"
                         role="button"
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
-                    <li><a href="about-us.html">About us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><Link to="/about-us">About us</Link></li>
+                    <li><Link to="/services">Services</Link></li>
                     <li className="dropdown">
-                      <a
+                      <Link
                         className="dropdown-toggle"
                         data-toggle="dropdown"
-                        href="/"
+                        to="/products"
                         role="button"
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
                         Products
-                      </a>
+                      </Link>
                       <ul className="dropdown-menu">
-                        <li><a href="products.html">Top seller</a></li>
-                        <li><a href="products.html">Top brands</a></li>
-                        <li><a href="products.html">View All Products</a></li>
-                        <li><a href="products.html">View All Brands</a></li>
-                        <li><a href="products.html">View Healthcare Solutions</a></li>
+                        <li><Link to="/products">Top seller</Link></li>
+                        <li><Link to="/products">Top brands</Link></li>
+                        <li><Link to="/products">View All Products</Link></li>
+                        <li><Link to="/products">View All Brands</Link></li>
+                        <li><Link to="/products">View Healthcare Solutions</Link></li>
                       </ul>
                     </li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="cart.html">cart</a></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/cart">cart</Link></li>
                   </ul>
                 </div>
               </nav>
