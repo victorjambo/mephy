@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import contacts from '../mock/contacts';
 
 const Footer = () => (
-  <footer className="pt_80 bg_gray">
+  <footer className="pt_80 bg_white">
     <div className="container">
       <div className="footer_full">
         <div className="position_relative">
