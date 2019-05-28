@@ -36,14 +36,7 @@ const Header = () => (
                   </ul>
                   <ul className="nav navbar-nav navbar-right nav_item">
                     <li className="dropdown">
-                      <Link
-                        to="/"
-                        className="dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <Link to="/" className="dropdown-toggle">
                         Home
                       </Link>
                     </li>

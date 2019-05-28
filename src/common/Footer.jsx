@@ -49,19 +49,19 @@ const Footer = () => (
                   <div className="social_icon color_white_a padding_top_30">
                     <ul>
                       <li>
-                        <Link to={contacts.contacts.facebook}>
+                        <a target="blank" href={contacts.contacts.facebook}>
                           <i className="fa fa-facebook" aria-hidden="true" />
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to={contacts.contacts.twitter}>
+                        <a target="blank" href={contacts.contacts.twitter}>
                           <i className="fa fa-twitter" aria-hidden="true" />
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to={contacts.contacts.instagram}>
+                        <a target="blank" href={contacts.contacts.instagram}>
                           <i className="fa fa-instagram" aria-hidden="true" />
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
