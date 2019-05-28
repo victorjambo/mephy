@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import contacts from '../mock/contacts';
 
 const Footer = () => (
   <footer className="pt_80 bg_gray">
@@ -11,8 +14,8 @@ const Footer = () => (
                 <div className="footer_minititle">Office Hours</div>
                 <div className="color_white_a padding_top_30">
                   <ul>
-                    <li>Monday - Friday: 8am - 5pm</li>
-                    <li>Saturday: 8am – 12pm</li>
+                    <li>{contacts.officeHours.weekday}</li>
+                    <li>{contacts.officeHours.weekend}</li>
                   </ul>
                 </div>
               </div>
@@ -20,14 +23,16 @@ const Footer = () => (
                 <div className="footer_box">
                   <div className="footer_minititle">Contact</div>
                   <span className="icon_number">
-                    <i className="fa fa-tty color_primary" aria-hidden="true" />+254720095236
+                    <i className="fa fa-tty color_primary" aria-hidden="true" />
+                    {contacts.contacts.phone}
                     <br />
-                    <i className="fa fa-tty color_primary" aria-hidden="true" />+254734095236
+                    <i className="fa fa-tty color_primary" aria-hidden="true" />
+                    {contacts.contacts.phoneAirtel}
                   </span>
                   <br />
                   <span className="email">
                     <i className="fa fa-envelope color_primary" />
-                    mephysclinicltd@gmail.com
+                    {contacts.contacts.email}
                   </span>
                 </div>
 
@@ -35,7 +40,7 @@ const Footer = () => (
               <div className="col-md-3 col-sm-4">
                 <div className="footer_box">
                   <div className="footer_minititle">Location</div>
-                  <p>Nairobi, Kenya</p>
+                  <p>{contacts.contacts.location}</p>
                 </div>
               </div>
               <div className="col-md-3 col-sm-4">
@@ -44,19 +49,19 @@ const Footer = () => (
                   <div className="social_icon color_white_a padding_top_30">
                     <ul>
                       <li>
-                        <a href="https://www.facebook.com/mephys.ke">
+                        <Link to={contacts.contacts.facebook}>
                           <i className="fa fa-facebook" aria-hidden="true" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="https://twitter.com/MephysK">
+                        <Link to={contacts.contacts.twitter}>
                           <i className="fa fa-twitter" aria-hidden="true" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="https://instagram.com/mephys.ke">
+                        <Link to={contacts.contacts.instagram}>
                           <i className="fa fa-instagram" aria-hidden="true" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -71,13 +76,13 @@ const Footer = () => (
               <h5 className="widget_title">HELP</h5>
               <ul className="footer_content">
                 <li>
-                  <a href="/">Make an order</a>
+                  <Link to="/">Make an order</Link>
                 </li>
                 <li>
-                  <a href="/">Track your order</a>
+                  <Link to="/">Track your order</Link>
                 </li>
                 <li>
-                  <a href="/">Help and Support</a>
+                  <Link to="/">Help and Support</Link>
                 </li>
               </ul>
             </div>
@@ -86,9 +91,9 @@ const Footer = () => (
             <div className="footer_widget color_secondary_a">
               <h5 className="widget_title">COMPANY INFO</h5>
               <ul className="footer_content">
-                <li><a href="about-us.html">About us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><Link to="/about-us">About us</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/products">Products</Link></li>
               </ul>
             </div>
           </div>
@@ -96,8 +101,8 @@ const Footer = () => (
             <div className="footer_widget color_secondary_a">
               <h5 className="widget_title">LEGAL</h5>
               <ul className="footer_content">
-                <li><a href="/">Legal Notice</a></li>
-                <li><a href="/">Privacy policy</a></li>
+                <li><Link to="/">Legal Notice</Link></li>
+                <li><Link to="/">Privacy policy</Link></li>
               </ul>
             </div>
           </div>

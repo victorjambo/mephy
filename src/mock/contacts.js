@@ -5,8 +5,8 @@ export default {
     instagram: 'https://instagram.com/mephys.ke',
     email: 'mephysclinicltd@gmail.com',
     phone: '+254720095236',
-    'phone-airtel': '+254734095236',
-    Location: 'Nairobi'
+    phoneAirtel: '+254734095236',
+    location: 'Nairobi, Kenya'
   },
   officeHours: {
     weekday: 'Monday – Friday: 8am – 5pm',
