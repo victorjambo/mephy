@@ -6,7 +6,6 @@ import Services from '../components/Services';
 import FeaturedProducts from '../components/FeaturedProducts';
 import Discount from '../components/Discount';
 import Testimonials from '../components/Testimonials';
-import Contact from '../components/Contact';
 import ExtraPadding from '../common/ExtraPadding';
 
 const Home = () => (
@@ -17,7 +16,6 @@ const Home = () => (
     <FeaturedProducts />
     <Discount />
     <Testimonials />
-    <Contact />
     <ExtraPadding />
   </React.Fragment>
 );

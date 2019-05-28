@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = () => (
-  <section className="bg_white contact" id="contact">
+  <section className="bg_gray contact" id="contact">
     <div className="container">
       <div className="row">
         <div className="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">

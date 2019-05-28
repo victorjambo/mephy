@@ -7,6 +7,8 @@ import Header from './common/Header';
 import Footer from './common/Footer';
 import Products from './pages/Products';
 import Services from './pages/Services';
+import ContactUs from './pages/ContactUs';
+import Cart from './pages/Products/Cart';
 
 const url = window.location.origin;
 const scripts = [
@@ -34,6 +36,8 @@ const App = () => (
       <Route path="/" exact component={Home} />
       <Route path="/products" exact component={Products} />
       <Route path="/services" exact component={Services} />
+      <Route path="/contact" exact component={ContactUs} />
+      <Route path="/cart" exact component={Cart} />
     </Switch>
 
     <Footer />
