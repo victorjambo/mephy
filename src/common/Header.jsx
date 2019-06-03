@@ -32,7 +32,7 @@ const Header = () => (
 
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul className="navbar-nav nav-contact pull-right">
-                    <li><Link className="btn btn-primary" to="/">Track Order</Link></li>
+                    <li><Link className="btn btn-primary" to="/">Appointment</Link></li>
                   </ul>
                   <ul className="nav navbar-nav navbar-right nav_item">
                     <li className="dropdown">
@@ -62,7 +62,12 @@ const Header = () => (
                       </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/cart">cart</Link></li>
+                    <li>
+                      <Link to="/cart">
+                        <i className="fa fa-shopping-cart" />
+                      </Link>
+                    </li>
+                    <li><Link to="/">Login</Link></li>
                   </ul>
                 </div>
               </nav>

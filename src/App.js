@@ -10,6 +10,7 @@ import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import Cart from './pages/Products/Cart';
 import ProductDetails from './pages/Products/ProductDetails';
+import PageNotFound from './pages/404';
 
 const url = window.location.origin;
 const scripts = [
@@ -29,6 +30,7 @@ const scripts = [
   `${url}/assets/js/settings.js`,
   `${url}/assets/js/custom.js`
 ];
+
 const App = () => (
   <React.Fragment>
     <Header />
@@ -40,6 +42,7 @@ const App = () => (
       <Route path="/services" exact component={Services} />
       <Route path="/contact" exact component={ContactUs} />
       <Route path="/cart" exact component={Cart} />
+      <Route component={PageNotFound} />
     </Switch>
 
     <Footer />
