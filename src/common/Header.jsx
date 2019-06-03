@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AuthLinks from '../components/auth/AuthLinks';
 
 const Header = () => (
   <header id="header" className="header_4 nav-on-banner">
@@ -62,12 +63,7 @@ const Header = () => (
                       </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li>
-                      <Link to="/cart">
-                        <i className="fa fa-shopping-cart" />
-                      </Link>
-                    </li>
-                    <li><Link to="/">Login</Link></li>
+                    <AuthLinks />
                   </ul>
                 </div>
               </nav>
