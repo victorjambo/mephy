@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import categories from '../../mock/categories';
 
 const items = categories.map(cat => (
-  <li><Link to={cat.link}>{cat.title}{' '}({cat.count})</Link></li>
+  <li key={cat.id}><Link to={cat.link}>{cat.title}{' '}({cat.count})</Link></li>
 ));
 
 const FilterCat = () => (

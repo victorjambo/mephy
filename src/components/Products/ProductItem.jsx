@@ -10,7 +10,7 @@ const ProductItem = ({
     <div className="product-item position_relative mb_30">
       {flag && <div className="sale position_absolute">{flag}</div>}
       <Link to={link}><img src={image} alt="Not found!" /></Link>
-      <h5 className="product_title"><a href="product-details.html">{itemTitle}</a></h5>
+      <h5 className="product_title"><Link to={link}>{itemTitle}</Link></h5>
       <div className="tag">{tag}</div>
       <div className="price-box">
         {initialPrize && <del>{initialPrize}</del>}

@@ -21,6 +21,7 @@ export default () => {
       image={item.image}
       link={item.link}
       flag={item.flag}
+      key={item.id}
     />
   ));
 

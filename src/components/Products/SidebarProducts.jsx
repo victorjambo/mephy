@@ -5,7 +5,7 @@ import Ratings from './Ratings';
 import products from '../../mock/products';
 
 const items = products.slice(0, 5).map(product => (
-  <li>
+  <li key={product.id}>
     <Link to={product.link}>
       <img src={product.image} alt="Not found!" />
     </Link>

@@ -1,12 +1,13 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 
 const Ratings = ({ rating }) => {
   const maxRating = 5;
-  const items = [...Array(maxRating).keys()].map((i) => {
-    if (i < rating) {
-      return (<i className="fa fa-star" />);
+  const items = [...Array(maxRating).keys()].map((k, i) => {
+    if (k < rating) {
+      return (<i className="fa fa-star" key={i} />);
     }
-    return (<i className="fa fa-star-o" />);
+    return (<i className="fa fa-star-o" key={i} />);
   });
 
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FeaturedProducts = () => (
   <section className="bg_gray" id="products">
@@ -62,7 +63,7 @@ const FeaturedProducts = () => (
       </div>
       <div className="row more-products">
         <div className="col-md-4 col-md-offset-4">
-          <a href="products.html" className="btn btn-primary">More Products</a>
+          <Link to="/products" className="btn btn-primary">More Products</Link>
         </div>
       </div>
     </div>
