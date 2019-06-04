@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import scriptLoader from 'react-async-script-loader';
 
@@ -11,6 +12,7 @@ import ContactUs from './pages/ContactUs';
 import Cart from './pages/Products/Cart';
 import ProductDetails from './pages/Products/ProductDetails';
 import PageNotFound from './pages/404';
+import store from './redux/store';
 
 const url = window.location.origin;
 const scripts = [
@@ -32,7 +34,7 @@ const scripts = [
 ];
 
 const App = () => (
-  <React.Fragment>
+  <Provider store={store}>
     <Header />
 
     <Switch>
@@ -46,7 +48,7 @@ const App = () => (
     </Switch>
 
     <Footer />
-  </React.Fragment>
+  </Provider>
 );
 
 
