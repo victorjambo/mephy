@@ -16,7 +16,7 @@ import SidebarProducts from '../../components/Products/SidebarProducts';
 const productItems = products.slice(0, 6).map(item => (
   <ProductItem
     prize={item.prize}
-    itemTitle={item.itemTitle}
+    title={item.title}
     tag={item.tag}
     rating={item.rating}
     image={item.image}
@@ -34,9 +34,9 @@ const product = {
   tag: 'Geriatrics, Health, Psychology',
   initialPrize: 'Ksh. 145',
   prize: 'Kes. 124',
-  itemTitle: 'Medichine',
+  title: 'Medichine',
   flag: 'new',
-  shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+  description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
 };
 
 const ProductDetails = () => (
@@ -72,7 +72,7 @@ const ProductDetails = () => (
               </div>
               <div className="col-lg-6 col-md-6">
                 <div className="single-product-info">
-                  <h5 className="single_product_title">{product.itemTitle}</h5>
+                  <h5 className="single_product_title">{product.title}</h5>
                   <Ratings rating={product.rating} />
                   <div className="price-box">
                     {product.initialPrize && <del>{product.initialPrize}</del>}
@@ -81,7 +81,7 @@ const ProductDetails = () => (
 
                   <div className="short-description">
                     <p>
-                      {product.shortDescription}
+                      {product.description}
                     </p>
                   </div>
                   <form>

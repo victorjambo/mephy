@@ -7,9 +7,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Medichine',
+    title: 'Medichine',
     flag: 'new',
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -19,9 +19,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Medichine Capsule',
+    title: 'Medichine Capsule',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 2,
@@ -31,9 +31,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Medichine Capsule',
+    title: 'Medichine Capsule',
     flag: 'new',
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -43,9 +43,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Injection',
+    title: 'Injection',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 4,
@@ -55,9 +55,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Surgical Set',
+    title: 'Surgical Set',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -67,9 +67,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Teeth Symple',
+    title: 'Teeth Symple',
     flag: 'sale',
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -79,9 +79,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Wheel Chair',
+    title: 'Wheel Chair',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 1,
@@ -91,9 +91,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Medical Gloves',
+    title: 'Medical Gloves',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -103,9 +103,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Surgical Scissors',
+    title: 'Surgical Scissors',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -115,9 +115,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Surgical Mask',
+    title: 'Surgical Mask',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -127,9 +127,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Vitamin Tablets',
+    title: 'Vitamin Tablets',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 1,
@@ -139,9 +139,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Surgical Set',
+    title: 'Surgical Set',
     flag: 'sale',
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -151,9 +151,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Injection',
+    title: 'Injection',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 3,
@@ -163,9 +163,9 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Digital Monitor',
+    title: 'Digital Monitor',
     flag: null,
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
     rating: 0,
@@ -175,8 +175,8 @@ export default [
     tag: 'Geriatrics, Health, Psychology',
     initialPrize: 'Ksh. 145',
     prize: 'Kes. 124',
-    itemTitle: 'Vitamin Tablet',
+    title: 'Vitamin Tablet',
     flag: 'sale',
-    shortDescription: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
+    description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
 ];

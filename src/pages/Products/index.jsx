@@ -15,7 +15,7 @@ export default () => {
   const productItems = products.map(item => (
     <ProductItem
       prize={item.prize}
-      itemTitle={item.itemTitle}
+      title={item.title}
       tag={item.tag}
       rating={item.rating}
       image={item.image}
