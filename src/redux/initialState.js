@@ -5,6 +5,7 @@ export default {
   contacts: [],
   services: [],
   message: {
-    message: 'Working'
+    message: 'Working',
+    products: {}
   }
 };

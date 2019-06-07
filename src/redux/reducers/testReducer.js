@@ -1,4 +1,4 @@
-import { TEST } from '../constants';
+import { TEST, GET_DATA } from '../constants';
 import initialState from '../initialState';
 
 
@@ -8,6 +8,11 @@ const testReducer = (state = initialState.message, action) => {
     return {
       ...state,
       message: action.message
+    };
+  case GET_DATA:
+    return {
+      ...state,
+      products: action.payload
     };
   default:
     return state;

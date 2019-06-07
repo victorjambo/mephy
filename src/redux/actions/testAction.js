@@ -1,4 +1,4 @@
-import { TEST } from '../constants';
+import { TEST, GET_DATA } from '../constants';
 
 const product = {
   rating: 2,
@@ -26,4 +26,13 @@ export const testAction = () => (dispatch, getState, { getFirestore }) => {
       dispatch(testFunc('data'));
     })
     .catch(error => console.log(error));
+};
+
+export const testFunc2 = products => ({
+  type: GET_DATA, payload: products
+});
+
+export const testGetProducts = () => (dispatch, getState, { getFirestore }) => {
+  const firestore = getFirestore();
+  firestore.get({ collection: 'products' });
 };

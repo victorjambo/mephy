@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -9,16 +10,17 @@ import FeaturedProducts from '../components/FeaturedProducts';
 import Discount from '../components/Discount';
 import Testimonials from '../components/Testimonials';
 import ExtraPadding from '../common/ExtraPadding';
-import { testAction } from '../redux/actions/testAction';
+import { testAction, testGetProducts } from '../redux/actions/testAction';
 
 
 class Home extends React.Component {
   componentDidMount() {
-    this.props.testAction();
+    const { testGetProducts } = this.props;
+    testGetProducts();
   }
 
   render() {
-    console.log(this.props.message);
+    console.log(this.props);
     return (
       <React.Fragment>
         <Slider />
@@ -34,12 +36,13 @@ class Home extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  message: state.testReducer
+  firestore: state.firestore,
+  firebase: state.firestore
 });
 
 const mapDispatchToProps = dispatch => ({
-  testAction: bindActionCreators(testAction, dispatch)
+  testAction: bindActionCreators(testAction, dispatch),
+  testGetProducts: bindActionCreators(testGetProducts, dispatch)
 });
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
