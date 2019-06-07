@@ -43,22 +43,56 @@ const styles = {
 };
 
 const Slider = () => (
-  <div className="ls-slide">
-    <img width="1920" height="1080" src="assets/images/slider-1.png" className="ls-bg" alt="" />
-    <p style={styles.large} className="ls-l color_white">
+  <React.Fragment>
+    <div className="ls-slide">
+      <img width="1920" height="1080" src="assets/images/slider-1.png" className="ls-bg" alt="" />
+      <p style={styles.large} className="ls-l color_white">
       Take Care Your <span className="color_primary">Health</span>
-    </p>
-    <p style={styles.small} className="ls-l color_white">
-      Not just better healthcare, but a better healthcare experience.
-    </p>
-    <a className="ls-l" href="/" target="_self">
-      <p
-        style={styles.learnMore}
-        className="btn btn-primary"
-      >LEARN MORE
       </p>
-    </a>
-  </div>
+      <p style={styles.small} className="ls-l color_white">
+      Not just better healthcare, but a better healthcare experience.
+      </p>
+      <a className="ls-l" href="/" target="_self">
+        <p
+          style={styles.learnMore}
+          className="btn btn-primary"
+        >LEARN MORE
+        </p>
+      </a>
+    </div>
+    <div className="ls-slide">
+      <img width="1920" height="1080" src="assets/images/slider-2.png" className="ls-bg" alt="" />
+      <p style={styles.large} className="ls-l color_white">
+        <span className="color_primary">Medicine</span> that touches the world
+      </p>
+      <p style={styles.small} className="ls-l color_white">
+      Not just better healthcare, but a better healthcare experience.
+      </p>
+      <a className="ls-l" href="/" target="_self">
+        <p
+          style={styles.learnMore}
+          className="btn btn-primary"
+        >LEARN MORE
+        </p>
+      </a>
+    </div>
+    <div className="ls-slide">
+      <img width="1920" height="1080" src="assets/images/slider-3.png" className="ls-bg" alt="" />
+      <p style={styles.large} className="ls-l color_white">
+        Bettering the Human <span className="color_primary">Condition</span>
+      </p>
+      <p style={styles.small} className="ls-l color_white">
+      Not just better healthcare, but a better healthcare experience.
+      </p>
+      <a className="ls-l" href="/" target="_self">
+        <p
+          style={styles.learnMore}
+          className="btn btn-primary"
+        >LEARN MORE
+        </p>
+      </a>
+    </div>
+  </React.Fragment>
 );
 
 export default Slider;
