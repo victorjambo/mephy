@@ -1,5 +1,6 @@
 export default [
   {
+    brand: 'Procare inc',
     rating: 5,
     link: '/products/1',
     id: 1,
@@ -12,6 +13,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/2',
     id: 2,
@@ -24,6 +26,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 2,
     link: '/products/3',
     id: 3,
@@ -36,6 +39,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/4',
     id: 4,
@@ -48,6 +52,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 4,
     link: '/products/5',
     id: 5,
@@ -60,6 +65,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/6',
     id: 6,
@@ -72,6 +78,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/7',
     id: 7,
@@ -84,6 +91,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 1,
     link: '/products/8',
     id: 8,
@@ -96,6 +104,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/9',
     id: 9,
@@ -108,6 +117,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/10',
     id: 10,
@@ -120,6 +130,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/11',
     id: 11,
@@ -132,6 +143,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 1,
     link: '/products/12',
     id: 12,
@@ -144,6 +156,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/13',
     id: 13,
@@ -156,6 +169,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 3,
     link: '/products/14',
     id: 14,
@@ -168,6 +182,7 @@ export default [
     description: 'Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat leo.'
   },
   {
+    brand: 'Procare inc',
     rating: 0,
     link: '/products/15',
     id: 15,

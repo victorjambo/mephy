@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AuthLinks from '../components/auth/AuthLinks';
+import { baseUrl } from '../helpers/constants';
 
 const Header = () => (
   <header id="header" className="header_4 nav-on-banner">
@@ -24,7 +24,7 @@ const Header = () => (
                     <span className="icon-bar" />
                   </button>
                   <Link className="navbar-brand my_brand flexing" to="/">
-                    <img className="img-responsive" id="logo" src="./assets/images/logo.png" alt="mephys" />
+                    <img className="img-responsive" id="logo" src={`${baseUrl}/assets/images/logo.png`} alt="mephys" />
                     <div className="company-name">
                       ME<span>PHYS</span>
                     </div>
@@ -33,7 +33,7 @@ const Header = () => (
 
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul className="navbar-nav nav-contact pull-right">
-                    <li><Link className="btn btn-primary" to="/">Appointment</Link></li>
+                    <li><Link className="btn btn-primary" to="/cart">cart <i className="fa fa-shopping-cart" /></Link></li>
                   </ul>
                   <ul className="nav navbar-nav navbar-right nav_item">
                     <li className="dropdown">
@@ -63,7 +63,7 @@ const Header = () => (
                       </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <AuthLinks />
+                    <li><Link to="/#appointment">Appointment</Link></li>
                   </ul>
                 </div>
               </nav>

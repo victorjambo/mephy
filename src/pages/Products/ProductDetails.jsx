@@ -11,6 +11,7 @@ import Search from '../../components/Products/Search';
 import FilterPrice from '../../components/Products/FilterPrice';
 import FilterCat from '../../components/Products/FilterCat';
 import SidebarProducts from '../../components/Products/SidebarProducts';
+import { baseUrl } from '../../helpers/constants';
 
 
 const productItems = products.slice(0, 6).map(item => (
@@ -61,12 +62,12 @@ const ProductDetails = () => (
               <div className="col-lg-6 col-md-6">
                 <div className="single-product-image">
                   <Link to={product.link}>
-                    <img src={product.image} alt="Not found!" />
+                    <img src={`${baseUrl}/${product.image}`} alt="Not found!" />
                   </Link>
                   <ul>
-                    <li><img src={product.image} alt="Not found!" /></li>
-                    <li><img src={product.image} alt="Not found!" /></li>
-                    <li><img src={product.image} alt="Not found!" /></li>
+                    <li><img src={`${baseUrl}/${product.image}`} alt="Not found!" /></li>
+                    <li><img src={`${baseUrl}/${product.image}`} alt="Not found!" /></li>
+                    <li><img src={`${baseUrl}/${product.image}`} alt="Not found!" /></li>
                   </ul>
                 </div>
               </div>
@@ -86,8 +87,8 @@ const ProductDetails = () => (
                   </div>
                   <form>
                     <div className="quantity">
-                      <input type="number" />
-                      <button type="submit" className="btn btn-primary">Add to cart</button>
+                      <input type="number" value="1" />
+                      <button type="submit" className="btn btn-primary" onClick={() => alert('item added to cart')}>Add to cart</button>
                     </div>
                   </form>
                   <table className="about_product">
@@ -139,55 +140,11 @@ const ProductDetails = () => (
                       Description
                       </a>
                     </li>
-                    <li role="presentation">
-                      <a
-                        href="#profile"
-                        aria-controls="profile"
-                        role="tab"
-                        data-toggle="tab"
-                      >
-                      Description
-                      </a>
-                    </li>
-                    <li role="presentation">
-                      <a
-                        href="#messages"
-                        aria-controls="messages"
-                        role="tab"
-                        data-toggle="tab"
-                      >
-                      Description
-                      </a>
-                    </li>
                   </ul>
 
                   <div className="tab-content">
                     <div role="tabpanel" className="tab-pane active" id="home">
-                    1. Aliquam lorem ante, dapibus in, viverra
-                      quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-                      imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
-                      rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-                      adipiscing sem neque sed ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                      commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus mus. Nullam quis ante.
-                    </div>
-                    <div role="tabpanel" className="tab-pane" id="profile">
-                    2. Aliquam lorem ante, dapibus in, viverra quis,
-                      feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-                      imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
-                      rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-                      adipiscing sem neque sed ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                      commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus mus. Nullam quis ante.
-                    </div>
-                    <div role="tabpanel" className="tab-pane" id="messages">
-                    3. Aliquam lorem ante, dapibus in, viverra quis,
-                      feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-                      imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
-                      rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-                      adipiscing sem neque sed ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                      commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus mus. Nullam quis ante.
+                      {product.description}
                     </div>
                   </div>
 

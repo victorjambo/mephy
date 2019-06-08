@@ -1,5 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import products from '../mock/products';
+
+const items = products.slice(0, 3).map(product => (
+  <div className="col-md-4">
+    <div className="thumbnail_block_1 bg_white hover_zoom">
+      <div className="overflow_hidden">
+        <Link to={product.link}>
+          <img src={product.image} alt="product" />
+        </Link>
+      </div>
+      <div className="thumbnail_content">
+        <span className="date">{product.brand}</span>
+        <h5 className="inner_title">
+          <Link className="color_secondary" href={product.link}>
+            {product.title}
+          </Link>
+        </h5>
+        <Link to={product.link} className="read_more color_primary">
+          Make an order<i className="fa fa-long-arrow-right " aria-hidden="true" />
+        </Link>
+      </div>
+    </div>
+  </div>
+));
 
 const FeaturedProducts = () => (
   <section className="bg_gray" id="products">
@@ -15,51 +39,7 @@ const FeaturedProducts = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4">
-          <div className="thumbnail_block_1 bg_white hover_zoom">
-            <div className="overflow_hidden">
-              <a href="/">
-                <img src="assets/images/prods/7.jpg" alt="product" />
-              </a>
-            </div>
-            <div className="thumbnail_content">
-              <span className="date">Brand of product</span>
-              <h5 className="inner_title"><a className="color_secondary" href="/">A22 Custom Knee Brace</a></h5>
-              <a href="/" className="read_more color_primary">Make an order<i className="fa fa-long-arrow-right " aria-hidden="true" /></a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="thumbnail_block_1 bg_white hover_zoom">
-            <div className="overflow_hidden">
-              <a href="/">
-                <img src="assets/images/prods/2.png" alt="product" />
-              </a>
-            </div>
-            <div className="thumbnail_content">
-              <span className="date">Procare inc</span>
-              <h5 className="inner_title"><a className="color_secondary" href="/">UltraSling II</a></h5>
-              <a href="/" className="read_more color_primary">
-                Make an order
-                <i className="fa fa-long-arrow-right " aria-hidden="true" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="thumbnail_block_1 bg_white hover_zoom">
-            <div className="overflow_hidden">
-              <a href="/">
-                <img src="assets/images/prods/1.png" alt="product" />
-              </a>
-            </div>
-            <div className="thumbnail_content">
-              <span className="date">Aircast</span>
-              <h5 className="inner_title"><a className="color_secondary" href="/">BACK/HIP/RIB CRYO/CUFF</a></h5>
-              <a href="/" className="read_more color_primary">Make an order<i className="fa fa-long-arrow-right " aria-hidden="true" /></a>
-            </div>
-          </div>
-        </div>
+        {items}
       </div>
       <div className="row more-products">
         <div className="col-md-4 col-md-offset-4">

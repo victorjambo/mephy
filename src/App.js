@@ -14,25 +14,7 @@ import ProductDetails from './pages/Products/ProductDetails';
 import PageNotFound from './pages/404';
 import store from './redux/store';
 import AboutUs from './pages/AboutUs';
-
-const url = window.location.origin;
-const scripts = [
-  `${url}/assets/js/plugins/jquery.min.js`,
-  `${url}/assets/js/plugins/greensock.js`,
-  `${url}/assets/js/plugins/layerslider.transitions.js`,
-  `${url}/assets/js/plugins/layerslider.kreaturamedia.jquery.js`,
-  `${url}/assets/js/plugins/bootstrap.min.js`,
-  `${url}/assets/js/plugins/owl.js`,
-  `${url}/assets/js/plugins/wow.js`,
-  `${url}/assets/js/plugins/mixitup.js`,
-  `${url}/assets/js/plugins/validate.js`,
-  `${url}/assets/js/plugins/loaders.css.js`,
-  `${url}/assets/js/plugins/jquery-ui.js`,
-  `${url}/assets/js/plugins/jquery.timepicker.min.js`,
-  `${url}/assets/js/plugins/jquery.cookie.js`,
-  `${url}/assets/js/settings.js`,
-  `${url}/assets/js/custom.js`
-];
+import { scripts } from './helpers/constants';
 
 const App = () => (
   <Provider store={store}>

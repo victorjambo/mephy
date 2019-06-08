@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 
 import Ratings from './Ratings';
 import products from '../../mock/products';
+import { baseUrl } from '../../helpers/constants';
 
 const items = products.slice(0, 5).map(product => (
   <li key={product.id}>
     <Link to={product.link}>
-      <img src={product.image} alt="Not found!" />
+      <img src={`${baseUrl}/${product.image}`} alt="Not found!" />
     </Link>
     <div className="d_table pull-left">
       <h6><Link to={product.link}>{product.title}</Link></h6>
