@@ -63,9 +63,38 @@ const Header = () => (
                         Products
                       </Link>
                       <ul className="dropdown-menu">
-                        <li><Link to="/products">Body part</Link></li>
-                        <li><Link to="/products">Category</Link></li>
-                        <li><Link to="/products">Brand</Link></li>
+                        <li>
+                          <Link to="/products">Body part</Link>
+                          <ul className="dropdown-menu">
+                            <li><Link to="/products">Knee</Link></li>
+                            <li><Link to="/products">Hip</Link></li>
+                            <li><Link to="/products">Shoulder</Link></li>
+                            <li><Link to="/products">Spine</Link></li>
+                            <li><Link to="/products">Hand</Link></li>
+                            <li><Link to="/products">Foot</Link></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to="/products">Brand</Link>
+                          <ul className="dropdown-menu">
+                            <li><Link to="/products">AIRCAST</Link></li>
+                            <li><Link to="/products">CMF</Link></li>
+                            <li><Link to="/products">COMPEX</Link></li>
+                            <li><Link to="/products">DONJOY</Link></li>
+                            <li><Link to="/products">DR. COMFORT</Link></li>
+                            <li><Link to="/products">PROCARE</Link></li>
+                            <li><Link to="/products">MotionMD</Link></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <Link to="/products">Category</Link>
+                          <ul className="dropdown-menu">
+                            <li><Link to="/products">BRACING & SUPPORTS</Link></li>
+                            <li><Link to="/products">SURGICAL</Link></li>
+                            <li><Link to="/products">RECOVERY</Link></li>
+                            <li><Link to="/products">FOOTCARE</Link></li>
+                          </ul>
+                        </li>
                       </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>
