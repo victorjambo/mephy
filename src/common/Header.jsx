@@ -41,8 +41,17 @@ const Header = () => (
                         Home
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/about-us">About us</Link>
+                    <li className="dropdown">
+                      <Link
+                        to="/about-us"
+                        className="dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        About us
+                      </Link>
                       <ul className="dropdown-menu">
                         <li><Link to="/about-us#intro">Who are we</Link></li>
                         <li><Link to="/about-us#mission">Mission</Link></li>
@@ -63,7 +72,7 @@ const Header = () => (
                         Products
                       </Link>
                       <ul className="dropdown-menu">
-                        <li>
+                        <li className="dropdown">
                           <Link to="/products">Body part</Link>
                           <ul className="dropdown-menu">
                             <li><Link to="/products">Knee</Link></li>
@@ -74,7 +83,7 @@ const Header = () => (
                             <li><Link to="/products">Foot</Link></li>
                           </ul>
                         </li>
-                        <li>
+                        <li className="dropdown">
                           <Link to="/products">Brand</Link>
                           <ul className="dropdown-menu">
                             <li><Link to="/products">AIRCAST</Link></li>
@@ -86,7 +95,7 @@ const Header = () => (
                             <li><Link to="/products">MotionMD</Link></li>
                           </ul>
                         </li>
-                        <li>
+                        <li className="dropdown">
                           <Link to="/products">Category</Link>
                           <ul className="dropdown-menu">
                             <li><Link to="/products">BRACING & SUPPORTS</Link></li>
