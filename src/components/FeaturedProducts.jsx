@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import products from '../mock/products';
 
 const items = products.slice(0, 3).map(product => (
-  <div className="col-md-4">
+  <div className="col-md-4" key={product.id}>
     <div className="thumbnail_block_1 bg_white hover_zoom">
       <div className="overflow_hidden">
         <Link to={product.link}>
@@ -13,7 +13,7 @@ const items = products.slice(0, 3).map(product => (
       <div className="thumbnail_content">
         <span className="date">{product.brand}</span>
         <h5 className="inner_title">
-          <Link className="color_secondary" href={product.link}>
+          <Link className="color_secondary" to={product.link}>
             {product.title}
           </Link>
         </h5>

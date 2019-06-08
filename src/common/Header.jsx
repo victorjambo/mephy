@@ -41,7 +41,14 @@ const Header = () => (
                         Home
                       </Link>
                     </li>
-                    <li><Link to="/about-us">About us</Link></li>
+                    <li>
+                      <Link to="/about-us">About us</Link>
+                      <ul className="dropdown-menu">
+                        <li><Link to="/about-us#mission">Mission</Link></li>
+                        <li><Link to="/about-us#vision">Vision</Link></li>
+                        <li><Link to="/about-us#values">Core Values</Link></li>
+                      </ul>
+                    </li>
                     <li><Link to="/services">Services</Link></li>
                     <li className="dropdown">
                       <Link
@@ -55,11 +62,9 @@ const Header = () => (
                         Products
                       </Link>
                       <ul className="dropdown-menu">
-                        <li><Link to="/products">Top seller</Link></li>
-                        <li><Link to="/products">Top brands</Link></li>
-                        <li><Link to="/products">View All Products</Link></li>
-                        <li><Link to="/products">View All Brands</Link></li>
-                        <li><Link to="/products">View Healthcare Solutions</Link></li>
+                        <li><Link to="/products">Body part</Link></li>
+                        <li><Link to="/products">Category</Link></li>
+                        <li><Link to="/products">Brand</Link></li>
                       </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>

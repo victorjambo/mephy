@@ -5,7 +5,7 @@ import ExtraPadding from '../common/ExtraPadding';
 import services from '../mock/services';
 
 const items = services.map(item => (
-  <div className="col-md-4 col-sm-6">
+  <div className="col-md-4 col-sm-6" key={item.id}>
     <div className="row">
       <div className="service_block_1 flat_primary flat_medium bg_white">
         <i className={item.faIcon} aria-hidden="true" />
