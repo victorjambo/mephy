@@ -2,7 +2,7 @@ import React from 'react';
 import { baseUrl } from '../../helpers/constants';
 
 const MissionVision = () => (
-  <section className="position_relative bg_gray">
+  <section className="position_relative">
     <div className="container">
       <div className="row">
         <div className="thumbnail_block_2 mb_50" id="mission">

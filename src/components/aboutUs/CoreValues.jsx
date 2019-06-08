@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CoreValues = () => (
-  <section className="bg_white flat_white">
+  <section className="bg_gray flat_white">
     <div className="container">
       <div className="row">
         <div className="col-md-12">

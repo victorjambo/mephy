@@ -3,6 +3,7 @@ import Banner from '../common/Banner';
 import MissionVision from '../components/aboutUs/MissionVision';
 import Introduction from '../components/aboutUs/Introduction';
 import CoreValues from '../components/aboutUs/CoreValues';
+import ExtraPadding from '../common/ExtraPadding';
 
 const AboutUs = () => (
   <React.Fragment>
@@ -10,6 +11,7 @@ const AboutUs = () => (
     <Introduction />
     <MissionVision />
     <CoreValues />
+    <ExtraPadding />
   </React.Fragment>
 );
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Introduction = () => (
-  <section id="intro">
+  <section id="intro" className="bg_gray">
     <div className="container">
       <div className="row">
         <div className="col-md-12">
