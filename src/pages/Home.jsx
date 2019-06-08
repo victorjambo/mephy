@@ -8,7 +8,6 @@ import AboutUsSummary from '../components/AboutUsSummary';
 import Services from '../components/Services';
 import FeaturedProducts from '../components/FeaturedProducts';
 import Discount from '../components/Discount';
-import Testimonials from '../components/Testimonials';
 import ExtraPadding from '../common/ExtraPadding';
 import { testAction, testGetProducts } from '../redux/actions/testAction';
 import Appointment from '../components/Appointment';
