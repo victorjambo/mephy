@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutUsSummary = () => (
   <section className="full_row" id="about">
@@ -17,7 +18,7 @@ const AboutUsSummary = () => (
                 <font style={{ verticalAlign: 'inherit' }}>Treatment through it allows the rebalancing of the functions of the body and the functioning of the body.</font>
               </font>
             </p>
-            <a href="/" className="btn btn-primary">Read More</a>
+            <Link to="/about-us" className="btn btn-primary">Read More</Link>
           </div>
 
         </div>

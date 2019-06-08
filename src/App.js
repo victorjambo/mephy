@@ -13,6 +13,7 @@ import Cart from './pages/Products/Cart';
 import ProductDetails from './pages/Products/ProductDetails';
 import PageNotFound from './pages/404';
 import store from './redux/store';
+import AboutUs from './pages/AboutUs';
 
 const url = window.location.origin;
 const scripts = [
@@ -44,6 +45,7 @@ const App = () => (
       <Route path="/services" exact component={Services} />
       <Route path="/contact" exact component={ContactUs} />
       <Route path="/cart" exact component={Cart} />
+      <Route path="/about-us" exact component={AboutUs} />
       <Route component={PageNotFound} />
     </Switch>
 
