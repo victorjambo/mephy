@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Appointment = () => (
-  <section className="bg_gray flat_medium flat_primary">
+  <section className="bg_gray flat_medium flat_primary" id="appointment">
     <div className="container">
       <div className="row">
         <div className="col-md-8 col-sm-12">

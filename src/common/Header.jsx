@@ -44,6 +44,7 @@ const Header = () => (
                     <li>
                       <Link to="/about-us">About us</Link>
                       <ul className="dropdown-menu">
+                        <li><Link to="/about-us#intro">Who are we</Link></li>
                         <li><Link to="/about-us#mission">Mission</Link></li>
                         <li><Link to="/about-us#vision">Vision</Link></li>
                         <li><Link to="/about-us#values">Core Values</Link></li>
