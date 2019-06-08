@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Slider from '../components/Slider';
+// import Slider from '../components/Slider';
 import AboutUsSummary from '../components/AboutUsSummary';
 import Services from '../components/Services';
 import FeaturedProducts from '../components/FeaturedProducts';
@@ -11,6 +11,7 @@ import Discount from '../components/Discount';
 import ExtraPadding from '../common/ExtraPadding';
 import { testAction, testGetProducts } from '../redux/actions/testAction';
 import Appointment from '../components/Appointment';
+import CarouselSlider from '../components/Slider/CarouselSlider';
 
 
 class Home extends React.Component {
@@ -22,7 +23,8 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Slider />
+        {/* <Slider /> */}
+        <CarouselSlider />
         <AboutUsSummary />
         <Services />
         <FeaturedProducts />

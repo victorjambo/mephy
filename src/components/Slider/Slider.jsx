@@ -1,4 +1,5 @@
 import React from 'react';
+import { baseUrl } from '../../helpers/constants';
 
 const styles = {
   large: {
@@ -69,7 +70,7 @@ const Slider = () => (
       className="ls-slide"
       data-ls={dataLs.start.div}
     >
-      <img width="1920" height="1080" src="assets/images/slider-1.png" className="ls-bg" alt="" />
+      <img width="1920" height="1080" src={`${baseUrl}/assets/images/slider-1.png`} className="ls-bg" alt="" />
       <p
         style={styles.large}
         className="ls-l color_white"
@@ -102,7 +103,7 @@ const Slider = () => (
       className="ls-slide"
       data-ls={dataLs.mid.div}
     >
-      <img width="1920" height="1080" src="assets/images/slider-2.png" className="ls-bg" alt="" />
+      <img width="1920" height="1080" src={`${baseUrl}/assets/images/slider-2.png`} className="ls-bg" alt="" />
       <p
         style={styles.large}
         data-ls={dataLs.mid.pLarge}
@@ -135,7 +136,7 @@ const Slider = () => (
       data-ls={dataLs.last.div}
       className="ls-slide"
     >
-      <img width="1920" height="1080" src="assets/images/slider-3.png" className="ls-bg" alt="" />
+      <img width="1920" height="1080" src={`${baseUrl}/assets/images/slider-3.png`} className="ls-bg" alt="" />
       <p
         style={styles.large}
         data-ls={dataLs.last.pLarge}
