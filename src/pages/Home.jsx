@@ -11,6 +11,7 @@ import Discount from '../components/Discount';
 import Testimonials from '../components/Testimonials';
 import ExtraPadding from '../common/ExtraPadding';
 import { testAction, testGetProducts } from '../redux/actions/testAction';
+import Appointment from '../components/Appointment';
 
 
 class Home extends React.Component {
@@ -27,7 +28,8 @@ class Home extends React.Component {
         <Services />
         <FeaturedProducts />
         <Discount />
-        <Testimonials />
+        {/* <Testimonials /> */}
+        <Appointment />
         <ExtraPadding />
       </React.Fragment>
     );

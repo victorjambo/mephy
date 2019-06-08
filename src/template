@@ -1,0 +1,11 @@
+import React from 'react';
+import Banner from '../common/Banner';
+
+const AboutUs = () => (
+  <React.Fragment>
+    <Banner pageTitle="About us" titlePreviousPageLink="Home" previousPageLink="/" titleCurrentPage="About us" />
+
+  </React.Fragment>
+);
+
+export default AboutUs;
