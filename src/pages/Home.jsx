@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 // import Slider from '../components/Slider';
 import Summary from '../components/aboutUs/Summary';
 import Services from '../components/Services';
-import FeaturedProducts from '../components/FeaturedProducts';
+import Featured from '../components/Products/Featured';
 import Discount from '../components/Discount';
 import ExtraPadding from '../common/ExtraPadding';
 import { testAction, testGetProducts } from '../redux/actions/testAction';
@@ -27,7 +27,7 @@ class Home extends React.Component {
         <CarouselSlider />
         <Summary />
         <Services />
-        <FeaturedProducts />
+        <Featured />
         <Discount />
         {/* <Testimonials /> */}
         <Appointment />

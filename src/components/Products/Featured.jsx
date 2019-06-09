@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import products from '../mock/products';
+import products from '../../mock/products';
 
 const items = products.slice(0, 3).map(product => (
   <div className="col-md-4" key={product.id}>
@@ -25,7 +25,7 @@ const items = products.slice(0, 3).map(product => (
   </div>
 ));
 
-const FeaturedProducts = () => (
+const Featured = () => (
   <section className="bg_gray" id="products">
     <div className="container">
       <div className="row ">
@@ -50,4 +50,4 @@ const FeaturedProducts = () => (
   </section>
 );
 
-export default FeaturedProducts;
+export default Featured;

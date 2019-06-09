@@ -1,4 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import services from '../mock/services';
+
+const items = services.slice(0, 8).map(service => (
+  <div className="col-md-3 col-sm-6" key={service.id}>
+    <div className="text-center mb_30 py_15 color_white flat_large">
+      <i className={service.faIcon} aria-hidden="true" />
+      <h6 className="inner_title py_20">
+        <Link to="/services" className="color_white">{service.title}</Link>
+      </h6>
+      <p>{`${service.description.slice(0, 75)}...`}</p>
+    </div>
+  </div>
+));
+
 
 const Services = () => (
   <section className="bg_primary">
@@ -16,62 +32,7 @@ const Services = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-human-lungs-outline" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Respiratory</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-male-hips-and-quadriceps" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Lymphoedema</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-bone-structure-tip" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Orthopedic</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-bone" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Women Health</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-women-eye-care" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Mental health</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-neurology" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Hydrotherapy</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-roof" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Rheumatology</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="text-center mb_30 py_15 color_white flat_large">
-            <i className="flaticon-fit" aria-hidden="true" />
-            <h6 className="inner_title py_20"><a href="/" className="color_white">Musculoskeletal</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
+        {items}
       </div>
     </div>
   </section>
