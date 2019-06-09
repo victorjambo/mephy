@@ -15,7 +15,7 @@ export default [
     id: 3,
     title: 'Geriatrics Therapy',
     description: 'With this specialty we focus on health care for the elderly people with the aim to address the complex needs of older people by treating and preventing diseases and disabilities. The decline in physiological reserve in organs makes the elderly develop some kinds of diseases and have more complication and as a result we are determined to offer the best care to improve the quality of life.',
-    faIcon: 'flaticon-teddy-bear',
+    faIcon: 'flaticon-human',
   },
   {
     id: 4,
