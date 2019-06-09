@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
+
 import { baseUrl } from '../helpers/constants';
 
 const Header = () => (
@@ -107,7 +109,7 @@ const Header = () => (
                       </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/#appointment">Appointment</Link></li>
+                    <li><LinkScroll activeClass="active" className="appointment" to="appointment" spy smooth duration={500}>Appointment</LinkScroll></li>
                   </ul>
                 </div>
               </nav>
