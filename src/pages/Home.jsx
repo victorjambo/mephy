@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 // import Slider from '../components/Slider';
-import AboutUsSummary from '../components/AboutUsSummary';
+import Summary from '../components/aboutUs/Summary';
 import Services from '../components/Services';
 import FeaturedProducts from '../components/FeaturedProducts';
 import Discount from '../components/Discount';
@@ -25,7 +25,7 @@ class Home extends React.Component {
       <React.Fragment>
         {/* <Slider /> */}
         <CarouselSlider />
-        <AboutUsSummary />
+        <Summary />
         <Services />
         <FeaturedProducts />
         <Discount />

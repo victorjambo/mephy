@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const AboutUsSummary = () => (
+const Summary = () => (
   <section className="full_row" id="about">
     <div className="container">
       <div className="row">
@@ -12,11 +12,15 @@ const AboutUsSummary = () => (
           </div>
           <div className="text_area">
             <p>
-              <font style={{ verticalAlign: 'inherit' }}>
-                <font style={{ verticalAlign: 'inherit' }}>A method that acts as a means of diagnosis and treatment, which uses manual resources (that is, using the hands as a working tool) for a therapeutic approach to the body and its pains. </font>
-                <font style={{ verticalAlign: 'inherit' }}>The philosophy of osteopathy is based on an in-depth knowledge of human anatomy and physiology. </font>
-                <font style={{ verticalAlign: 'inherit' }}>Treatment through it allows the rebalancing of the functions of the body and the functioning of the body.</font>
-              </font>
+              Mephys rehabilitation clinic – a leader in the city for physiotherapy and sports injuries!
+              Our physiotherapists have years of experience in treating musculoskeletal and sporting injuries.
+            </p>
+            <p>
+              At Mephys physiotherapy we believe in treating the person and not just the injury, to ensure their complete recovery.
+              Our proven results help patients achieve optimal health, whether it’s to relieve back pain, reach a new level in sports or recover from work injury or accidents.
+            </p>
+            <p>
+              At Mephys rehabilitation clinic we can help you get over your pain and injury quicker as well as help prevent re-occurrence of your problem!
             </p>
             <Link to="/about-us" className="btn btn-primary">Read More</Link>
           </div>
@@ -41,4 +45,4 @@ const AboutUsSummary = () => (
   </section>
 );
 
-export default AboutUsSummary;
+export default Summary;
