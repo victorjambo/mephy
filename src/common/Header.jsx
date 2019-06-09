@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 import { baseUrl } from '../helpers/constants';
+import ProductDropdown from './ProductDropdown';
 
 const Header = () => (
   <header id="header" className="header_4 nav-on-banner">
@@ -37,7 +38,7 @@ const Header = () => (
                   <ul className="navbar-nav nav-contact pull-right">
                     <li><Link className="btn btn-primary" to="/cart">cart <i className="fa fa-shopping-cart" /></Link></li>
                   </ul>
-                  <ul className="nav navbar-nav navbar-right nav_item">
+                  <ul className="nav navbar-nav navbar-right nav_item nav-mega">
                     <li className="dropdown">
                       <Link to="/" className="dropdown-toggle">
                         Home
@@ -62,7 +63,7 @@ const Header = () => (
                       </ul>
                     </li>
                     <li><Link to="/services">Services</Link></li>
-                    <li className="dropdown">
+                    <li className="dropdown" id="menu-products">
                       <Link
                         className="dropdown-toggle"
                         data-toggle="dropdown"
@@ -73,39 +74,8 @@ const Header = () => (
                       >
                         Products
                       </Link>
-                      <ul className="dropdown-menu">
-                        <li className="dropdown">
-                          <Link to="/products">Body part</Link>
-                          <ul className="dropdown-menu">
-                            <li><Link to="/products">Knee</Link></li>
-                            <li><Link to="/products">Hip</Link></li>
-                            <li><Link to="/products">Shoulder</Link></li>
-                            <li><Link to="/products">Spine</Link></li>
-                            <li><Link to="/products">Hand</Link></li>
-                            <li><Link to="/products">Foot</Link></li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <Link to="/products">Brand</Link>
-                          <ul className="dropdown-menu">
-                            <li><Link to="/products">AIRCAST</Link></li>
-                            <li><Link to="/products">CMF</Link></li>
-                            <li><Link to="/products">COMPEX</Link></li>
-                            <li><Link to="/products">DONJOY</Link></li>
-                            <li><Link to="/products">DR. COMFORT</Link></li>
-                            <li><Link to="/products">PROCARE</Link></li>
-                            <li><Link to="/products">MotionMD</Link></li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <Link to="/products">Category</Link>
-                          <ul className="dropdown-menu">
-                            <li><Link to="/products">BRACING & SUPPORTS</Link></li>
-                            <li><Link to="/products">SURGICAL</Link></li>
-                            <li><Link to="/products">RECOVERY</Link></li>
-                            <li><Link to="/products">FOOTCARE</Link></li>
-                          </ul>
-                        </li>
+                      <ul className="dropdown-menu mega-menu">
+                        <li><ProductDropdown /></li>
                       </ul>
                     </li>
                     <li><Link to="/contact">Contact</Link></li>

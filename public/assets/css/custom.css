@@ -90,3 +90,112 @@ html {
 .inner_title a.color_secondary:hover {
   color: #fff!important;
 }
+
+
+
+@media screen and (min-width: 1025px) {
+  .nav-mega #menu-products {
+    position: static;
+  }
+  .nav-mega .dropdown-menu.mega-menu {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    min-width: auto;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    border-color: #ccc;
+  }
+  .nav-mega .dropdown-menu.mega-menu > li {
+    padding: 20px;
+  }
+  .nav-mega .dropdown-menu.mega-menu .media-list .media {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .nav-mega .dropdown-menu.mega-menu .media-list .media-heading {
+    font-size: 16px;
+  }
+  /* 
+  #menu-products ul {
+    visibility: visible;
+    opacity: 1;
+  } */
+  li.has-panel.active:before {
+    content: " ";
+    position: absolute;
+    width: 70%;
+    right: -15px;
+    bottom: 89%;
+    height: 1px;
+    background: #dcdcdd;
+  }
+  .nav-panel.has-switch {
+    border-left: 1px solid #dcdcdd;
+  }
+  .margin-0 {
+    color: inherit;
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  .mega-menu ul.level-1 li.level-title {
+    font-size: 14px;
+    font-family: 'Uni Regular',sans-serif;
+    font-weight: normal;
+    display: block;
+    float: left;
+    padding-right: 45px;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .mega-menu ul.level-1 li.level-title .caps {
+    padding-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #01a1d5;
+  }
+
+  .mega-menu .level-2 li {
+    text-transform: none;
+    display: block;
+    float: none;
+    font-family: 'Uni Regular',sans-serif;
+    font-weight: normal;
+    height: auto;
+    letter-spacing: normal;
+    width: 100%;
+    margin: 0;
+    padding: 1px 0;
+    line-height: 1.45;
+  }
+
+  .mega-menu li a {
+    padding: 0 15px;
+  }
+
+  .mega-menu li a:hover {
+    color: #01a1d5!important;
+  }
+
+  .nav-panel-switch ul {
+    padding: 0;
+    margin-bottom: 11.25px;
+    overflow: hidden;
+    display: block;
+  }
+}
