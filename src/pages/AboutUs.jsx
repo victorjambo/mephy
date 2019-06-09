@@ -17,15 +17,16 @@ class AboutUs extends React.Component {
   componentDidMount() {
     const { location: { hash } } = this.props;
     const refs = {
-      '#intro': this.intro,
-      '#mission': this.mission,
-      '#vision': this.vision,
-      '#values': this.values
+      '#intro': this.intro.offsetTop,
+      '#mission': this.mission.offsetTop,
+      '#vision': this.vision.offsetTop,
+      '#values': this.values.offsetTop,
+      '': 0
     };
     this.scrollToSection(refs[hash]);
   }
 
-  scrollToSection = ref => window.scrollTo(0, ref.offsetTop);
+  scrollToSection = ref => window.scrollTo(0, ref);
 
   render() {
     return (

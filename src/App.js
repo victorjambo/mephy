@@ -15,22 +15,26 @@ import PageNotFound from './pages/404';
 import store from './redux/store';
 import AboutUs from './pages/AboutUs';
 import { scripts } from './helpers/constants';
+import ScrollToTop from './helpers/ScrollToTop';
 
 const App = () => (
   <Provider store={store}>
     <Header />
 
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/products" exact component={Products} />
-      <Route path="/products/:id" exact component={ProductDetails} />
-      <Route path="/services" exact component={Services} />
-      <Route path="/contact" exact component={ContactUs} />
-      <Route path="/cart" exact component={Cart} />
-      <Route path="/about-us" exact component={AboutUs} />
-      <Route component={PageNotFound} />
-    </Switch>
+    <ScrollToTop>
 
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/products" exact component={Products} />
+        <Route path="/products/:id" exact component={ProductDetails} />
+        <Route path="/services" exact component={Services} />
+        <Route path="/contact" exact component={ContactUs} />
+        <Route path="/cart" exact component={Cart} />
+        <Route path="/about-us" exact component={AboutUs} />
+        <Route component={PageNotFound} />
+      </Switch>
+
+    </ScrollToTop>
     <Footer />
   </Provider>
 );
