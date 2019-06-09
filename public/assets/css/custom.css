@@ -83,3 +83,6 @@
   color: white;
   font-weight: bold;
 }
+.inner_title a.color_secondary:hover {
+  color: #fff!important;
+}

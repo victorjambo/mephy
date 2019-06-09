@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Masonry from 'react-masonry-component';
 
@@ -12,7 +13,7 @@ const items = services.map(item => (
         <i className={item.faIcon} aria-hidden="true" />
         <div className="service_text d_table">
           <h6 className="inner_title pb_10">
-            <a href="service_details.html" className="color_secondary">{item.title}</a>
+            <a className="color_secondary">{item.title}</a>
           </h6>
           <p>{item.description}</p>
         </div>
