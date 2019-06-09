@@ -77,7 +77,7 @@ const CarouselSlider = () => (
               Not just better healthcare, but a better healthcare experience.
             </p>
             <Link
-              href="/about-us"
+              to="/about-us"
               target="_self"
             >
               <p
@@ -104,8 +104,8 @@ const CarouselSlider = () => (
             >
               Not just better healthcare, but a better healthcare experience.
             </p>
-            <a
-              href="/about-us"
+            <Link
+              to="/about-us"
               target="_self"
             >
               <p
@@ -114,7 +114,7 @@ const CarouselSlider = () => (
               >
                 LEARN MORE
               </p>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -133,8 +133,8 @@ const CarouselSlider = () => (
             >
               Not just better healthcare, but a better healthcare experience.
             </p>
-            <a
-              href="/about-us"
+            <Link
+              to="/about-us"
               target="_self"
             >
               <p
@@ -142,7 +142,7 @@ const CarouselSlider = () => (
                 className="btn btn-primary"
               >LEARN MORE
               </p>
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Introduction = () => (
-  <section id="intro" className="bg_gray">
+const Introduction = ({ intro }) => (
+  <section id="intro" className="bg_gray" ref={intro}>
     <div className="container">
       <div className="row">
         <div className="col-md-12">

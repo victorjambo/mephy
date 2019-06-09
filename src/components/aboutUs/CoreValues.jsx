@@ -1,7 +1,7 @@
 import React from 'react';
 
-const CoreValues = () => (
-  <section className="bg_gray flat_white">
+const CoreValues = ({ values }) => (
+  <section className="bg_gray flat_white" id="values" ref={values}>
     <div className="container">
       <div className="row">
         <div className="col-md-12">
