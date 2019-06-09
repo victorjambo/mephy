@@ -15,10 +15,10 @@ import CarouselSlider from '../components/Slider/CarouselSlider';
 
 
 class Home extends React.Component {
-  componentDidMount() {
-    const { testGetProducts } = this.props;
-    testGetProducts();
-  }
+  // componentDidMount() {
+  //   const { testGetProducts } = this.props;
+  //   testGetProducts();
+  // }
 
   render() {
     return (

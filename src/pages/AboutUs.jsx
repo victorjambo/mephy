@@ -8,22 +8,20 @@ import ExtraPadding from '../common/ExtraPadding';
 class AboutUs extends React.Component {
   intro = React.createRef()
 
-  mission = React.createRef()
-
-  vision = React.createRef()
+  missionVision = React.createRef()
 
   values = React.createRef()
 
   componentDidMount() {
     const { location: { hash } } = this.props;
-    const refs = {
+    const ref = {
       '#intro': this.intro.offsetTop,
-      '#mission': this.mission.offsetTop,
-      '#vision': this.vision.offsetTop,
+      '#mission': this.missionVision.offsetTop,
+      '#vision': this.missionVision.offsetTop,
       '#values': this.values.offsetTop,
       '': 0
     };
-    this.scrollToSection(refs[hash]);
+    this.scrollToSection(ref[hash]);
   }
 
   scrollToSection = ref => window.scrollTo(0, ref);
@@ -33,10 +31,7 @@ class AboutUs extends React.Component {
       <React.Fragment>
         <Banner pageTitle="About us" titlePreviousPageLink="Home" previousPageLink="/" titleCurrentPage="About us" />
         <Introduction intro={(intro) => { this.intro = intro; }} />
-        <MissionVision
-          mission={(mission) => { this.mission = mission; }}
-          vision={(vision) => { this.vision = vision; }}
-        />
+        <MissionVision missionVision={(missionVision) => { this.missionVision = missionVision; }} />
         <CoreValues values={(values) => { this.values = values; }} />
         <ExtraPadding />
       </React.Fragment>

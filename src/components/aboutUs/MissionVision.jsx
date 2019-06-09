@@ -1,11 +1,11 @@
 import React from 'react';
 import { baseUrl } from '../../helpers/constants';
 
-const MissionVision = ({ mission, vision }) => (
-  <section className="position_relative">
+const MissionVision = ({ missionVision }) => (
+  <section className="position_relative" id="mission-vision" ref={missionVision}>
     <div className="container">
       <div className="row">
-        <div className="thumbnail_block_2 mb_50" id="mission" ref={mission}>
+        <div className="thumbnail_block_2 mb_50">
           <div className="col-md-5">
             <div className="circle"><img src={`${baseUrl}/assets/images/hospital/1.png`} alt="not found" /></div>
           </div>
@@ -16,7 +16,7 @@ const MissionVision = ({ mission, vision }) => (
             </div>
           </div>
         </div>
-        <div className="thumbnail_block_2" id="vision" ref={vision}>
+        <div className="thumbnail_block_2">
           <div className="col-md-7">
             <div className="text_box_3 hospital_info m_mb_30">
               <h4 className="inner_title mb_30">Our Vision</h4>
