@@ -1,4 +1,5 @@
 import React from 'react';
+import Masonry from 'react-masonry-component';
 
 import Banner from '../common/Banner';
 import ExtraPadding from '../common/ExtraPadding';
@@ -27,7 +28,9 @@ const Services = () => (
     <section className="medical_service bg_gray">
       <div className="container">
         <div className="row">
-          {items}
+          <Masonry>
+            {items}
+          </Masonry>
         </div>
       </div>
     </section>
