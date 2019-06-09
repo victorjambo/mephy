@@ -94,6 +94,10 @@ html {
 
 
 @media screen and (min-width: 1025px) {
+  /* #menu-products ul {
+    visibility: visible;
+    opacity: 1;
+  } */
   .nav-mega #menu-products {
     position: static;
   }
@@ -123,12 +127,7 @@ html {
   .nav-mega .dropdown-menu.mega-menu .media-list .media-heading {
     font-size: 16px;
   }
-  /* 
-  #menu-products ul {
-    visibility: visible;
-    opacity: 1;
-  } */
-  li.has-panel.active:before {
+  li.has-panel.top.active:before {
     content: " ";
     position: absolute;
     width: 70%;
@@ -137,8 +136,32 @@ html {
     height: 1px;
     background: #dcdcdd;
   }
+  li.has-panel.mid.active:before {
+    content: " ";
+    position: absolute;
+    width: 70%;
+    right: -15px;
+    bottom: 77%;
+    height: 1px;
+    background: #dcdcdd;
+  }
+  li.has-panel.bottom.active:before {
+    content: " ";
+    position: absolute;
+    width: 79%;
+    right: -15px;
+    bottom: 66%;
+    height: 1px;
+    background: #dcdcdd;
+  }
   .nav-panel.has-switch {
     border-left: 1px solid #dcdcdd;
+  }
+  .nav-panel.has-switch {
+    display: none;
+  }
+  .nav-panel.has-switch.is-active {
+    display: block;
   }
   .margin-0 {
     color: inherit;
@@ -197,5 +220,9 @@ html {
     margin-bottom: 11.25px;
     overflow: hidden;
     display: block;
+  }
+  ul.level-2 li.level-sub {
+    padding: 0 15px;
+    color: #fff;
   }
 }

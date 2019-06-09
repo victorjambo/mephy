@@ -8,10 +8,16 @@ const ProductDropdown = () => (
       <div className="col-sm-3">
         <div className="nav-panel-switch">
           <h6 className="margin-0">Browse by:</h6>
-          <ul className="for-panel">
-            <li className="has-panel active" data-panel-id="body-part"><a href="#" className="all-caps">Body Part</a></li>
-            <li className="has-panel" data-panel-id="business-unit"><a href="#" className="all-caps">Category</a></li>
-            <li className="has-panel" data-panel-id="brand"><a href="#" className="all-caps">Brand</a></li>
+          <ul className="for-panel" role="tablist">
+            <li role="presentation" className="has-panel top active">
+              <a href="#body-part">Body Part</a>
+            </li>
+            <li role="presentation" className="has-panel mid">
+              <a href="#business-unit">Category</a>
+            </li>
+            <li role="presentation" className="has-panel bottom">
+              <a href="#brand">Brand</a>
+            </li>
           </ul>
           <ul><li><Link to="/products" className="search-trigger">Search All Products</Link></li></ul>
           <ul>
@@ -25,8 +31,7 @@ const ProductDropdown = () => (
       </div>
       <div className="col-sm-9">
 
-
-        <div className="nav-panel has-switch" id="body-part" style={{ display: 'block' }}>
+        <div className="nav-panel has-switch is-active" id="body-part">
           <div className="row">
             <div className="col-sm-4">
               <ul className="level-1">
@@ -110,13 +115,13 @@ const ProductDropdown = () => (
           </div>
         </div>
 
-        <div className="nav-panel has-switch" id="business-unit" style={{ display: 'none' }}>
+        <div className="nav-panel has-switch" id="business-unit">
           <div className="row">
             <div className="col-sm-4">
               <ul className="level-1">
                 <li className="level-title"><Link className="caps" to="/products">Bracing &amp; Supports</Link>
                   <ul className="level-2">
-                    <li>Performance, protection and recovery for knee, ankle, elbow, back, wrist, shoulder and more.</li>
+                    <li className="level-sub">Performance, protection and recovery for knee, ankle, elbow, back, wrist, shoulder and more.</li>
                   </ul>
                 </li>
               </ul>
@@ -125,7 +130,7 @@ const ProductDropdown = () => (
               <ul className="level-1">
                 <li className="level-title"><Link className="caps" to="/products">Surgical</Link>
                   <ul className="level-2">
-                    <li>High-end products that improve quality of life and restore movement. </li>
+                    <li className="level-sub">High-end products that improve quality of life and restore movement. </li>
                   </ul>
                 </li>
               </ul>
@@ -136,7 +141,7 @@ const ProductDropdown = () => (
               <ul className="level-1">
                 <li className="level-title"><Link className="caps" to="/products">Footcare</Link>
                   <ul className="level-2">
-                    <li>The worldwide leading provider of diabetic footwear.</li>
+                    <li className="level-sub">The worldwide leading provider of diabetic footwear.</li>
                   </ul>
                 </li>
               </ul>
@@ -145,7 +150,7 @@ const ProductDropdown = () => (
               <ul className="level-1">
                 <li className="level-title"><Link className="caps" to="/products">Healthcare Solutions / MotionMD</Link>
                   <ul className="level-2">
-                    <li>A consultative approach to customized DME solutions</li>
+                    <li className="level-sub">A consultative approach to customized DME solutions</li>
                   </ul>
                 </li>
               </ul>
@@ -153,7 +158,8 @@ const ProductDropdown = () => (
             <div className="col-sm-8" />
           </div>
         </div>
-        <div className="nav-panel has-switch" id="brand" style={{ display: 'none' }}>
+
+        <div className="nav-panel has-switch" id="brand">
           <div className="row">
             <div className="col-sm-3">
               <ul className="level-1">
