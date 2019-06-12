@@ -16,6 +16,7 @@ import store from './redux/store';
 import AboutUs from './pages/AboutUs';
 import { scripts } from './helpers/constants';
 import ScrollToTop from './helpers/ScrollToTop';
+import AppointmentPage from './pages/Appointment';
 
 const App = () => (
   <Provider store={store}>
@@ -31,6 +32,7 @@ const App = () => (
         <Route path="/contact" exact component={ContactUs} />
         <Route path="/cart" exact component={Cart} />
         <Route path="/about-us" exact component={AboutUs} />
+        <Route path="/appointment" exact component={AppointmentPage} />
         <Route component={PageNotFound} />
       </Switch>
 
