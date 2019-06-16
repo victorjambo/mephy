@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-eval */
 import React from 'react';
 import Slider from './Slider';
 
@@ -6,6 +8,10 @@ const styles = {
 };
 
 export default class extends React.Component {
+  componentDidMount() {
+    eval('$("#slider").layerSlider({sliderVersion:"6.0.0",type:"fullwidth",responsiveUnder:0,layersContainer:1200,maxRatio:1,parallaxScrollReverse:true,hideUnder:0,hideOver:100000,skin:"outline",showBarTimer:true,thumbnailNavigation:"disabled",allowRestartOnResize:true,skinsPath:"skins/",height:800});');
+  }
+
   render() {
     return (
       <section className="full_row p_0">

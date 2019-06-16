@@ -76,25 +76,26 @@ const Slider = () => (
         className="ls-l color_white"
         data-ls={dataLs.start.pLarge}
       >
-      Take Care Your <span className="color_primary">Health</span>
+        We Take Care Your <span className="color_primary">Physio</span>
       </p>
       <p
         style={styles.small}
         className="ls-l color_white"
         data-ls={dataLs.start.pSmall}
       >
-      Not just better healthcare, but a better healthcare experience.
+        Not just better healthcare, but a better healthcare experience.
       </p>
       <a
         className="ls-l"
-        href="/"
+        href="/about-us"
         target="_self"
         data-ls={dataLs.start.aLearnMore}
       >
         <p
           style={styles.learnMore}
           className="btn btn-primary"
-        >LEARN MORE
+        >
+          LEARN MORE
         </p>
       </a>
     </div>
@@ -109,7 +110,7 @@ const Slider = () => (
         data-ls={dataLs.mid.pLarge}
         className="ls-l color_white"
       >
-        <span className="color_primary">Medicine</span> that touches the world
+        <span className="color_primary">Beauty</span> that touches the world
       </p>
       <p
         style={styles.small}
@@ -120,14 +121,15 @@ const Slider = () => (
       </p>
       <a
         className="ls-l"
-        href="/"
+        href="/about-us"
         target="_self"
         data-ls={dataLs.mid.aLearnMore}
       >
         <p
           style={styles.learnMore}
           className="btn btn-primary"
-        >LEARN MORE
+        >
+          LEARN MORE
         </p>
       </a>
     </div>
@@ -142,7 +144,7 @@ const Slider = () => (
         data-ls={dataLs.last.pLarge}
         className="ls-l color_white"
       >
-        Bettering the Human <span className="color_primary">Condition</span>
+        Bettering your <span className="color_primary">wellness</span>
       </p>
       <p
         style={styles.small}
@@ -153,7 +155,7 @@ const Slider = () => (
       </p>
       <a
         className="ls-l"
-        href="/"
+        href="/about-us"
         target="_self"
         data-ls={dataLs.last.aLearnMore}
       >
