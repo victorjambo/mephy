@@ -91,6 +91,14 @@ html {
   color: #fff!important;
 }
 
+@media screen and (max-width: 425px) {
+  .nav-mega #menu-products {
+    display: none;
+  }
+  .nav-mega #menu-products-mobile {
+    display: block;
+  }
+}
 
 
 @media screen and (min-width: 1025px) {
@@ -98,8 +106,12 @@ html {
     visibility: visible;
     opacity: 1;
   } */
+  .nav-mega #menu-products-mobile {
+    display: none;
+  }
   .nav-mega #menu-products {
     position: static;
+    display: block;
   }
   .nav-mega .dropdown-menu.mega-menu {
     -moz-box-sizing: border-box;

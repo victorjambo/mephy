@@ -82,6 +82,7 @@ class Header extends React.Component {
                           </ul>
                         </li>
                         <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/products" id="menu-products-mobile">Products</Link></li>
                         <li className="dropdown" id="menu-products">
                           <Link
                             className="dropdown-toggle"
