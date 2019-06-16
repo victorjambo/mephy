@@ -92,8 +92,9 @@ html {
 }
 
 @media screen and (max-width: 425px) {
-  .nav-mega #menu-products {
-    display: none;
+  .nav-mega #menu-products,
+  .sidebar-widget {
+    display: none!important;
   }
   .nav-mega #menu-products-mobile {
     display: block;
