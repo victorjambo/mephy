@@ -18,3 +18,16 @@ export const scripts = [
   `${baseUrl}/assets/js/custom.js`,
   `${baseUrl}/assets/js/tabs.js`
 ];
+
+export const ROUTES = {
+  HOME: '/',
+  PRODUCTS: '/products',
+  PRODUCT: '/products/:id',
+  SERVICES: '/services',
+  SERVICE: '/services/:id',
+  CONTACT: '/contact',
+  CART: '/cart',
+  ABOUTUS: '/about-us',
+  APPOINTMENT: '/appointment',
+  CATPRODUCTS: '/category/:id/products'
+};

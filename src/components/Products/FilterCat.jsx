@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import categories from '../../mock/categories';
 
-const items = categories.map(cat => (
-  <li key={cat.id}><Link to={cat.link}>{cat.title}{' '}({cat.count})</Link></li>
+const items = categories.map(category => (
+  <li key={category.id}><Link to={`/category/${category.id}/products`}>{category.title}{' '}({category.count})</Link></li>
 ));
 
 const FilterCat = () => (

@@ -7,11 +7,11 @@ import cartItems from '../../mock/cartItems';
 const items = cartItems.map(item => (
   <tr className="cart_item" key={item.id}>
     <td className="product-thumbnail">
-      <Link to={item.link}>
+      <Link to={`/category/${item.id}/products`}>
         <img src={item.image} alt="" srcSet="" sizes="(max-width: 270px) 100vw, 270px" />
       </Link>
     </td>
-    <td className="product-name" data-title="Product"><Link to={item.link}>{item.title}</Link>
+    <td className="product-name" data-title="Product"><Link to={`/category/${item.id}/products`}>{item.title}</Link>
     </td>
     <td className="product-quantity" data-title="Quantity">
       <div className="quantity">

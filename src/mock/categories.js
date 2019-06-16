@@ -1,32 +1,34 @@
+import products from './products';
+
 export default [
   {
-    id: 1,
+    id: '1',
     title: 'Children’s Health',
-    link: '/products',
-    count: 1
+    count: 1,
+    products: [...products]
   },
   {
-    id: 2,
+    id: '2',
     title: 'Geriatrics',
-    link: '/products',
-    count: 7
+    count: 7,
+    products: [...products]
   },
   {
-    id: 3,
+    id: '3',
     title: 'Health',
-    link: '/products',
-    count: 20
+    count: 20,
+    products: [...products]
   },
   {
-    id: 4,
+    id: '4',
     title: 'Oftamology',
-    link: '/products',
-    count: 10
+    count: 10,
+    products: [...products]
   },
   {
-    id: 5,
+    id: '5',
     title: 'Psychology',
-    link: '/products',
-    count: 2
+    count: 2,
+    products: [...products]
   },
 ];
