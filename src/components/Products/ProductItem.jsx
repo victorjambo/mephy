@@ -5,13 +5,13 @@ import Ratings from './Ratings';
 import { baseUrl } from '../../helpers/constants';
 
 const ProductItem = ({
-  prize, initialPrize = null, title, tag, rating, image, flag, link
+  prize, initialPrize = null, title, tag, rating, image, flag, id
 }) => (
   <div className="col-md-4 col-sm-6">
     <div className="product-item position_relative mb_30">
       {flag && <div className="sale position_absolute">{flag}</div>}
-      <Link to={link}><img src={`${baseUrl}/${image}`} alt="Not found!" /></Link>
-      <h5 className="product_title"><Link to={link}>{title}</Link></h5>
+      <Link to={`/products/${id}`}><img src={`${baseUrl}/${image}`} alt="Not found!" /></Link>
+      <h5 className="product_title"><Link to={`/products/${id}`}>{title}</Link></h5>
       <div className="tag">{tag}</div>
       <div className="price-box">
         {initialPrize && <del>{initialPrize}</del>}

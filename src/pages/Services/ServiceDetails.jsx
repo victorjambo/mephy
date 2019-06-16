@@ -13,8 +13,8 @@ class ServiceDetails extends React.Component {
     service: {}
   }
 
-  componentWillReceiveProps(props) {
-    const { match: { params: { id } } } = props;
+  componentDidMount() {
+    const { match: { params: { id } } } = this.props;
     services.forEach((service) => {
       if (service.id === id) {
         this.setState({ service });

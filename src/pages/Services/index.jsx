@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Masonry from 'react-masonry-component';
+import { Link } from 'react-router-dom';
 
 import Banner from '../../common/Banner';
 import ExtraPadding from '../../common/ExtraPadding';
@@ -13,7 +14,7 @@ const items = services.map(item => (
         <i className={item.faIcon} aria-hidden="true" />
         <div className="service_text d_table">
           <h6 className="inner_title pb_10">
-            <a className="color_secondary">{item.title}</a>
+            <Link to={`/services/${item.id}`} className="color_secondary">{item.title}</Link>
           </h6>
           <p>{item.description}</p>
         </div>

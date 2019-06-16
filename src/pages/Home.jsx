@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 import Slider from '../components/Slider';
 import Summary from '../components/aboutUs/Summary';
-import Services from '../components/Services/Services';
+import Services from '../components/Services';
 import Featured from '../components/Products/Featured';
 import Discount from '../components/Discount';
 import ExtraPadding from '../common/ExtraPadding';

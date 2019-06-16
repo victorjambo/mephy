@@ -21,7 +21,7 @@ const productItems = products.slice(0, 6).map(item => (
     tag={item.tag}
     rating={item.rating}
     image={item.image}
-    link={item.link}
+    id={item.id}
     flag={item.flag}
     key={item.id}
   />
@@ -32,8 +32,8 @@ class ProductDetails extends React.Component {
     product: {}
   }
 
-  componentWillReceiveProps(props) {
-    const { match: { params: { id } } } = props;
+  componentDidMount() {
+    const { match: { params: { id } } } = this.props;
     products.forEach((product) => {
       if (product.id === id) {
         this.setState({ product });
@@ -64,7 +64,7 @@ class ProductDetails extends React.Component {
                 <div className="row">
                   <div className="col-lg-6 col-md-6">
                     <div className="single-product-image">
-                      <Link to={product.link}>
+                      <Link to={`/products/${product.id}`}>
                         <img src={`${baseUrl}/${product.image}`} alt="Not found!" />
                       </Link>
                       <ul>
@@ -90,7 +90,7 @@ class ProductDetails extends React.Component {
                       </div>
                       <form>
                         <div className="quantity">
-                          <input type="number" value="1" />
+                          <input type="number" value={product.id} />
                           <button type="submit" className="btn btn-primary" onClick={() => alert('item added to cart')}>Add to cart</button>
                         </div>
                       </form>

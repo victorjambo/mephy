@@ -19,7 +19,7 @@ export default () => {
       tag={item.tag}
       rating={item.rating}
       image={item.image}
-      link={item.link}
+      id={item.id}
       flag={item.flag}
       key={item.id}
     />

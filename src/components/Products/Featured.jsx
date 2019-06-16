@@ -6,18 +6,18 @@ const items = products.slice(0, 3).map(product => (
   <div className="col-md-4" key={product.id}>
     <div className="thumbnail_block_1 bg_white hover_zoom">
       <div className="overflow_hidden">
-        <Link to={product.link}>
+        <Link to={`/products/${product.id}`}>
           <img src={product.image} alt="product" />
         </Link>
       </div>
       <div className="thumbnail_content">
         <span className="date">{product.brand}</span>
         <h5 className="inner_title">
-          <Link className="color_secondary" to={product.link}>
+          <Link className="color_secondary" to={`/products/${product.id}`}>
             {product.title}
           </Link>
         </h5>
-        <Link to={product.link} className="read_more color_primary">
+        <Link to={`/products/${product.id}`} className="read_more color_primary">
           Make an order<i className="fa fa-long-arrow-right " aria-hidden="true" />
         </Link>
       </div>

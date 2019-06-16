@@ -2,7 +2,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 5,
-    link: '/products/1',
     id: '1',
     image: 'assets/images/products/12.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -15,7 +14,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/2',
     id: '2',
     image: 'assets/images/products/13.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -28,7 +26,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 2,
-    link: '/products/3',
     id: '3',
     image: 'assets/images/products/14.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -41,7 +38,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/4',
     id: '4',
     image: 'assets/images/products/15.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -54,7 +50,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 4,
-    link: '/products/5',
     id: '5',
     image: 'assets/images/products/16.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -67,7 +62,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/6',
     id: '6',
     image: 'assets/images/products/17.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -80,7 +74,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/7',
     id: '7',
     image: 'assets/images/products/18.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -93,7 +86,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 1,
-    link: '/products/8',
     id: '8',
     image: 'assets/images/products/19.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -106,7 +98,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/9',
     id: '9',
     image: 'assets/images/products/20.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -119,7 +110,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/10',
     id: '10',
     image: 'assets/images/products/21.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -132,7 +122,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/11',
     id: '11',
     image: 'assets/images/products/22.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -145,7 +134,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 1,
-    link: '/products/12',
     id: '12',
     image: 'assets/images/products/23.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -158,7 +146,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/13',
     id: '13',
     image: 'assets/images/products/21.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -171,7 +158,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 3,
-    link: '/products/14',
     id: '14',
     image: 'assets/images/products/15.png',
     tag: 'Geriatrics, Health, Psychology',
@@ -184,7 +170,6 @@ export default [
   {
     brand: 'Procare inc',
     rating: 0,
-    link: '/products/15',
     id: '15',
     image: 'assets/images/products/16.png',
     tag: 'Geriatrics, Health, Psychology',

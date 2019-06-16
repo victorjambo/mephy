@@ -7,11 +7,11 @@ import { baseUrl } from '../../helpers/constants';
 
 const items = products.slice(0, 5).map(product => (
   <li key={product.id}>
-    <Link to={product.link}>
+    <Link to={`/products/${product.id}`}>
       <img src={`${baseUrl}/${product.image}`} alt="Not found!" />
     </Link>
     <div className="d_table pull-left">
-      <h6><Link to={product.link}>{product.title}</Link></h6>
+      <h6><Link to={`/products/${product.id}`}>{product.title}</Link></h6>
       <Ratings rating={product.rating} />
       <div className="price-box">
         {product.initialPrize && <del>{product.initialPrize}</del>}
