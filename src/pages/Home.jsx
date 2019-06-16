@@ -5,13 +5,12 @@ import { bindActionCreators } from 'redux';
 
 import Slider from '../components/Slider';
 import Summary from '../components/aboutUs/Summary';
-import Services from '../components/Services';
+import Services from '../components/Services/Services';
 import Featured from '../components/Products/Featured';
 import Discount from '../components/Discount';
 import ExtraPadding from '../common/ExtraPadding';
 import { testAction, testGetProducts } from '../redux/actions/testAction';
 import Appointment from '../components/Appointment';
-// import CarouselSlider from '../components/Slider/CarouselSlider';
 
 
 class Home extends React.Component {
@@ -24,7 +23,6 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Slider />
-        {/* <CarouselSlider /> */}
         <Summary />
         <Services />
         <Featured />

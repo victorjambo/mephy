@@ -8,6 +8,7 @@ import Header from './common/Header';
 import Footer from './common/Footer';
 import Products from './pages/Products';
 import Services from './pages/Services';
+import ServiceDetails from './pages/Services/ServiceDetails';
 import ContactUs from './pages/ContactUs';
 import Cart from './pages/Products/Cart';
 import ProductDetails from './pages/Products/ProductDetails';
@@ -29,6 +30,7 @@ const App = () => (
         <Route path="/products" exact component={Products} />
         <Route path="/products/:id" exact component={ProductDetails} />
         <Route path="/services" exact component={Services} />
+        <Route path="/services/:id" exact component={ServiceDetails} />
         <Route path="/contact" exact component={ContactUs} />
         <Route path="/cart" exact component={Cart} />
         <Route path="/about-us" exact component={AboutUs} />

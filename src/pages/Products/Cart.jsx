@@ -5,7 +5,7 @@ import Banner from '../../common/Banner';
 import cartItems from '../../mock/cartItems';
 
 const items = cartItems.map(item => (
-  <tr className="cart_item">
+  <tr className="cart_item" key={item.id}>
     <td className="product-thumbnail">
       <Link to={item.link}>
         <img src={item.image} alt="" srcSet="" sizes="(max-width: 270px) 100vw, 270px" />
@@ -83,7 +83,7 @@ const Cart = () => (
                 </tbody>
               </table>
               <div className="wc-proceed-to-checkout">
-                <Link href="checkout.html" className="btn btn-primary">
+                <Link to="/" className="btn btn-primary">
                   Proceed to checkout
                 </Link>
               </div>

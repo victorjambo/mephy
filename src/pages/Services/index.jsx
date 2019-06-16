@@ -2,9 +2,9 @@
 import React from 'react';
 import Masonry from 'react-masonry-component';
 
-import Banner from '../common/Banner';
-import ExtraPadding from '../common/ExtraPadding';
-import services from '../mock/services';
+import Banner from '../../common/Banner';
+import ExtraPadding from '../../common/ExtraPadding';
+import services from '../../mock/services';
 
 const items = services.map(item => (
   <div className="col-md-4 col-sm-6" key={item.id}>
@@ -28,6 +28,14 @@ const Services = () => (
 
     <section className="medical_service bg_gray">
       <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="title_area">
+              <h2 className="section_title text-center color_secondary down_line_center">Our Special Services</h2>
+              <span className="sub_title text-center color_gray">We aim to provide world class services.</span>
+            </div>
+          </div>
+        </div>
         <div className="row">
           <Masonry>
             {items}

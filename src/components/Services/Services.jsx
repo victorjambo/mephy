@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import services from '../mock/services';
+import services from '../../mock/services';
 
 const items = services.slice(0, 8).map(service => (
-  <div className="col-md-3 col-sm-6" key={service.id}>
+  <div className="col-md-3 col-sm-6 service-item" key={service.id}>
     <div className="text-center mb_30 py_15 color_white flat_large">
       <i className={service.faIcon} aria-hidden="true" />
       <h6 className="inner_title py_20">

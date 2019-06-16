@@ -1,5 +1,6 @@
 export default [
   {
+    id: '1',
     link: '/',
     removeLink: '/',
     quantity: 1,
@@ -9,6 +10,7 @@ export default [
     image: 'assets/images/products/2.png',
   },
   {
+    id: '2',
     link: '/',
     removeLink: '/',
     quantity: 1,
@@ -18,6 +20,7 @@ export default [
     image: 'assets/images/products/2.png',
   },
   {
+    id: '3',
     link: '/',
     removeLink: '/',
     quantity: 1,
@@ -27,6 +30,7 @@ export default [
     image: 'assets/images/products/2.png',
   },
   {
+    id: '4',
     link: '/',
     removeLink: '/',
     quantity: 1,
@@ -36,6 +40,7 @@ export default [
     image: 'assets/images/products/2.png',
   },
   {
+    id: '5',
     link: '/',
     removeLink: '/',
     quantity: 1,
