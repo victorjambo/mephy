@@ -19,7 +19,8 @@
         $brand = $('.partner-slider'),
         $contact = $('#contact-form'),
         $landdrop = $('.lan-drop'),
-		$client = $('.clients')
+        $client = $('.clients'),
+        $toggle_button = $('#toggle-button')
 
 
 
@@ -280,5 +281,28 @@
 				jQuery('body').css('padding-top', get_height);
 			}
 		});
-	}
+    }
+
+    function toggleClick() {
+        $toggle_button = $('#toggle-button')
+        var _opened = $(".navbar-collapse").hasClass("collapse in");
+        $toggle_button.on('click', function (e) {
+            if (_opened) {
+                $(".navbar-collapse").removeClass('in')
+            } else {
+                $(".navbar-collapse").addClass('in')
+            }
+        })
+    }
+
+    // Navbar harmburger menu disappear on click out
+    $(document).click(function (event) {
+        toggleClick()
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("collapse in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $("button.navbar-toggle").click(toggleClick());
+        }
+    });
+
 })(window.jQuery);

@@ -35,10 +35,9 @@ class Header extends React.Component {
                   <nav className="navbar navbar-default">
                     <div className="navbar-header">
                       <button
+                        id="toggle-button"
                         type="button"
                         className="navbar-toggle collapsed"
-                        data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1"
                         aria-expanded="false"
                       >
                         <span className="sr-only">Toggle navigation</span>
@@ -49,19 +48,19 @@ class Header extends React.Component {
                       <Link className="navbar-brand my_brand flexing" to="/">
                         <img className="img-responsive" id="logo" src={`${baseUrl}/assets/images/logo.png`} alt="mephys" />
                         <div className="company-name">
-                      ME<span>PHYS</span>
+                          ME<span>PHYS</span>
                         </div>
                       </Link>
                     </div>
 
-                    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div className="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                       <ul className="navbar-nav nav-contact pull-right">
                         <li><Link className="btn btn-primary" to="/cart">cart <i className="fa fa-shopping-cart" /></Link></li>
                       </ul>
                       <ul className="nav navbar-nav navbar-right nav_item nav-mega">
                         <li className="dropdown">
                           <Link to="/" className="dropdown-toggle">
-                        Home
+                            Home
                           </Link>
                         </li>
                         <li className="dropdown">
@@ -73,7 +72,7 @@ class Header extends React.Component {
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                        About us
+                            About us
                           </Link>
                           <ul className="dropdown-menu">
                             <li><Link to="/about-us#intro">Who are we</Link></li>
@@ -92,7 +91,7 @@ class Header extends React.Component {
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                        Products
+                            Products
                           </Link>
                           <ul className="dropdown-menu mega-menu">
                             <li><ProductDropdown /></li>
