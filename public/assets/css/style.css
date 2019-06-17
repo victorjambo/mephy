@@ -931,6 +931,7 @@ section{
     padding: 40px 30px;
     border-bottom: 3px solid #f5f5f5;
     border-right: 3px solid #f5f5f5;
+    cursor: pointer;
 }
 .service_block_1 i{
 	float: left;
