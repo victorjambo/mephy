@@ -13,7 +13,6 @@ class Footer extends React.Component {
     const data = new FormData(e.target);
     const { createNewsletter } = this.props;
     createNewsletter(data.get('email'));
-    alert('Thank you for subscribing to our NEWSLETTER');
     e.target.reset();
   };
 

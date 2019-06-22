@@ -2,6 +2,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import scriptLoader from 'react-async-script-loader';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Home from './pages/Home';
 import Header from './common/Header';
@@ -21,6 +23,7 @@ import AppointmentPage from './pages/Appointment';
 
 const App = () => (
   <Provider store={store}>
+    <ToastContainer />
     <Header />
 
     <ScrollToTop>
