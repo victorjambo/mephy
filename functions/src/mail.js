@@ -11,18 +11,19 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-exports.send = function(data) {
-  switch (data) {
+exports.send = function(data, type) {
+  switch (type) {
     case APPOINTMENT:
       context = {
         type: 'Mephy Appointment',
         subject: 'Appointment: Someone has booked an appointment',
-        body: 'You have received a new appointment'
+        body: 'You have received a new appointment',
+        link: '/'
       }
       break;
     case CONTACT_US:
       context = {
-        type: 'Mephy Appointment',
+        type: 'Mephy Contact Us',
         subject: 'Contact Us: New message',
         body: 'Someone is trying to contact you',
         link: '/'
@@ -44,6 +45,7 @@ exports.send = function(data) {
     to: dest,
     subject: context.subject,
     html: `<p style="font-size: 16px;">${context.body}</p>
+      ${JSON.stringify(data)}
       <br />
       <img src="https://images.prod.meredith.com/product/fc8754735c8a9b4aebb786278e7265a5/1538025388228/l/rick-and-morty-pickle-rick-sticker" />`
   };

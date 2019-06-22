@@ -28,8 +28,7 @@ class Contact extends React.Component {
       name, email, subject, message
     });
 
-    handleContactUs().then(res => console.log(res));
-
+    handleContactUs({ id: 'id' });
     this.setState({ ...initialState });
   }
 
@@ -57,7 +56,7 @@ class Contact extends React.Component {
                     <input type="text" name="name" placeholder="Name" className="form-control" onChange={this.handleChange} value={name} required />
                   </div>
                   <div className="form-group">
-                    <input type="text" name="email" placeholder="Email Address" className="form-control" onChange={this.handleChange} value={email} required />
+                    <input type="email" name="email" placeholder="Email Address" className="form-control" onChange={this.handleChange} value={email} required />
                   </div>
                   <div className="form-group">
                     <input type="text" name="subject" placeholder="Subject" className="form-control" onChange={this.handleChange} value={subject} required />

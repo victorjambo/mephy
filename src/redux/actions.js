@@ -44,7 +44,10 @@ export const createContactUs = data => (dispatch, getState, { getFirestore }) =>
     ...data,
     createdAt: new Date()
   })
-    .then(() => toast.success('Thank you for reaching out. Our team will be in contact soon'))
+    .then((res) => {
+      console.log(res.id);
+      toast.success('Thank you for reaching out. Our team will be in contact soon')
+    })
     .catch(() => error());
 };
 
