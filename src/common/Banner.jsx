@@ -11,11 +11,8 @@ const Banner = ({
           <div className="banner_info position_relative">
             <h1 className="inner_title color_primary pb_20">{pageTitle}</h1>
             <ul className="color_white_a">
-              <li>
-                <Link to={previousPageLink}>{titlePreviousPageLink}</Link>
-              </li>
-              <li><Link to={previousPageLink}>.</Link>
-              </li>
+              <li><Link to={previousPageLink}>{titlePreviousPageLink}</Link></li>
+              <li><Link to={previousPageLink}>.</Link></li>
               <li>{titleCurrentPage}</li>
             </ul>
           </div>

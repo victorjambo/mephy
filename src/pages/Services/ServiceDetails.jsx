@@ -38,8 +38,8 @@ class ServiceDetails extends React.Component {
       <React.Fragment>
         <Banner
           pageTitle={service && service.title}
-          titlePreviousPageLink="Home"
-          previousPageLink="/"
+          titlePreviousPageLink="Services"
+          previousPageLink="/services"
           titleCurrentPage={service && service.title}
         />
 

@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Masonry from 'react-masonry-component';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -13,13 +13,28 @@ import Preloader from '../../common/Preloader';
 
 
 class Services extends React.Component {
+  state = {
+    redirect: false,
+    id: ''
+  }
+
   componentDidMount() {
     const { getServices } = this.props;
     getServices();
   }
 
+  handleClick = (id) => {
+    this.setState({ redirect: true, id });
+  }
+
   render() {
     const { isLoaded, isEmpty, services } = this.props;
+    const { redirect, id } = this.state;
+
+    if (redirect) {
+      return <Redirect push to={`/services/${id}`} />;
+    }
+
     return (
       <React.Fragment>
         <Banner pageTitle="Services" titlePreviousPageLink="Home" previousPageLink="/" titleCurrentPage="Services" />
@@ -39,16 +54,16 @@ class Services extends React.Component {
                 (isLoaded && isEmpty && services) ? (
                   <Masonry>
                     {
-                      services.map(item => (
-                        <div className="col-md-4 col-sm-6" key={item.id}>
+                      services.map(service => (
+                        <div className="col-md-4 col-sm-6" key={service.id} role="presentation" onClick={() => this.handleClick(service.id)}>
                           <div className="row">
                             <div className="service_block_1 flat_primary flat_medium bg_white">
-                              <i className={item.faIcon} aria-hidden="true" />
+                              <i className={service.faIcon} aria-hidden="true" />
                               <div className="service_text d_table">
                                 <h6 className="inner_title pb_10">
-                                  <Link to={`/services/${item.id}`} className="color_secondary">{item.title}</Link>
+                                  <Link to={`/services/${service.id}`} className="color_secondary">{service.title}</Link>
                                 </h6>
-                                <p>{item.description}</p>
+                                <p>{service.description}</p>
                               </div>
                             </div>
                           </div>
