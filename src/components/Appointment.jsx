@@ -39,6 +39,7 @@ class Appointment extends React.Component {
 
     console.log(some);
     alert('Appointment Booked');
+    e.target.reset();
   }
 
   render() {

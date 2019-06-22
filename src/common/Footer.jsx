@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 
 import contacts from '../mock/contacts';
 
+const handleSubmit = (e) => {
+  e.preventDefault();
+  alert('Thank you for subscribing to our NEWSLETTER');
+  e.target.reset();
+};
+
 const Footer = () => (
   <footer className="pt_80 bg_white">
     <div className="container">
@@ -108,12 +114,12 @@ const Footer = () => (
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="footer_widget">
-              <h5 className="widget_title">Newsletter</h5>
+              <h5 className="widget_title">NEWSLETTER</h5>
               <div className="footer_content">
                 <p>Get notified on arrival of new products</p>
-                <form className="pt_15 form_3">
+                <form className="pt_15 form_3" onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="email" className="form-control" placeholder="Enter email" required />
                   </div>
                   <button type="submit" className="btn btn-primary">Subscribe</button>
                 </form>
