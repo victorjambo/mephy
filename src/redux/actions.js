@@ -1,7 +1,6 @@
 import { toast } from 'react-toastify';
 
 const error = () => toast.warn('There was an error submitting the email. Try reloading the page');
-const suc = () => toast.warn('There was an error submitting the email. Try reloading the page');
 
 
 export const healthcheck = () => (dispatch, getState, { getFirestore }) => {

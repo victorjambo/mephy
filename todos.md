@@ -15,3 +15,4 @@
 ### UI
 - [] show cart on navbar
 - [] admin page
+- [x] toastify
