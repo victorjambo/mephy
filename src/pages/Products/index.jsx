@@ -52,7 +52,7 @@ export default class extends React.Component {
               <div className="col-md-3">
                 <div className="sidebar_style3">
                   <Search />
-                  <FilterPrice />
+                  {/* <FilterPrice /> */}
                   <FilterCat />
                   <SidebarProducts />
                 </div>
