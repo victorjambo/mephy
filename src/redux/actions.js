@@ -8,12 +8,17 @@ export const getServices = () => (dispatch, getState, { getFirestore }) => {
   firestore.get({ collection: 'services' });
 };
 
+export const getService = id => (dispatch, getState, { getFirestore }) => {
+  const firestore = getFirestore();
+  firestore.get({ collection: 'services', doc: id });
+};
+
 export const getProducts = () => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
   firestore.get({ collection: 'products' });
 };
 
-export const getService = id => (dispatch, getState, { getFirestore }) => {
+export const getProduct = id => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
-  firestore.get({ collection: 'services', doc: id });
+  firestore.get({ collection: 'products', doc: id });
 };

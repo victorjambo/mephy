@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6,
 	background-color: #fff
 }
 .category_block_1.sidebar-widget a:hover, blockquote, .comment-detail > span a,
-.sidebar_style2 .form_3 .btn, .table.shop_table th,
+.table.shop_table th,
 .services.sidebar-widget a, .cart_item .product-name a, .sidebar_style3 .inner-title,
 .price-filter.sidebar-widget .pricing-value p, .price-box span,
 .single-product-info .about_product tr td:first-child, .product-item a,
@@ -277,4 +277,13 @@ h1, h2, h3, h4, h5, h6,
 	background: transparent;
 	color: #31343d
 }
+}
+
+.sidebar_style2 input {
+	color: #fff;
+}
+
+.rdtPicker,
+.sidebar_style2 .form_3 .btn {
+  color: #01a1d5;
 }
