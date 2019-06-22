@@ -7,7 +7,6 @@ import mock from '../../mock/products';
 import categories from '../../mock/categories';
 import Paginate from '../../common/Paginate';
 import Search from '../../components/Products/Search';
-import FilterPrice from '../../components/Products/FilterPrice';
 import FilterCat from '../../components/Products/FilterCat';
 import SidebarProducts from '../../components/Products/SidebarProducts';
 
