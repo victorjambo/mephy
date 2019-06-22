@@ -1,9 +1,14 @@
+/* eslint-disable no-shadow */
 import React from 'react';
 import { connect } from 'react-redux';
 import Datetime from 'react-datetime';
+import { bindActionCreators } from 'redux';
+
 import 'react-datetime/css/react-datetime.css';
 
 import whatToExpect from '../mock/whatToExpect';
+import { createAppointment } from '../redux/actions';
+import firebase from '../helpers/firebase';
 
 const staticServices = [
   {
@@ -27,18 +32,17 @@ const staticServices = [
 class Appointment extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
-    const data = new FormData(e.target);
-
-    const some = {
-      name: data.get('name'),
-      email: data.get('email'),
-      service: data.get('service'),
-      phone: data.get('phone'),
-      datetime: data.get('datetime')
+    const formData = new FormData(e.target);
+    const { createAppointment } = this.props;
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      service: formData.get('service'),
+      phone: formData.get('phone'),
+      datetime: firebase.firestore.Timestamp.fromDate(new Date(formData.get('datetime')))
     };
 
-    console.log(some);
-    alert('Appointment Booked');
+    createAppointment(data);
     e.target.reset();
   }
 
@@ -89,7 +93,7 @@ class Appointment extends React.Component {
                     </div>
                     <div className="form-group">
                       <Datetime
-                        isValidDate={current => current.day() !== 0 && current.day() !== 6}
+                        isValidDate={current => current.day() !== 0 && current.day() !== 6 && current.isAfter(Datetime.moment().subtract(1, 'day'))}
                         inputProps={{
                           placeholder: 'Date', name: 'datetime', required: true, autoComplete: 'off'
                         }}
@@ -114,4 +118,8 @@ const mapStateToProps = state => ({
   services: state.firestore.ordered.services,
 });
 
-export default connect(mapStateToProps)(Appointment);
+const mapDispatchToProps = dispatch => ({
+  createAppointment: bindActionCreators(data => createAppointment(data), dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Appointment);

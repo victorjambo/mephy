@@ -50,3 +50,17 @@ export const createContactUs = data => (dispatch, getState, { getFirestore }) =>
     // dispatch({ type: 'CREATE_PROJECT_ERROR' }, err);
   });
 };
+
+export const createAppointment = data => (dispatch, getState, { getFirestore }) => {
+  const firestore = getFirestore();
+  firestore.collection('appointments').add({
+    ...data,
+    createdAt: new Date()
+  }).then((res) => {
+    console.log(res);
+    // dispatch({ type: 'CREATE_PROJECT_SUCCESS' });
+  }).catch((err) => {
+    console.log(err);
+    // dispatch({ type: 'CREATE_PROJECT_ERROR' }, err);
+  });
+};
