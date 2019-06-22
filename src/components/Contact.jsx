@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { createContactUs } from '../redux/actions';
+import firebase from '../helpers/firebase';
 
 const initialState = {
   name: '',
@@ -18,6 +19,7 @@ class Contact extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { createContactUs } = this.props;
+    const handleContactUs = firebase.functions().httpsCallable('handleContactUs');
     const {
       name, email, subject, message
     } = this.state;
@@ -25,6 +27,8 @@ class Contact extends React.Component {
     createContactUs({
       name, email, subject, message
     });
+
+    handleContactUs().then(res => console.log(res));
 
     this.setState({ ...initialState });
   }

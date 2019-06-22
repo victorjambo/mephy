@@ -2,3 +2,13 @@
 .DS_Store
 /build
 **/hosting.*
+
+# vscode
+.vscode
+
+# firebase
+.firebase
+**/.runtimeconfig.json
+**/firebase-debug.log
+
+**/.env
