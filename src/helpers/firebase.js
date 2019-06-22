@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const config = {
+export const config = {
   apiKey: 'AIzaSyBNBvUb3EbSyLVYGIywsjhNbEpQFMlTL_A',
   authDomain: 'mephy-physiotherapy.firebaseapp.com',
   databaseURL: 'https://mephy-physiotherapy.firebaseio.com',

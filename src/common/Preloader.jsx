@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Preloader = () => (
-  <div className="preloader">
+  <div className="preloader-component">
     <div className="loader-animation" />
   </div>
 );

@@ -9,14 +9,14 @@ import Services from '../components/Services';
 import Featured from '../components/Products/Featured';
 import Discount from '../components/Discount';
 import ExtraPadding from '../common/ExtraPadding';
-import { testAction, testGetProducts } from '../redux/actions/testAction';
+import { healthcheck } from '../redux/actions';
 import Appointment from '../components/Appointment';
 
 
 class Home extends React.Component {
   // componentDidMount() {
-  //   const { testGetProducts } = this.props;
-  //   testGetProducts();
+  //   const { healthcheck } = this.props;
+  //   healthcheck();
   // }
 
   render() {
@@ -36,13 +36,12 @@ class Home extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  firestore: state.firestore,
-  firebase: state.firestore
+  isLoaded: state.firebase.profile.isLoaded,
+  isEmpty: state.firebase.profile.isEmpty,
 });
 
 const mapDispatchToProps = dispatch => ({
-  testAction: bindActionCreators(testAction, dispatch),
-  testGetProducts: bindActionCreators(testGetProducts, dispatch)
+  healthcheck: bindActionCreators(healthcheck, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
