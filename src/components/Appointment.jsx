@@ -1,12 +1,28 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 import Datetime from 'react-datetime';
 import 'react-datetime/css/react-datetime.css';
 
 import whatToExpect from '../mock/whatToExpect';
 
-const valid = current => current.day() !== 0 && current.day() !== 6;
-
+const staticServices = [
+  {
+    id: 1,
+    title: 'Massage Therapy',
+  },
+  {
+    id: 2,
+    title: 'Headache Management',
+  },
+  {
+    id: 3,
+    title: 'Injury',
+  },
+  {
+    id: 4,
+    title: 'Hand Therapy',
+  }
+];
 
 class Appointment extends React.Component {
   handleSubmit = (e) => {
@@ -22,11 +38,14 @@ class Appointment extends React.Component {
     };
 
     console.log(some);
-
     alert('Appointment Booked');
   }
 
   render() {
+    const { services } = this.props;
+    const servicesOptions = services || staticServices;
+    const options = servicesOptions.map(item => (<option key={item.id}>{item.title}</option>));
+
     return (
       <section className="bg_gray flat_medium flat_primary" id="appointment">
         <div className="container">
@@ -54,11 +73,8 @@ class Appointment extends React.Component {
                   <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                       <select className="form-control" name="service">
-                        <option>Select Service</option>
-                        <option>Massage Therapy</option>
-                        <option>Headache Management</option>
-                        <option>Injury</option>
-                        <option>Hand Therapy</option>
+                        <option>Select a Service</option>
+                        {options}
                       </select>
                     </div>
                     <div className="form-group">
@@ -71,7 +87,12 @@ class Appointment extends React.Component {
                       <input type="number" name="phone" placeholder="Phone" className="form-control" required />
                     </div>
                     <div className="form-group">
-                      <Datetime isValidDate={valid} inputProps={{ placeholder: 'Date', name: 'datetime', required: true, autoComplete: "off" }} />
+                      <Datetime
+                        isValidDate={current => current.day() !== 0 && current.day() !== 6}
+                        inputProps={{
+                          placeholder: 'Date', name: 'datetime', required: true, autoComplete: 'off'
+                        }}
+                      />
                     </div>
                     <div className="form-group">
                       <button className="btn" type="submit">Book Appointment</button>
@@ -88,4 +109,8 @@ class Appointment extends React.Component {
   }
 }
 
-export default Appointment;
+const mapStateToProps = state => ({
+  services: state.firestore.ordered.services,
+});
+
+export default connect(mapStateToProps)(Appointment);
