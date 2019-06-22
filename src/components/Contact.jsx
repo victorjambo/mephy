@@ -1,4 +1,9 @@
+/* eslint-disable no-shadow */
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+import { createContactUs } from '../redux/actions';
 
 const initialState = {
   name: '',
@@ -12,10 +17,16 @@ class Contact extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    const { createContactUs } = this.props;
+    const {
+      name, email, subject, message
+    } = this.state;
+
+    createContactUs({
+      name, email, subject, message
+    });
 
     this.setState({ ...initialState });
-
-    alert('Contact submited');
   }
 
   handleChange = (e) => {
@@ -63,4 +74,8 @@ class Contact extends React.Component {
   }
 }
 
-export default Contact;
+const mapDispatchToProps = dispatch => ({
+  createContactUs: bindActionCreators(data => createContactUs(data), dispatch)
+});
+
+export default connect(null, mapDispatchToProps)(Contact);
