@@ -1,7 +1,10 @@
 import { toast } from 'react-toastify';
 
-const error = () => toast.warn('There was an error submitting the email. Try reloading the page');
+import firebase from '../helpers/firebase';
 
+const error = () => toast.warn('There was an error submitting the email. Try reloading the page');
+const handleContactUs = firebase.functions().httpsCallable('handleContactUs');
+const handleAppointments = firebase.functions().httpsCallable('handleAppointments');
 
 export const healthcheck = () => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
@@ -45,8 +48,8 @@ export const createContactUs = data => (dispatch, getState, { getFirestore }) =>
     createdAt: new Date()
   })
     .then((res) => {
-      console.log(res.id);
-      toast.success('Thank you for reaching out. Our team will be in contact soon')
+      handleContactUs({ id: res.id });
+      toast.success('Thank you for reaching out. Our team will be in contact soon');
     })
     .catch(() => error());
 };
@@ -57,6 +60,9 @@ export const createAppointment = data => (dispatch, getState, { getFirestore }) 
     ...data,
     createdAt: new Date()
   })
-    .then(() => toast.success('Appointment Booked'))
+    .then((res) => {
+      handleAppointments({ id: res.id });
+      toast.success('Appointment Booked');
+    })
     .catch(() => error());
 };

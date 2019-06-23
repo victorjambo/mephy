@@ -1,5 +1,5 @@
 ### Functions
-- [] send email
+- [x] send email
 - [] create cart
 
 ### Logic
@@ -11,6 +11,8 @@
 - [] add to cart on product details page
 - [] cart
 - [] newsletters unique email
+- [] auth
+- [] save appointment state without login then auto send
 
 ### UI
 - [] show cart on navbar
