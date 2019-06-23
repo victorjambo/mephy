@@ -1,46 +1,32 @@
+/* eslint-disable no-shadow */
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 import Banner from '../../common/Banner';
 import ExtraPadding from '../../common/ExtraPadding';
 import ProductItem from '../../components/Products/ProductItem';
-import mock from '../../mock/products';
-import categories from '../../mock/categories';
-import Paginate from '../../common/Paginate';
+// import Paginate from '../../common/Paginate';
 import Search from '../../components/Products/Search';
 import FilterCat from '../../components/Products/FilterCat';
 import SidebarProducts from '../../components/Products/SidebarProducts';
+import Preloader from '../../common/Preloader';
+import { getProducts } from '../../redux/actions';
 
-export default class extends React.Component {
+
+class Products extends React.Component {
   state = {
-    products: mock,
     pageTitle: 'Our Products'
   }
 
   componentDidMount() {
-    const { match: { params: { id } } } = this.props;
-    if (id) {
-      categories.forEach((cat) => {
-        if (cat.id === id) {
-          this.setState({ products: cat.products, pageTitle: cat.title });
-        }
-      });
-    }
+    const { getProducts } = this.props;
+    getProducts();
   }
 
   render() {
-    const { products, pageTitle } = this.state;
-    const productItems = products.map(product => (
-      <ProductItem
-        prize={product.prize}
-        title={product.title}
-        tag={product.tag}
-        rating={product.rating}
-        image={product.image}
-        id={product.id}
-        flag={product.flag}
-        key={product.id}
-      />
-    ));
+    const { pageTitle } = this.state;
+    const { products } = this.props;
 
     return (
       <React.Fragment>
@@ -59,10 +45,23 @@ export default class extends React.Component {
 
               <div className="col-md-9">
                 <div className="row">
-                  {productItems}
+                  {
+                    products ? products.map(product => (
+                      <ProductItem
+                        prize={product.prize}
+                        title={product.title}
+                        tag={product.tag}
+                        rating={product.rating}
+                        image={product.image}
+                        id={product.id}
+                        flag={product.flag}
+                        key={product.id}
+                      />
+                    )) : (<Preloader />)
+                  }
                 </div>
 
-                <Paginate />
+                {/* <Paginate /> */}
               </div>
 
             </div>
@@ -73,3 +72,15 @@ export default class extends React.Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  isLoaded: state.firebase.profile.isLoaded,
+  isEmpty: state.firebase.profile.isEmpty,
+  products: state.firestore.ordered.products,
+});
+
+const mapDispatchToProps = dispatch => ({
+  getProducts: bindActionCreators(getProducts, dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Products);

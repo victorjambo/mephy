@@ -6,9 +6,7 @@ export default [
     brand: 'PROCARE',
     category: 'categories/8gV9t3LKKMJPNaGLc18k',
     description: 'The EMPOWR PS Knee recreates the stability of the natural, healthy knee throughout a full range of motion. By creating a knee replacement with inherent stability, patients can return to an active and healthy lifestyle. The EMPOWR PS Knee femoral component features a single radius design to maintain consistent soft tissue tension throughout a full range of motion. This single radius, in combination with a conforming insert design, controls the anterior-posterior translation of the femoral component and enhances quadriceps efficiency for the patient',
-    thumb: [
-      '',
-    ],
+    thumb: [],
     prize: 'ASK FOR PRICE',
     rating: 3,
     initialPrize: '',
@@ -21,9 +19,7 @@ export default [
     brand: 'PROCARE',
     category: 'categories/8gV9t3LKKMJPNaGLc18k',
     description: 'The premier soft good knee ligament brace is recommended for non-contact sport and activities of daily living. Suitable for mild to moderate ligament instabilities. Ideal intermediate-level product for sporting activities.',
-    thumb: [
-      '',
-    ],
+    thumb: [],
     prize: 'ASK FOR PRICE',
     rating: 3,
     initialPrize: '',
@@ -36,9 +32,7 @@ export default [
     brand: 'PROCARE',
     category: 'categories/8gV9t3LKKMJPNaGLc18k',
     description: 'The Armor FourcePoint delivers an indestructible shield of proven protection and uncompromised strength giving athletes the confidence to go all out, guaranteed. Indestructible Protection!  Athletes involved with contact and extreme sports demand a knee brace that provides uncompromised strength with a shield of injury protection allowing them to go all out. The Armor FourcePoint fits their profile. The steel reinforced hinge plate delivers additional strength while the low profile FourcePoint hinge and internally mounted straps promotes bilateral use that won\'t impede performance. Armor FourcePoint provides healthcare professionals the strongest prefabricated solution to protect athletes who dare to challenge their own boundaries. Ideal applications include: •	Patient Activity Level, Contact / extreme sports •	Highly active lifestyles Indications: Hyperextension; Moderate to severe ACL instabilities; Prophylactic/bilateral use; MCL/LCL instabilities/ACL reconstructions',
-    thumb: [
-      '',
-    ],
+    thumb: [],
     prize: 'ASK FOR PRICE',
     rating: 3,
     initialPrize: '',
@@ -51,9 +45,7 @@ export default [
     brand: 'DONJOY',
     category: 'categories/8gV9t3LKKMJPNaGLc18k',
     description: 'Fullforce combines DonJoy\'s proven 4-Points-of-Leverage System with FourcePoint hinge technology, the most powerful and clinically-proven solutions available to protect the ACL. Created for all activity levels, FULLFORCE\'s sleek, low profile and exceptionally light weight have made it the go-to prefabricated brace for competitive and recreational athletes of all kinds.',
-    thumb: [
-      '',
-    ],
+    thumb: [],
     prize: 'ASK FOR PRICE',
     rating: 3,
     initialPrize: '',
