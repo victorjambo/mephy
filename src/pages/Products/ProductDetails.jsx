@@ -70,7 +70,7 @@ class ProductDetails extends React.Component {
                   <div className="col-md-9">
                     <div className="row">
                       <SingleProductImage
-                        productId={product.id}
+                        productTitle={product.title}
                         image={product.image}
                         thumb={product.thumb}
                       />

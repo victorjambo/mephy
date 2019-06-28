@@ -248,3 +248,7 @@ html {
 .nav>li>a:focus {
   background-color: transparent;
 }
+
+.__react_modal_image__medium_img {
+  max-width: 50%!important;
+}
