@@ -20,8 +20,8 @@ class Products extends React.Component {
   }
 
   componentDidMount() {
-    const { getProducts } = this.props;
-    getProducts();
+    const { getProducts, match: { params: { id } } } = this.props;
+    getProducts(id);
   }
 
   render() {

@@ -10,8 +10,10 @@ import { getProducts } from '../../redux/actions';
 
 class Featured extends React.Component {
   componentDidMount() {
-    const { getProducts } = this.props;
-    getProducts();
+    const { getProducts, products } = this.props;
+    if (!products) {
+      getProducts();
+    }
   }
 
   render() {

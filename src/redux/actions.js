@@ -26,9 +26,17 @@ export const getService = id => (dispatch, getState, { getFirestore }) => {
   firestore.get({ collection: 'services', doc: id });
 };
 
-export const getProducts = () => (dispatch, getState, { getFirestore }) => {
+export const getProducts = categoryId => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
-  firestore.get({ collection: 'products' });
+  let query = { collection: 'products' };
+  if (categoryId) {
+    const categoryDocRef = firebase.firestore().collection('categories').doc(categoryId);
+    query = {
+      ...query,
+      where: ['category', '==', categoryDocRef]
+    };
+  }
+  firestore.get(query);
 };
 
 export const getProduct = id => (dispatch, getState, { getFirestore }) => {
@@ -126,4 +134,9 @@ export const migrateCategories = () => (dispatch, getState, { getFirestore }) =>
       .then(() => toast.success(`${cat.title} successfully created`))
       .catch(() => toast.warn(`Error creating ${cat.title}`));
   });
+};
+
+export const getCategories = () => (dispatch, getState, { getFirestore }) => {
+  const firestore = getFirestore();
+  firestore.get({ collection: 'categories' });
 };

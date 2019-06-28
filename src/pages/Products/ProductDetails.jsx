@@ -24,7 +24,7 @@ import SingleProductImage from './SingleProductImage';
 
 class ProductDetails extends React.Component {
   state = {
-    product: {}
+    product: {},
   }
 
   componentDidMount() {
@@ -34,12 +34,14 @@ class ProductDetails extends React.Component {
 
   componentWillReceiveProps(props) {
     const { products, match: { params: { id } } } = props;
+    const { history } = this.props;
     if (products) {
-      products.forEach((product) => {
-        if (product.id === id) {
-          this.setState({ product });
-        }
-      });
+      const product = products.find(product => product.id === id);
+      if (product) {
+        this.setState({ product });
+      } else {
+        history.push('/product-not-found');
+      }
     }
   }
 
@@ -64,7 +66,7 @@ class ProductDetails extends React.Component {
               </div>
 
               {
-                product ? (
+                Object.keys(product).length ? (
                   <div className="col-md-9">
                     <div className="row">
                       <SingleProductImage
@@ -114,7 +116,7 @@ class ProductDetails extends React.Component {
                         <h4 className="inner_title down_line_left">Related Product</h4>
                       </div>
                       {
-                        products ? products.slice(0, 6).map(item => (
+                        products && products.slice(0, 6).map(item => (
                           <ProductItem
                             prize={item.prize}
                             title={item.title}
@@ -125,7 +127,7 @@ class ProductDetails extends React.Component {
                             flag={item.flag}
                             key={item.id}
                           />
-                        )) : <Preloader />
+                        ))
                       }
                     </div>
                   </div>

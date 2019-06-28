@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Thumbs = ({ thumb }) => (
   <ul>
     {
-      thumb.map((k, i) => (<li key={i}><img src={k} alt="Not found!" /></li>))
+      thumb.map((k, i) => (<li key={i}><img src={k} alt="Not found!" /></li>)) // TODO: MODAL ONCLICK
     }
   </ul>
 );
