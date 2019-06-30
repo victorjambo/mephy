@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { baseUrl } from '../helpers/constants';
 import ProductDropdown from './ProductDropdown';
 
+// TODO [LINKS]
 class Header extends React.Component {
   state = {
     fixed: ''

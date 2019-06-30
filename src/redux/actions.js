@@ -1,10 +1,9 @@
 import { toast } from 'react-toastify';
 
 import firebase from '../helpers/firebase';
-import fixturesProducts from '../fixtures/djoproducts_v2';
-import fixturesServices from '../fixtures/services_v1';
-import fixturesBrands from '../fixtures/brands_v1';
-import fixturesCategories from '../fixtures/category_v1';
+
+import fixtures from '../fixtures/v2';
+import fixturesV1 from '../fixtures/v1';
 
 
 const error = () => toast.warn('There was an error submitting the email. Try reloading the page');
@@ -90,12 +89,21 @@ export const createProduct = data => (dispatch, getState, { getFirestore }) => {
     .catch(() => error());
 };
 
+export const getCategories = () => (dispatch, getState, { getFirestore }) => {
+  const firestore = getFirestore();
+  firestore.get({ collection: 'categories' });
+};
+
+// MIGRATIONS
+// depends on category, brandRef, bodyType
 export const migrateProducts = () => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
 
-  fixturesProducts.forEach((product) => {
+  fixturesV1.products.forEach((product) => {
     product.brandRef = firestore.doc(product.brandRef);
     product.category = firestore.doc(product.category);
+    // product.bodyType = firestore.doc(product.bodyType);
+    // product.subBodyType = firestore.doc(product.subBodyType);
     product.createdAt = new Date();
     firestore.collection('products').add(product)
       .then(() => toast.success(`${product.title} successfully created`))
@@ -106,7 +114,7 @@ export const migrateProducts = () => (dispatch, getState, { getFirestore }) => {
 export const migrateServices = () => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
 
-  fixturesServices.forEach((service) => {
+  fixtures.services.forEach((service) => {
     service.createdAt = new Date();
     firestore.collection('services').add(service)
       .then(() => toast.success(`${service.title} successfully created`))
@@ -117,7 +125,7 @@ export const migrateServices = () => (dispatch, getState, { getFirestore }) => {
 export const migrateBrands = () => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
 
-  fixturesBrands.forEach((brand) => {
+  fixtures.brands.forEach((brand) => {
     brand.createdAt = new Date();
     firestore.collection('brands').add(brand)
       .then(() => toast.success(`${brand.title} successfully created`))
@@ -128,7 +136,7 @@ export const migrateBrands = () => (dispatch, getState, { getFirestore }) => {
 export const migrateCategories = () => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
 
-  fixturesCategories.forEach((cat) => {
+  fixtures.categories.forEach((cat) => {
     cat.createdAt = new Date();
     firestore.collection('categories').add(cat)
       .then(() => toast.success(`${cat.title} successfully created`))
@@ -136,7 +144,26 @@ export const migrateCategories = () => (dispatch, getState, { getFirestore }) =>
   });
 };
 
-export const getCategories = () => (dispatch, getState, { getFirestore }) => {
+export const migrateAnatomies = () => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
-  firestore.get({ collection: 'categories' });
+
+  fixtures.anatomies.forEach((anatomy) => {
+    firestore.collection('anatomies').add({
+      title: anatomy.title,
+      createdAt: new Date()
+    })
+      .then((res) => {
+        toast.success(`anatomy ${anatomy.title} successfully created`);
+        anatomy.types.forEach((type) => {
+          type.createdAt = new Date();
+          firestore.collection('anatomies')
+            .doc(res.id)
+            .collection('types')
+            .add(type)
+            .then(() => toast.success(`Type ${type.title} successfully created`))
+            .catch(() => toast.warn(`Error creating ${type.title}`));
+        });
+      })
+      .catch(() => toast.warn(`Error creating ${anatomy.title}`));
+  });
 };

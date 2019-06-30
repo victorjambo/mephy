@@ -37,7 +37,7 @@ class Products extends React.Component {
               <div className="col-md-3">
                 <div className="sidebar_style3">
                   <Search />
-                  {/* <FilterPrice /> */}
+                  {/* TODO: filter by brand category anatomy type */}
                   <FilterCat />
                   <SidebarProducts />
                 </div>
