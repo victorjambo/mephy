@@ -14,7 +14,7 @@ const SingleProductImage = ({ productTitle, image, thumb }) => (
   <div className="col-lg-6 col-md-6">
     <div className="single-product-image">
       <ModalImage small={image} large={image} alt={productTitle} />
-      {(thumb && thumb.length) && <Thumbs thumb={thumb} productTitle={productTitle} />}
+      {thumb && <Thumbs thumb={thumb} productTitle={productTitle} />}
     </div>
   </div>
 );
