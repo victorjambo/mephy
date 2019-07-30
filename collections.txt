@@ -1,0 +1,61 @@
+COLLECTIONS
+• Products
+• Users
+• Address
+• Categories
+• Services
+• Orders
+• OrderItems
+• contacts
+
+Products
+• title => product title
+• rating -> rating to show popularity
+• link -> product link
+• id -> primary key
+• image -> product image
+• tag => Category it belongs to
+• initialPrize => for sales purposes
+• prize => product price
+• flag => Enum (Sale, New)
+• description => more info of the product
+
+Users
+• id -> primary key
+• firstname -> google auth
+• lastname -> google auth
+• email -> google auth
+• pic -> google auth
+• orders -> cart items
+• address -> FK Address
+
+Address
+• city => user input
+• state => user input
+
+Services
+• title => service type
+• description => more info
+• faIcon => GUI icon of service
+
+Orders
+• user_id -> FK integer
+• status -> ENUM (pending, on transit, awaiting confirmation)
+
+OrderItems
+• product_id -> FK integer
+• order_id -> FK integer
+• quantity -> integer
+
+Categories
+• title => Category type
+• link -> link to Category
+• count -> products in this Category
+
+
+RELATIONSHIPS
+• Products & Categories => One to Many => Product belongs_to Category
+• Products & OrderItems => One to Many => OrderItems has_many Products => Product has_many OrderItems
+• OrderItems & Orders => One to Many => OrderItems belongs_to Orders => Order has_many OrderItems
+• Users & Address => One to One => User has_one Address
+• Users & Orders => One to Many => User has_many Orders => Orders belongs_to User

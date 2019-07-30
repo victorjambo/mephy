@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "mephy-physiotherapy",
+    "default": "mephy-physiotherapy"
+  }
+}

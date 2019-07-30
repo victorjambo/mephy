@@ -1,0 +1,1639 @@
+/*======================
+01. Default CSS Start
+02. Another Default CSS
+03. Text Area Customize
+04. Form Customize
+05. Background Customize
+06. Padding Margin Customize
+07. Button Customize
+08. Popular Question Section 
+09. list style
+10. Section Tittle Customize
+11. Header CSS Start
+12. Nav Header CSS Start
+13. slider css start
+14. Servide CSS Start
+15. Extra Facilities CSS Start
+16. counter Section CSS Start
+17. Gallery CSS Start
+18. Subscripton CSS Start
+19. We Are Best CSS Start
+20. Choose Us CSS Start
+21. Great Place to Work start
+22. Blog CSS Start
+23. Footer CSS Start
+24. Banner CSS
+25. About Us CSS
+26. About Hospital
+27. Our service_block_2
+28. Our Service Details
+29. Our Doctors Details
+29. Blog Page css
+30. Blog Details css
+31. Timeshedule css
+32. Department css
+33. Appointment Page css
+34. Error Page css
+35. Contact Page css
+=======================*/
+
+@import url('plugins/animate.min.css');
+@import url('plugins/jquery.fancybox.min.css');
+@import url('plugins/owl.css');
+
+/*====== Link Google Fonts API ========*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700');
+
+/*====================================================================
+	0. Scroll to Top css
+====================================================================*/
+.scroll-to-top {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 999;
+	text-align: center;
+	line-height: 47px;
+	display: none
+}
+a.scroll-btn {
+	color: #fff;
+	display: block
+}
+/*==================
+	00. Banner CSS
+===================*/
+.banner{
+	padding: 60px 0
+}
+.banner_info li a{
+	float: left;
+	margin-right: 10px
+}
+#logo {
+  width: 50px;
+  height: 50px;
+}
+/*======================
+	01. Default CSS Start
+=======================*/
+body {
+    font-size: 14px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 28px;
+	overflow-x: hidden
+}
+a {
+    text-decoration: none;
+    cursor: pointer
+}
+a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    font-weight: 800
+}
+button{
+	outline: unset
+}
+
+.h1, h1 {
+    font-size: 52px
+}
+.h2, h2 {
+    font-size: 46px
+}
+.h3, h3 {
+    font-size: 40px
+}
+.h4, h4 {
+    font-size: 30px;
+    font-weight: 700
+}
+.h5, h5 {
+    font-size: 22px;
+    font-weight: 700
+}
+.h6, h6 {
+    font-size: 18px;
+    font-weight: 700
+}
+.slider_title {
+	font-size: 62px
+}
+img {
+    width: 100%
+}
+p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+	line-height: 28px
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+label {
+    margin-bottom: 0px
+}
+.flat_large [class^="flaticon-"]:before {
+    font-size: 60px
+}
+.flat_medium [class^="flaticon-"]:before {
+    font-size: 45px
+}
+.overflow_hidden{
+	overflow: hidden
+}
+.middle_x, .middle{
+	position: absolute;
+	left: 50%
+}
+.middle_y, .middle{
+	position: absolute;
+	top: 50%
+}
+.margin_auto {
+    display: table;
+    margin: 0 auto
+}
+.social_boxicon li a{
+	width: 40px;
+	line-height: 36px;
+	border: 2px solid;
+	margin: 0 3px;
+	float: left;
+	text-align: center
+}
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-prev{
+	left: 0px
+}
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-next {
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	top: 50%;
+	right: 0px;
+	z-index: 2
+}
+.circle{
+	border-radius: 50%;
+	overflow: hidden
+}
+.full_row {
+	width: 100%
+}
+.img_full_height {
+	width: auto;
+	height: 100%
+}
+/*=====================
+	02. Another Default CSS
+======================*/
+.w_100 {
+    width: 100% !important
+}
+.w_50 {
+    width: 50% !important
+}
+.recent_post li, .btn-bar,
+.full_row, .gallery-section .filters,
+.gallery-section .filter-btns li, .position_relative {
+    position: relative
+}
+.down_line:before, .according_title:after,
+.according_title:before, .position_absolute {
+    position: absolute
+}
+.according > div:first-child .according_details,
+.recent_post li a, .d_block {
+    display: block
+}
+.product_sorting, .banner_title,
+#buttons ul li, .choose_description .text_area,
+.d_inline_block {
+    display: inline-block
+}
+.d_table {
+    display: table
+}
+.right_0 {
+	right: 0
+}
+.left_0 {
+	left: 0
+}
+.top_0 {
+	top: 0
+}
+.bottom_0 {
+	bottom: 0
+}
+/*=====================
+	03. Text Area Customize
+=====================*/
+.text_block_1 {
+    padding: 50px 30px
+}
+.text_block_2 i {
+    float: left;
+    margin-right: 20px
+}
+.text_block_2 .inner_title{
+	line-height: 40px
+}
+.text_box_2 {
+	display: block
+}
+/*=====================
+	04. Form Customize
+=====================*/
+textarea.form-control {
+    resize: none;
+    padding: 12px;
+    height: 150px;
+}
+select {
+	 border: medium none;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    height: 44px;
+    padding: 0 15px;
+	width: 100%
+}
+.form_1 .form-control{
+	padding: 0;
+    border-color: transparent transparent #e1e1e1 transparent;
+    background: transparent;
+}
+.form_2 p{
+	color: #818181;
+	margin-bottom: 30px
+}
+.form_2 .btn{
+	border-radius: 0
+}
+.form_3 .form-control, .form_3 select{
+	border: 1px solid
+}
+.form_3 input, .form_3 select, .form_3 textarea.form-control {
+	background-color: transparent;
+	border-radius: 23px;
+	padding: 10px 20px
+}
+/*=====================
+	05. Background Customize
+=====================*/
+.overlay-1, .overlay-2, .overlay_gradient ,
+.overlay_white, .overlay{
+    position: relative
+}
+.overlay-1::before, .overlay-2::before, .overlay:before,
+.overlay_gradient:before, .overlay_white:before{
+    bottom: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+	left: 0;
+    width: 100%
+}
+.shadow{
+	box-shadow: 0px 1px 20px -5px #a5a5a5;
+	display: inline-block
+}
+.social_icon li a {
+    margin-right: 25px
+}
+.social_icon li {
+    float: left;
+    padding-right: 10px
+}
+/*=====================
+	06. Padding Margin Customize
+====================*/
+section{
+	padding-top: 80px;
+    padding-bottom: 80px
+}
+.py_80 {
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+.p_0 {
+	padding: 0 !important
+}
+.px_0, .pl_0 {
+	padding-left: 0 !important
+}
+.px_0, .pr_0 {
+	padding-right: 0 !important
+}
+.pr_7{
+	padding-right: 7px
+}
+.px_10, .pl_10 {
+	padding-left: 10px !important
+}
+.px_10, .pr_10 {
+	padding-right: 10px !important
+}
+.px_15, .pl_15 {
+	padding-left: 15px !important
+}
+.px_15, .pr_15 {
+	padding-right: 15px !important
+}
+.p_15{
+	padding: 15px
+}
+.px_20, .pl_20 {
+	padding-left: 20px !important
+}
+.px_20, .pr_20 {
+	padding-right: 20px !important
+}
+.px_25, .pl_25 {
+	padding-left: 25px !important
+}
+.px_25, .pr_25 {
+	padding-right: 25px !important
+}
+.px_30, .pl_30 {
+	padding-left: 30px !important
+}
+.px_30, .pr_30 {
+	padding-right: 30px !important
+}
+.pl_50, .px_50 {
+	padding-left: 50px !important
+}
+.pl_100, .px_100 {
+	padding-left: 100px !important
+}
+.px_50, .pr_50 {
+	padding-right: 50px !important
+}
+.pt_0{
+	padding-top: 0 !important
+}
+.pt_30, .py_30 {
+	padding-top: 30px !important
+}
+.pt_10, .py_10 {
+	padding-top: 10px !important
+}
+.pt_15, .py_15 {
+	padding-top: 15px !important
+}
+.pb_0{
+	padding-bottom: 0 
+}
+.pb_10, .py_10 {
+	padding-bottom: 10px !important
+}
+.pb_15, .py_15 {
+	padding-bottom: 15px !important
+}
+.pb_30, .py_30 {
+	padding-bottom: 30px !important
+}
+.pb_40 {
+	padding-bottom: 40px !important
+}
+.pt_5, .py_5 {
+	padding-top: 5px !important
+}
+.pb_5, .py_5 {
+	padding-bottom: 5px !important
+}
+.pt_10, .py_10 {
+	padding-top: 10px !important
+}
+.pb_10, .py_10 {
+	padding-bottom: 10px !important
+}
+.pt_20, .py_20 {
+	padding-top: 20px !important
+}
+.pb_20, .py_20 {
+	padding-bottom: 20px !important
+}
+.pt_30, .py_30 {
+	padding-top: 30px !important
+}
+.pb_30, .py_30 {
+	padding-bottom: 30px !important
+}
+.pt_40, .py_40 {
+	padding-top: 40px !important
+}
+.pb_40, .py_40 {
+	padding-bottom: 40px !important
+}
+.pt_50, .py_50 {
+	padding-top: 50px !important
+}
+.pb_50, .py_50 {
+	padding-bottom: 50px !important
+}
+.pt_80, .py_80 {
+	padding-top: 80px !important
+}
+.pb_80, .py_80 {
+	padding-bottom: 80px !important
+}
+.p_20 {
+	padding: 20px !important
+}
+.p_30 {
+	padding: 30px !important
+}
+.p_40 {
+	padding: 40px !important
+}
+.m_0 {
+	margin: 0 !important
+}
+.mb_0 {
+	margin-bottom: 0 !important
+}
+.mt_10, .my_10 {
+	margin-top: 10px!important
+}
+.mb_10, .my_10 {
+	margin-bottom: 10px!important
+}
+.mt_15, .my_15 {
+	margin-top: 15px!important
+}
+.mb_15, .my_15 {
+	margin-bottom: 15px!important
+}
+.mt_20, .my_20 {
+	margin-top: 20px!important
+}
+.mb_20, .my_20 {
+	margin-bottom: 20px !important
+}
+.mt_25 {
+	margin-top: 25px!important
+}
+.mt_30, .my_30 {
+	margin-top: 30px!important
+}
+.mb_30, .my_30 {
+	margin-bottom: 30px!important
+}
+.mb_40 {
+	margin-bottom: 40px!important
+}
+.mr_0, .mx_0 {
+	margin-right: 0px !important
+}
+.mr_5, .mx_5 {
+	margin-right: 5px !important
+}
+.mr_10 {
+	margin-right: 10px !important
+}
+.mr_15, .mx_15 {
+	margin-right: 15px !important
+}
+.ml_15, .mx_15 {
+	margin-left: 15px !important
+}
+.mr_25, .mx_25 {
+	margin-right: 25px !important
+}
+.mr_30, .mx_30 {
+	margin-right: 30px !important
+}
+.ml_30, .mx_30 {
+	margin-left: 30px !important
+}
+.ml_35, .mx_35 {
+	margin-left: 35px !important
+}
+.mr_20, .mx_20 {
+	margin-right: 20px !important
+}
+.mt_40, .my_40 {
+	margin-top: 40px!important
+}
+.mt_50, .my_50 {
+	margin-top: 50px!important;
+	display: inline-block;
+	width: 100%
+}
+.mb_50, .my_50 {
+	margin-bottom: 50px !important
+}
+.mb_5 {
+	margin-bottom: 5px !important
+}
+.mb_15 {
+	margin-bottom: 15px !important
+}
+.mb_10 {
+	margin-bottom: 10px !important
+}
+.mb_20 {
+	margin-bottom: 20px !important
+}
+.ml_20, .mx_20 {
+	margin-left: 20px !important
+}
+/*==================
+	07. Button Customize
+===================*/
+.btn {
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 0px 30px;
+    text-shadow: none;
+    text-transform: uppercase;
+    line-height: 46px;
+	border-radius: 25px;
+	text-align: center
+}
+.btn-primary:hover {
+    background-color: transparent
+}
+.btn-default {
+    border: 2px solid
+}
+.btn-default {
+    background-color: transparent;
+    border: 2px solid
+}
+.read_more {
+    font-weight: 500;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+.btn-link {
+	font-weight: 500;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+/*===================== 
+	08. Popular Question Section 
+======================*/
+.according_area {
+  margin-bottom: 3px
+}
+.according_title::before {
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  width: 10px
+}
+.according_title {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 44px;
+  overflow: hidden;
+  padding: 0 50px 0 15px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.according_title::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  width: 10px
+}
+.according_title i{
+  margin-right:7px
+}
+.according > div:first-child .according_details {
+  display: inline-block
+}
+.according_details {
+  display: none;
+  padding: 15px
+}
+.margin-top-30{
+	margin-top: 30px
+}
+/*====================
+	09. list style
+=====================*/
+.list_style_1 li{
+	padding-right: 15px
+}
+.list_style_1 li i{
+	margin-right: 7px
+}
+.list_style_2 {
+	display: table;
+	width: 100%
+}
+.list_style_2 li{
+    padding-right: 15px;
+    position: relative;
+    font-size: 17px;
+    float: left;
+    padding-left: 15px;
+	line-height: 40px
+}
+.list_style_2 li:before{
+	position: absolute;
+	content: "\f0da";
+	font-family: FontAwesome;
+	left: 0
+}
+/*====================
+	10. Section Tittle Customize
+====================*/
+.section_title{
+	width: 58%;
+	display: table;
+	margin: 0 auto 30px
+}
+.section_title span {
+    display: block;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+.down_line_center,
+.down_line_left{
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px
+}
+.down_line_center:before,
+.down_line_left:before{
+    content: "";
+    width: 50px;
+    height: 4px;
+    bottom: 0;
+    position: absolute
+}
+.down_line_center:before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sub_title {
+    display: block;
+	font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 65%;
+    margin: 0 auto;
+    color: #6c6c6c;
+    margin-bottom: 40px;
+	line-height: 35px
+}
+.title_area_left .section_title,
+.title_area_left .sub_title {
+	width: 100%
+}
+.inner_title{
+    font-weight: 700
+}
+/*==================== 
+	11. Header CSS Start 
+====================*/
+.top_header li {
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+}
+.nav-on-top{
+    animation-fill-mode: both;
+    width: 100%;
+    z-index: 999;
+	top: 0;
+	position: absolute
+}
+.nav-on-banner {
+    animation-fill-mode: both;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 999;
+}
+@keyframes menu_sticky {
+0% {
+ margin-top: -100px;
+}
+50% {
+ margin-top: -90px;
+}
+100% {
+ margin-top: 0;
+}
+}
+@keyframes menu_sticky {
+0% {
+ margin-top: -100px;
+}
+50% {
+ margin-top: -90px;
+}
+100% {
+ margin-top: 0;
+}
+}
+#header.fixed-header {
+	animation-duration: 1s;
+	animation-name: menu_sticky;
+	animation-timing-function: ease-out;
+	left: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+#header.fixed-header .top_header {
+	display: none;
+}
+.nav_shadow {
+    box-shadow: 0px -4px 15px #000;
+    -webkit-box-shadow: 0px -4px 15px #a5a5a5
+}
+.navbar-toggle {
+    margin: 14px 0
+}
+.top_header{
+	line-height: 50px;
+	font-size: 13px
+}
+.top_profile ul li {
+    float: left;
+    border-right: 1px solid;
+    line-height: 51px;
+}
+.top_profile ul li:first-child {
+    border-left: 1px solid
+}
+.top_profile a {
+    padding: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+/*======================= 
+	12. Nav Header CSS Start
+=======================*/
+.nav_menu .navbar-default {
+    background: none;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px
+}
+.nav.navbar-nav > li > a {
+	font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 26px 12px
+}
+.nav.navbar-nav > li:last-child > a {
+	margin-right: 0
+}
+.dropdown-menu {
+    display: none;
+    z-index: 999;
+	min-width: 190px;
+    left: 0;
+    width: 100%;
+    padding: 0px
+}
+.dropdown-menu li a {
+    padding: 10px 15px;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+	text-transform: capitalize;
+	white-space: inherit
+}
+.dropdown-menu li.dropdown a i {
+    float: right
+}
+/*=========================
+	13. slider css start
+==========================*/
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, 
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+	width: 100%;
+	height: auto
+}
+.carousel-inner>.item {
+	height: 750px
+}
+.slider_content {
+    width: 75%
+}
+.slider_content .slider_subtitle{
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block
+}
+.slider_content .text_area p {
+    padding: 10px 0px;
+	font-size: 20px
+}
+.img-rg img {
+    height: 100vh !important
+}
+.carousel-indicators {
+    display: none
+}
+.left_control,
+.right_control {
+    font-size: 120px;
+    top: 40%
+}
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none
+}
+/*=========================
+	13. Video css start
+==========================*/
+.side_video {
+    border-radius: 50% 0% 0% 50%;
+	text-align: center;
+    padding: 13% 12%;
+    display: table;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%)
+}
+.side_video .inner_title {
+    padding-top: 25px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+.side_video [class^="flaticon-"]:before {
+	font-size: 80px
+}
+.side_video .intro-video {
+	height: 0
+}
+.YouTubePopUp-Wrap {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999
+}
+.YouTubePopUp-Content {
+  background: rgba(0, 0, 0, 0) url("../img/fancybox/fancybox_loading.gif") no-repeat scroll center center;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 680px;
+  position: relative
+}
+.YouTubePopUp-Content iframe {
+  border: medium none;
+  bottom: 0;
+  display: block;
+  height: 480px;
+  margin: auto 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+/*==========================
+	14. Servide CSS Start
+==========================*/
+.service_block_1 {
+    padding: 40px 30px;
+    border-bottom: 3px solid #f5f5f5;
+    border-right: 3px solid #f5f5f5;
+    cursor: pointer;
+}
+.service_block_1 i{
+	float: left;
+	margin-right: 20px
+}
+/*==================================
+	15. Extra Facilities CSS Start
+===================================*/
+.facilities {
+    display: table;
+    box-shadow: 2px 2px 15px -4px #18212f;
+    padding: 50px 45px;
+    width: 100%
+}
+.medical_facility strong {
+    font-size: 18px;
+    color: #1e2937
+}
+/*==========================
+	16. counter Section CSS Start
+===========================*/
+.funfact .amount {
+    font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	line-height: 60px;
+}
+.funfact span {
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 15px;
+    display: block
+}
+.fact-counter {
+	display: table;
+	width: 100%;
+}
+/*========================
+	17. Gallery CSS Start
+=========================*/
+.thumbnail_view .inner_title {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    overflow: hidden;
+    top: 45%;
+    left: 45%;
+    position: absolute
+}
+.thumbnail_view i{
+	font-size: 30px;
+	color: #fff;
+	opacity: 0
+}
+.image_gallery:hover i{
+	opacity: 1
+}
+.image_gallery {
+	cursor: pointer
+}
+/*==============================
+	18. Subscripton CSS Start
+===============================*/
+.subscribe_from .form-control {
+	height: 50px;
+    margin-bottom: 0;
+	width: 67%;
+	border-radius: 25px
+}
+.subscribe p {
+    padding-top: 12px;
+    color: #fff
+}
+.subscribe_from .btn {
+    border-radius: inherit
+}
+.subscribe_from .btn-primary {
+    padding: 0 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 46px;
+	border-radius: 30px
+}
+/*===========================
+	19. We Are Best CSS Start
+===========================*/
+.emeargency_call {
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 25px;
+	width: 100%
+}
+
+.emeargency_call span,
+.emeargency_call i {
+    float: left
+}
+
+.emeargency_call i {
+    padding-right: 20px
+}
+/*========================
+	20. Choose Us CSS Start
+==========================*/
+.time_table_1 .inner_title {
+    text-transform: capitalize;
+    font-weight: 700
+}
+.working_time ul li {
+    font-weight: 500;
+    padding-bottom: 20px
+}
+.working_time ul li span {
+    text-align: right;
+    float: right
+}
+.time_table_1 .btn {
+    width: 100%
+}
+
+/*==============================
+	21. Great Place to Work start
+==============================*/
+.signature img {
+	width: 160px;
+    float: left;
+    margin-right: 30px;
+}
+.great_place .text_area span{
+    margin-top: 30px;
+    display: block;
+}
+.signature {
+    margin-top: 40px
+}
+.signature .sub_title {
+    padding-top: 5px;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
+    display: inline
+}
+.name{
+    font-size: 21px;
+    color: #31343d;
+    font-weight: 700
+}
+/*unnamed css start*/
+.image_gallery:before {
+    bottom: 0;
+    position: absolute;
+    content: "";
+    left: 0;
+	top: 100%;
+    width: 100%
+}
+.image_gallery:hover:before {
+    top: 0
+}
+.appointment{
+	width: 90%
+}
+.appointment span{
+	font-size: 36px
+}
+.member_profile .overlay:before{
+	top: 100%
+}
+.member_profile:hover .overlay:before{
+	top: 0px
+}
+.member_profile .social_boxicon {
+	opacity: 0
+}
+.member_profile:hover .social_boxicon {
+	opacity: 1
+}
+.social_boxicon{
+	width: 138px
+}
+/*===============================
+	22. Blog CSS Start
+================================*/
+.thumbnail_block_1 .read_more i.fa{
+	margin-left: 5px
+}
+.thumbnail_block_1 .read_more:hover i.fa{
+	margin-left: 10px
+}
+.thumbnail_block_1, .thumbnail_block_2{
+	display: inline-block;
+	width: 100%
+}
+.thumbnail_content {
+    min-height: 170px;
+	padding: 15px 20px
+}
+.thumbnail_content .inner_title {
+    font-weight: 600;
+    padding: 10px 0 20px;
+    font-family: 'Barlow', sans-serif;
+	font-size: 21px
+}
+.thumbnail_content .date {
+    color: #a5a5a5
+}
+/*===========================
+	19. Team style Circle CSS Start
+===========================*/
+.member_img.circle{
+	width: 290px;
+	height: 290px;
+	margin: 0 auto
+}
+.member_img.circle img{
+	width: auto;
+	height: 100%
+}
+/*==========================
+	23. Footer CSS Start
+==========================*/
+.footer_full .help_area_2{
+	position: absolute;
+	top: -160px
+}
+.icon_number i,
+.email i {
+    margin-right: 10px
+}
+.footer_box {
+    position: relative
+}
+.footer_box:before {
+    position: absolute;
+	content: "";
+	width: 1px;
+	height: 120px;
+	left: -20px
+}
+.footer_box .footer_minititle,
+.footer_minititle {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.footer_box p {
+    font-weight: 600;
+	font-size: 15px
+}
+.footer_widget .widget_title {
+    font-weight: 700;
+    margin: 60px 0px 30px 0px
+}
+.recent_post ul li a {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 600
+}
+.footer_content li {
+    margin-bottom: 10px
+}
+.footer_full .help_area {
+    position: absolute;
+    top: -36%;
+}
+/* .icon_number {
+    font-size: 21px;
+    font-weight: 700
+}
+.icon_number a i {
+    font-size: 20px
+} */
+.footer_logo {
+    padding: 25px 0px;
+	width: 155px
+}
+.unicoder_copy {
+    border-top: 1px solid;
+    margin-top: 45px
+}
+
+/*==========================
+	24. Dental Header CSS
+==========================*/
+.header_2 {
+    position: absolute;
+    width: 95%;
+    left: 50%;
+    top: 20px
+}
+.header_2 .nav_header {
+	padding: 5px 0
+}
+.header_2 {
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#header.header_2.fixed-header {
+	transform: none
+}
+.nav-contact {
+	padding-left: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px
+}
+.nav-contact li.call_us {
+	line-height: 50px;
+	position: relative;
+	padding-right: 15px;
+	font-weight: 600;
+	font-size: 16px
+}
+.call_us .glyph-icon:before {
+	position: relative;
+    top: 8px;
+    left: -8px;
+    font-size: 36px;
+	font-weight: normal
+}
+
+/*==========================
+	25. Dental Index
+==========================*/
+.video [class^="flaticon-"]:before {
+    font-size: 90px;
+}
+.video-popup {
+    float: left;
+    margin-right: 20px;
+    Position: relative;
+    z-index: 1;
+}
+.text_block_1 .call_us {
+    font-size: 24px;
+    font-weight: bold;
+}
+.feature_box.text_block_1, 
+.feature_box.time_table_1 {
+    height: 430px;
+}
+.medical_service {
+    z-index: 1;
+	position: relative
+}
+.service_block_5 {
+    border-right: 1px solid transparent;
+}
+/* progress-bar */
+.progress_chart{
+	margin-top: 220px
+}
+.progress{
+	height: 10px
+}
+.prgs-bar > span {
+  font-weight: 500
+}
+.skill-progress .progress {
+  margin: 5px 0 35px;
+  position: relative;
+  overflow: visible
+}
+.skill-percent {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: -25px;
+  z-index: 9
+}
+.skill-percent {
+  font-weight: bold
+}
+.progress-bar {
+  transition: all 3000ms ease 0s;
+  width: 0;
+  background-color: #fff;
+  border-radius: 5px
+}
+
+/*==========================
+	25. Testimonial Style
+==========================*/
+.client_info{
+	display: inline-block;
+	width: 100%
+}
+.client_info img{
+	width: 80px
+}
+.client_info .circle{
+	float: left;
+	margin-right: 20px
+}
+.clients .owl-controls .owl-nav{
+	position: absolute;
+	left: 50%;
+	font-size: 30px
+}
+.clients .owl-controls .owl-nav .owl-prev{
+	margin-left: -12px
+}
+.clients .owl-controls .owl-nav .owl-next{
+	margin-left: 12px
+}
+
+/*==================================
+	26. Get An Appointment CSS Start
+===================================*/
+.get_appointment {
+	height: 700px
+}
+.ui-widget{
+	font-family: 'Barlow', sans-serif
+}
+.ui-datepicker{
+	width: 300px !important;
+	padding: 30px 7px 7px 7px !important
+}
+.ui-widget-content,
+.ui-widget-header, .ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight{
+	border: none !important
+}
+.ui-datepicker .ui-datepicker-title{
+	line-height: 35px !important
+}
+
+/*==================================
+	27. Header Style 3
+===================================*/
+.header_3 .top_header {
+	border-bottom: 1px solid transparent;
+}
+.header_3 .top_profile a {
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==================================
+	28. Features Box
+===================================*/
+.features .text_block_3 {
+	border-right: 1px solid transparent
+}
+.features .text_block_3:hover,
+.features .text_block_3:hover a,
+.features .text_block_3:hover [class^="flaticon-"]:before {
+	color: #fff
+}
+
+/*==================================
+	29. Service block for eye
+===================================*/
+.service_block_4 span {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    border-radius: 50%;
+}
+.service_block_4 span [class^="flaticon-"]:before {
+    line-height: 130px;
+}
+
+/*==================================
+	30. Quality & Perfomance
+===================================*/
+.photo_box:nth-child(odd) {
+    margin-right: 10px;
+}
+.photo_box {
+    width: 48%;
+    float: left;
+    margin-bottom: 10px;
+}
+.photo_box .digite {
+    font-size: 95px;
+    line-height: normal;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==================================
+	31. Header Four
+===================================*/
+.header_4 .nav-contact {
+	padding-left: 45px;
+	margin-right: -15px
+}
+
+/*==================================
+	32. Intro Video Mini
+===================================*/
+.intro-video.intro-mini {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+/*==================================
+	33. Choose us Physiotherapy home
+===================================*/
+.choose_us {
+    display: flex;
+	width: 100%
+}
+.choose_us .list_style_2 li:before {
+	color: #fff
+}
+.choose_img_box {
+	margin-left: -15px;
+	margin-right: -15px;
+	overflow: hidden;
+	height: 100%
+}
+
+/*==================================
+	34. Appointment for Physiotherapy
+===================================*/
+.bg_set_after:before {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/*==================================
+	35. Header Five Diagnostic
+===================================*/
+.middle-header .rotate_icon_block {
+    display: table;
+    float: left;
+    padding: 12px 0 0;
+}
+.middle_header_icon {
+    display: table;
+    border: 2px solid #eee;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    float: left;
+}
+.middle_header_icon, .middle_header_icon {
+    transform: rotate(45deg);
+    -moz-transition: rotate(45deg);
+    -ms-transition: rotate(45deg);
+    -o-transition: rotate(45deg);
+    -webkit-transition: rotate(45deg);
+}
+.middle_header_icon i {
+    display: inline-block;
+}
+.middle_header_icon [class^="flaticon-"]:before {
+    line-height: 51px;
+}
+.middle-header .contact-number {
+    margin-left: 80px;
+    padding: 4px 0;
+    margin-right: 30px;
+}
+.middle-header .rotate_icon_block span {
+    font-weight: 600;
+}
+.middle-header .rotate_icon_block p {
+    font-size: 13px;
+	margin: 0
+}
+.header_5 .nav.navbar-nav li a {
+	color: #fff
+}
+.header_5 .nav.navbar-nav > li > a {
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+.header_5 .navbar-default .btn {
+    float: right;
+    line-height: 64px;
+    border-radius: 0;
+	margin-right: -15px;
+}
+#header.fixed-header .middle-header {
+	display: none
+}
+/*==================================
+	35. Available Test Diagnostic
+===================================*/
+.test_category {
+    position: relative;
+    width: 100%;
+}
+.test_category li {
+    margin-bottom: 10px;
+    font-weight: 500;
+	line-height: 30px
+}
+
+/*==================================
+	36. Video Section Diagnostic
+===================================*/
+.mt-50 {
+	margin-top: -50px
+}
+.fade_overlay_tb {
+	position: relative
+}
+.fade_overlay_tb:before {
+    bottom: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.fade_overlay_tb:before {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f4f4+70,f7f7f7+100&1+40,0.4+100 */
+	background: -moz-linear-gradient(top, rgba(244,244,244,1) 40%, rgba(244,244,244,0.7) 70%, rgba(247,247,247,0.4) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(244,244,244,1) 40%,rgba(244,244,244,0.7) 70%,rgba(247,247,247,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(244,244,244,1) 40%,rgba(244,244,244,0.7) 70%,rgba(247,247,247,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#66f7f7f7',GradientType=0 ); /* IE6-9 */
+}
+
+/*==================================
+	37. Nav Search Form Veterinary
+===================================*/
+.nav_search_form {
+	position: relative;
+	margin: 11px 0;
+	width: 250px;
+	margin-right: -15px
+}
+.nav_search_form input {
+	background: #fff;
+	width: 100%
+}
+.nav_search_form button {
+    position: absolute;
+    right: 20px;
+	background: none;
+	border: none;
+    top: 8px;
+    cursor: pointer;
+	right: 10px
+}
+
+/*==================================
+	38. Search On Slider Eye
+===================================*/
+.search_on_slider {
+	z-index: 99;
+	margin-top: 20px
+}
+.search_on_slider input[type="search"] {
+	width: 380px;
+	background: transparent;
+	border-radius: 25px;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 0 35px 0 20px
+}
+.search_on_slider button {
+    position: absolute;
+    right: 20px;
+	background: none;
+	border: none;
+    top: 8px;
+    cursor: pointer;
+	right: 10px
+}
+.search_on_slider button i {
+	color: #fff
+}
+.search_on_slider input[type="search"]::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+.search_on_slider input[type="search"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+.search_on_slider input[type="search"]::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+.search_on_slider input[type="search"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+.search_on_slider input[type="search"]::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+.search_on_slider input[type="search"]::placeholder { /* Most modern browsers support this now. */
+   color:    #fff;
+}
+
+/*==================================
+	38. Physiotherapy Header
+===================================*/
+.header_4 .nav.navbar-nav li a {
+	color: #fff;
+	font-weight: 500;
+}

@@ -1,0 +1,289 @@
+.btn-primary {
+	color: #fff;
+	background-color: #01a1d5
+}
+.btn-primary:hover{
+	color: #01a1d5
+}
+.btn-default {
+	color: #01a1d5;
+	background-color: #fff
+}
+.btn-default:hover{
+	background-color: transparent;
+	color: #fff
+}
+/*===== Font Color CSS =====*/
+body{
+	color: #6c6c6c
+}
+.color_gray, .color_gray_a a{
+	color: #6c6c6c
+}
+.recent-news.sidebar-widget li span, .color_gray_2_a a, 
+.recent-news.sidebar-widget li span, .color_gray_2{
+	color: #ababab
+}
+.color_white, .color_white_a a, 
+.flat_white [class^="flaticon-"]:before{
+    color: #fff
+}
+.color_primary, .color_primary_a a, .icon_primary i,
+.flat_primary [class^="flaticon-"]:before,
+.flat_primary .glyph-icon:before {
+    color: #01a1d5
+}
+h1, h2, h3, h4, h5, h6,
+.color_secondary, .color_secondary_a a, .icon_secondary i,
+.flat_secondary [class^="flaticon-"]:before,
+.flat_secondary .glyph-icon:before,
+.nav-contact li.call_us {
+    color: #31343d
+}
+/*===== Background Color CSS =====*/
+.bg_primary {
+    background-color: #01a1d5
+}
+.bg_secondary {
+    background-color: #31343d
+}
+.bg_white {
+    background-color: #ffffff
+}
+.bg_gray {
+    background-color: #f5f5f5
+}
+.bg_gray_2 {
+    background-color: #eeeeee
+}
+/*===== Overlay Color CSS =====*/
+.overlay_white:before, .progress{
+	background-color: rgba(255, 255, 255, 0.5)
+}
+.overlay-1::before {
+    background-color: rgba(49, 52, 61, 0.75)
+}
+.overlay-2::before{
+	background-color: rgba(0, 0, 0, 0.75)
+}
+.overlay:before, .image_gallery:hover:before {
+    background-color: rgba(1, 161, 213, 0.73);
+}
+.overlay_gradient:before{
+	background: -moz-linear-gradient(to right, rgba(129, 197, 67,.5) 0%, rgba(255,255,255,.5) 100%);
+	background: -webkit-linear-gradient(to right, rgba(129, 197, 67,.5) 0%,rgba(255,255,255,.5) 100%);
+	background: linear-gradient(to right, rgba(129, 197, 67,.5) 0%,rgba(255,255,255,.5) 100%)
+}
+/*===== Border Color CSS =====*/
+.top_profile ul li:first-child, .top_profile ul li , 
+.nav_header, .btn-default, .social_boxicon a:hover, 
+.sidebar_style2 input{
+	border-color: #fff
+}
+.btn-primary:hover, blockquote, .month_table table td.active .date,
+.month_table table td:hover .date, .shop-product img, 
+.owl-carousel .owl-controls .owl-dot.active span{
+	border-color: #01a1d5
+}
+.unicoder_copy, .blog_details .list_style_1,
+.post_status, .timeshedule td, .timeshedule th,
+.departments {
+	border-color: #e1e1e1
+}
+.service_block_5, .header_3 .top_header, .header_3 .top_profile ul li,
+.form_3 .form-control, .form_3 select, .features .text_block_3{
+	border-color: #e1e1e1
+}
+/*===== Nav Color CSS =====*/
+.nav.navbar-nav > li > a {
+	color: #31343d
+}
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a {
+	background: transparent;
+	color: #01a1d5
+}
+.dropdown-menu > li > a {
+	color: #fff
+}
+.nav.navbar-nav > li > a:hover,
+.header_5 .nav.navbar-nav > li > a:hover,
+.header_4 .nav.navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.header_5 .navbar-default .navbar-nav .active a,
+.header_5 .navbar-default .navbar-nav .active a:focus,
+.header_5 .navbar-default .navbar-nav .active a:hover,
+.header_4 .navbar-default .navbar-nav .active a,
+.header_4 .navbar-default .navbar-nav .active a:focus,
+.header_4 .navbar-default .navbar-nav .active a:hover,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover{
+    color: #01a1d5;
+    background-color: transparent
+}
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover,
+.nav .open>a, .nav .open>a:focus, 
+.nav .open>a:hover {
+    color: #fff;
+    background-color: #01a1d5
+}
+.dropdown-menu {
+	background-color: #31343d
+}
+.header_4.fixed-header .nav_header.bg_secondary {
+	background-color: #31343d
+}
+/*===== Other Color CSS =====*/
+.form-control, select {
+	background-color: #f5f5f5
+}
+.down_line_center:before, .down_line_left:before, .loader-animation {
+    background-color: #01a1d5
+}
+/*===== Home Page Font Color CSS =====*/
+.service_block_1:hover, .service_block_1:hover a,
+.service_block_1:hover [class^="flaticon-"]:before, 
+.service_block_4:hover [class^="flaticon-"]:before,
+.faq_item.active .question_toogle{
+	color: #fff
+}
+.list_style_2 li:before, .thumbnail_content a:hover,
+.footer_widget li a:hover, .social_icon li a:hover,
+.service_block_4:hover a, .test_category li a:hover{
+	color: #01a1d5
+}
+/*===== Home Page BG Color CSS =====*/
+.service_block_1:hover, .service_block_4:hover span, .bg_set_after:before,
+.faq_item.active .question_toogle, .features .text_block_3:hover{
+	background-color: #01a1d5
+}
+#header.fixed-header,
+.bg_primary .down_line_center:before, 
+.bg_primary  .down_line_left:before,
+.footer_box:before, .middle-header {
+	background-color: #fff
+}
+/*===-===============DATE_PICKER COLOR CSS========================*/
+.ui-widget-content, .ui-state-active, .ui-widget-content .ui-state-active {
+	background-color: #31343d !important
+}
+.ui-widget-header, .ui-state-highlight, .ui-state-hover:hover {
+	background-color: #01a1d5 !important
+}
+.ui-datepicker-week-end {
+	color: #01a1d5 !important
+}
+.ui-widget-content, .ui-datepicker .ui-datepicker-title, 
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight, .ui-state-hover:hover{
+	color: #fff !important
+}
+/*===-===============TIME_PICKER COLOR CSS========================*/
+.ui-timepicker-standard a {
+	color: #fff !important
+}
+.ui-timepicker-standard .ui-state-hover{
+	background-color: #fff !important;
+	color: #01a1d5 !important
+}
+/*===-================================================================================= 
+									Inner Page Color CSS 
+======================================================================================*/
+.banner_info li:last-child, .feature:hover a, .social_boxicon a:hover, .member_profile:hover .member_description  a,
+.service_block_2:hover a, .service_block_3:hover i, .comment-detail > span i, .pagination li.active a,
+.sidebar-widget li a:hover, .pagination li a:hover, .doctor_contact li strong,
+.services.sidebar-widget a:hover, .text_block_3:hover a, .text_block_4 a:hover,
+.month_table table td.active .date, .stars i, .product-item:hover a,
+.cart_item .product-name a:hover, .doctors .details  a:hover, .medical_service .inner_title a:hover{
+	color: #01a1d5
+}
+.text_block_4 span, .service_block_3:hover, .filter-btns li:hover,
+.according_title.active, .form_3 select, .filter-btns li.active,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-prev:hover,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-next:hover,
+.month_table table td:hover .date, .owl-carousel .owl-controls .owl-dot.active span,
+.price-filter.sidebar-widget .filter-range, .shop-add a.btn:hover,
+.price-filter.sidebar-widget .filter-range::before, .tags2.sidebar-widget a,
+.price-filter.sidebar-widget .filter-range::after, .product-item .sale,
+.product-item .new, .quantity input[type="number"], .nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover,
+.nav-tabs > li > a:hover, .pagination_style2 ul li a:hover, .pagination_style2 ul li.active a {
+	background-color: #01a1d5
+}
+.service_block_3:hover, .service_block_3:hover a, .filter-btns li:hover, 
+.filter-btns li.active, .according_title.active, .sidebar_style2 .form_3 select,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-next,
+.month_table table td:hover .date, .shop-add a.btn:hover, .tags2.sidebar-widget a,
+.tags2.sidebar-widget a:hover, .nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover,
+.nav-tabs > li > a:hover {
+	color: #fff
+}
+.social_boxicon a:hover, .service_block_3:hover span,
+.according_title.active::before, .according_title.active::after,
+.service_block_3, .according_title, blockquote,
+.line_white:before, .timeshedule tr:nth-child(odd),
+.sidebar_style2 .form_3 .btn, .intro-video i.fa,
+.form_2 .form-control, .form_2 textarea, .form_2 select {
+	background-color: #fff
+}
+.category_block_1.sidebar-widget a:hover, blockquote, .comment-detail > span a,
+.table.shop_table th,
+.services.sidebar-widget a, .cart_item .product-name a, .sidebar_style3 .inner-title,
+.price-filter.sidebar-widget .pricing-value p, .price-box span,
+.single-product-info .about_product tr td:first-child, .product-item a,
+.shop-product a, .nav-tabs a, .product-remove a, .category_block_1 li a:hover{
+	color: #31343d
+}
+.according_title::before, .according_title::after,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl_side_arrow.owl-carousel .owl-controls .owl-nav .owl-next,
+.month_table tr:first-child, .sidebar_style3 .inner-title:after{
+	background-color: #31343d
+}
+.timeshedule .designation, .shop-category a{
+	color: #6c6c6c
+}
+.filter-btns li{
+	background-color: #eaeaea
+}
+
+.sidebar_style2 .form_3 .form-control::-webkit-input-placeholder {
+	color:#fff
+}
+
+@media (max-width:991px){
+.dropdown-menu,
+.nav .open>a, .nav .open>a:focus, 
+.nav .open>a:hover {
+	background-color: transparent
+}
+.nav .open>a, .nav .open>a:focus, 
+.nav .open>a:hover,
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+	color: #01a1d5
+}
+.nav_item > li > a, .dropdown-menu > li > a {
+	color: #31343d
+}
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover {
+	background: transparent;
+	color: #31343d
+}
+}
+
+.sidebar_style2 input {
+	color: #fff;
+}
+
+.rdtPicker,
+.sidebar_style2 .form_3 .btn {
+  color: #01a1d5;
+}
