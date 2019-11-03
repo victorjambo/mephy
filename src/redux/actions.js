@@ -1,9 +1,9 @@
 import { toast } from 'react-toastify';
 
 import firebase from '../helpers/firebase';
-
 import fixtures from '../fixtures/v2';
 import fixturesV1 from '../fixtures/v1';
+import df from '../helpers/dynamicFilters';
 
 
 const error = () => toast.warn('There was an error submitting the email. Try reloading the page');
@@ -25,17 +25,17 @@ export const getService = id => (dispatch, getState, { getFirestore }) => {
   firestore.get({ collection: 'services', doc: id });
 };
 
-export const getProducts = categoryId => (dispatch, getState, { getFirestore }) => {
+export const getProducts = filters => (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
-  let query = { collection: 'products' };
-  if (categoryId) {
-    const categoryDocRef = firebase.firestore().collection('categories').doc(categoryId);
-    query = {
-      ...query,
-      where: ['category', '==', categoryDocRef]
-    };
-  }
-  firestore.get(query);
+
+  firestore.get(df('products', {
+    collection: 'categories',
+    fields: {
+      fields: 'category',
+      operator: '==',
+      value: filters
+    }
+  }));
 };
 
 export const getProduct = id => (dispatch, getState, { getFirestore }) => {
