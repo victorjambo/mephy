@@ -1,6 +1,7 @@
 {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
+  "main": "./express.js",
   "scripts": {
     "lint": "eslint .",
     "serve": "firebase serve --only functions",
@@ -8,22 +9,40 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "serve:firestore": "firebase serve --only firestore"
+    "start:express": "babel-node express.js",
+    "start:express:dev": "NODE_ENV=development  DEBUG=log  nodemon --exec babel-node express.js",
+    "serve:firestore": "firebase serve --only firestore",
+    "db:sequelize": "node_modules/.bin/sequelize",
+    "db:seed": "node_modules/.bin/sequelize db:seed:all",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate"
   },
   "engines": {
     "node": "8"
   },
   "dependencies": {
+    "babel-plugin-transform-class": "^0.3.0",
     "circular-json": "^0.5.9",
     "cors": "^2.8.5",
-    "firebase-admin": "~7.0.0",
-    "firebase-functions": "^2.3.0",
-    "nodemailer": "^6.2.1"
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "firebase-admin": "^8.7.0",
+    "firebase-functions": "^3.3.0",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.2.1",
+    "pg": "^7.12.1",
+    "sequelize": "^5.21.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.12.0",
     "eslint-plugin-promise": "^4.1.1",
-    "firebase-functions-test": "^0.1.6"
+    "firebase-functions-test": "^0.1.6",
+    "sequelize-auto-migrations": "^1.0.3",
+    "sequelize-cli": "^5.5.1"
   },
   "private": true
 }
