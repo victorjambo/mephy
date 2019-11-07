@@ -1,7 +1,6 @@
 {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
-  "main": "./express.js",
   "scripts": {
     "lint": "eslint .",
     "serve": "firebase serve --only functions",
@@ -9,9 +8,6 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "start:express": "babel-node express.js",
-    "start:express:dev": "NODE_ENV=development  DEBUG=log  nodemon --exec babel-node express.js",
-    "serve:firestore": "firebase serve --only firestore",
     "db:sequelize": "node_modules/.bin/sequelize",
     "db:seed": "node_modules/.bin/sequelize db:seed:all",
     "db:migrate": "node_modules/.bin/sequelize db:migrate"

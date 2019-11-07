@@ -1,8 +1,8 @@
-const homeRouter = require('./Home');
+const healthcheck = require('./Healthcheck');
+const { appointments, contactUs } = require('./Mailer');
 
-const routes = (app) => {
-  app.use('/', homeRouter);
-  return app;
+module.exports = {
+  healthcheck,
+  appointments,
+  contactUs
 };
-
-module.exports = routes;
