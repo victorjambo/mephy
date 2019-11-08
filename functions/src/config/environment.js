@@ -1,0 +1,9 @@
+module.exports = {
+  NODE_ENV: process.env.NODE_ENV || 'production',
+  DATABASE_URL: process.env.DATABASE_URL,
+  DATABASE_DIALECT: process.env.DATABASE_DIALECT,
+  DATABASE_USERNAME: process.env.DATABASE_USERNAME,
+  DATABASE_PASSWORD: process.env.DATABASE_PASSWORD,
+  DATABASE_NAME: process.env.DATABASE_NAME,
+  DATABASE_HOST: process.env.DATABASE_HOST
+};
