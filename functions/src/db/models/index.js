@@ -12,7 +12,10 @@ let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
+  sequelize = new Sequelize('mephy-db', 'postgres', 'xpaixC8pL8uBC2le', {
+    host: '34.70.226.199',
+    dialect: 'postgres'
+  });
 }
 
 fs
@@ -29,6 +32,6 @@ Object.keys(db).forEach((modelName) => {
   }
 });
 
-db.Sequelize = Sequelize;
+db.Sequelize = sequelize;
 
 module.exports = db;
