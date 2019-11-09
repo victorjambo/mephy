@@ -2,17 +2,17 @@ const db = require('../../../db');
 
 module.exports = function(_, res) {
   db
-    .query('SELECT version()')
-    .then(({ rows: [{ version }] }) => {
+    .raw('SELECT current_database()')
+    .then(({ rows: [{ current_database }] }) => {
       return res.send({
         message: 'Welcome to Mephys Physiotherapy mothership',
-        db: version
+        current_database,
       });
     })
     .catch(err => {
       return res.json({
         message: 'Welcome to Mephys Physiotherapy mothership',
-        db: err
+        err,
       });
     });
 }
