@@ -7,10 +7,7 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log",
-    "db:sequelize": "node_modules/.bin/sequelize",
-    "db:seed": "node_modules/.bin/sequelize db:seed:all",
-    "db:migrate": "node_modules/.bin/sequelize db:migrate"
+    "logs": "firebase functions:log"
   },
   "engines": {
     "node": "8"
@@ -26,7 +23,6 @@
     "firebase-functions": "^3.3.0",
     "http-errors": "^1.7.3",
     "knex": "^0.20.1",
-    "knex-migrate-sql-file": "^1.0.3",
     "morgan": "^1.9.1",
     "nodemailer": "^6.2.1",
     "pg": "^7.12.1",

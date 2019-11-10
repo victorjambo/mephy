@@ -1,44 +1,31 @@
-// Update with your config settings.
+const functions = require('firebase-functions');
+
+const { db } = functions.config();
 
 module.exports = {
-
   development: {
-    client: 'sqlite3',
-    connection: {
-      filename: './dev.sqlite3'
-    }
+    client: 'pg',
+    connection: 'postgres://localhost/mephy_development'
   },
 
-  staging: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
+  test: {
+    client: 'pg',
+    connection: 'postgres://localhost/mephy_test'
   },
 
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    client: 'pg',
+    connection: db,
     pool: {
-      min: 2,
-      max: 10
+      min: 5,
+      max: 5,
+      createTimeoutMillis: 30000,
+      idleTimeoutMillis: 600000,
+      createRetryIntervalMillis: 200,
+      acquireTimeoutMillis: 600000
     },
     migrations: {
       tableName: 'knex_migrations'
-    }
+    },
   }
-
 };
