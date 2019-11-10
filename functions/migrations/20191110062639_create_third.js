@@ -1,9 +1,9 @@
 exports.up = function (knex) {
   return Promise.all([
     knex.schema.createTable('products_categories', (table) => {
-      table.increments();
-      table.integer('product_id').references('products.id');
-      table.integer('category_id').references('categories.id');
+      table.string('id').primary()
+      table.string('product_id').references('products.id');
+      table.string('category_id').references('categories.id');
     })
   ])
 }

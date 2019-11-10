@@ -1,4 +1,5 @@
-var knex = require('../../db');
+const knex = require('../../db');
+const pushId = require('../helpers/pushId');
 
 class ModelOperations {
   constructor(modelName) {
@@ -14,6 +15,7 @@ class ModelOperations {
   }
 
   create(payload) {
+    payload.id = pushId()
     return knex(this.modelName)
       .returning('*')
       .insert(payload);

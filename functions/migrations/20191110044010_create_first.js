@@ -1,7 +1,7 @@
 exports.up = function (knex) {
   return Promise.all([
     knex.schema.createTable('users', (table) => {
-      table.increments('id')
+      table.string('id').primary()
       table.string('username').notNullable()
       table.string('password').notNullable()
       table.string('service').notNullable()
@@ -12,15 +12,15 @@ exports.up = function (knex) {
       table.timestamps()
     }),
     knex.schema.createTable('anatomies', (table) => {
-      table.increments();
+      table.string('id').primary()
       table.text('title');
     }),
     knex.schema.createTable('brands', (table) => {
-      table.increments();
+      table.string('id').primary()
       table.text('title');
     }),
     knex.schema.createTable('categories', (table) => {
-      table.increments();
+      table.string('id').primary()
       table.text('title');
       table.text('description');
       table.text('faIcon');
