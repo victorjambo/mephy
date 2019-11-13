@@ -1,4 +1,4 @@
-const { Brands } = require('../../models');
+const { Brands } = require('../../db/models');
 const Response = require('../../helpers/Response')
 
 const msg = {
@@ -13,11 +13,10 @@ const msg = {
 class BrandController extends Response {
   static async gets(_, res) {
     try {
-      return await Brands.getAll()
-        .then(data => {
-          return super.success(res, msg.fetch, 200, data);
-        })
-        .catch(err => errorResponse(res, err))
+      const brands = await Brands.findAll({
+        order: [['createdAt', 'DESC']]
+      });
+      return super.success(res, msg.fetch, 200, brands)
     } catch (error) {
       return super.error(res, super.envErrors(error), 500);
     }
@@ -26,14 +25,8 @@ class BrandController extends Response {
   static async get(req, res) {
     const { id } = req.params;
     try {
-      return await Brands.getOne(id)
-        .then(data => {
-          if (!data.length) {
-            return super.error(res, msg.notFound, 404);
-          }
-          return super.success(res, msg.fetch, 200, data);
-        })
-        .catch(err => super.error(res, err, 400));
+      const brand = Brands.findByPk(id)
+      return super.success(res, msg.fetch, 200, brand)
     } catch (error) {
       return super.error(res, super.envErrors(error), 500);
     }
@@ -43,11 +36,7 @@ class BrandController extends Response {
     const { body } = req;
     try {
       const data = await Brands.create(body);
-      return res.status(201).json({
-        data,
-        success: true,
-        message: msg.create
-      });
+      return super.success(res, msg.create, 201, data)
     } catch (error) {
       return super.error(res, super.envErrors(error), 500);
     }
@@ -59,10 +48,13 @@ class BrandController extends Response {
       params: { id }
     } = req;
     try {
-      const data = await Brands.update(id, body);
-      return data.length
-        ? super.success(res, msg.updated, 200, data)
-        : super.error(res, msg.notFound, 404);
+      const [exitCode, [brand]] = await Brands.update(body, {
+        returning: true,
+        where: { id }
+      });
+      return exitCode
+        ? super.success(res, message, 200, brand)
+        : super.error(res, notFound, 404);
     } catch (error) {
       return super.error(res, super.envErrors(error), 500);
     }
@@ -71,7 +63,9 @@ class BrandController extends Response {
   static async delete(req, res) {
     const { id } = req.params;
     try {
-      const exitCode = await Brands.delete(id);
+      const exitCode = await Products.destroy({
+        where: { id }
+      });
       return exitCode
         ? super.success(res, msg.delete, 200)
         : super.error(res, msg.notFound, 404);

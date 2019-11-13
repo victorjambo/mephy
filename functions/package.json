@@ -7,13 +7,17 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "db:sequelize": "node_modules/.bin/sequelize",
+    "db:seed": "node_modules/.bin/sequelize db:seed:all",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate"
   },
   "engines": {
     "node": "8"
   },
   "dependencies": {
     "babel-plugin-transform-class": "^0.3.0",
+    "bluebird": "^3.7.1",
     "circular-json": "^0.5.9",
     "cors": "^2.8.5",
     "debug": "^4.1.1",
@@ -22,11 +26,10 @@
     "firebase-admin": "^8.7.0",
     "firebase-functions": "^3.3.0",
     "http-errors": "^1.7.3",
-    "knex": "^0.20.1",
     "morgan": "^1.9.1",
     "nodemailer": "^6.2.1",
     "pg": "^7.12.1",
-    "sqlite3": "^4.1.0"
+    "sequelize": "^5.21.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -34,7 +37,8 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.12.0",
     "eslint-plugin-promise": "^4.1.1",
-    "firebase-functions-test": "^0.1.6"
+    "firebase-functions-test": "^0.1.6",
+    "sequelize-cli": "^5.5.1"
   },
   "private": true
 }

@@ -1,3 +1,3 @@
-import { REGEX } from './constants';
+const { REGEX } = require('./constants');
 
-export default (str, type) => REGEX[type].test(str);
+module.exports = (str, type) => REGEX[type].test(str);

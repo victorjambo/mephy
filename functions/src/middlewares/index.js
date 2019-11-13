@@ -1,5 +1,5 @@
-import Validator from './Validator';
+const Validator = require('./Validator');
 
-export default {
+module.exports = {
   Validator
 };

@@ -1,4 +1,4 @@
-const { Products } = require('../../models');
+const models = require('../../db/models');
 const Response = require('../../helpers/Response')
 
 const msg = {
@@ -13,11 +13,10 @@ const msg = {
 class ProductController extends Response {
   static async gets(_, res) {
     try {
-      return await Products.getAll()
-        .then(data => {
-          return super.success(res, msg.fetch, 200, data);
-        })
-        .catch(err => errorResponse(res, err))
+      const products = await models.Products.findAll({
+        order: [['createdAt', 'DESC']]
+      });
+      return super.success(res, msg.fetch, 200, products)
     } catch (error) {
       return super.error(res, super.envErrors(error), 500);
     }
@@ -26,15 +25,14 @@ class ProductController extends Response {
   static async get(req, res) {
     const { id } = req.params;
     try {
-      return await Products.getOne(id)
-        .then(data => {
-          if (!data.length) {
-            return super.error(res, msg.notFound, 404);
-          }
-          return super.success(res, msg.fetch, 200, data);
-        })
-        .catch(err => super.error(res, err, 400));
+      const product = await models.Products.findOne({
+        where: { id }
+      });
+      return product
+        ? super.success(res, msg.fetch, 200, product)
+        : super.error(res, msg.notFound, 404);
     } catch (error) {
+      console.log({error})
       return super.error(res, super.envErrors(error), 500);
     }
   }
@@ -42,12 +40,8 @@ class ProductController extends Response {
   static async create(req, res) {
     const { body } = req;
     try {
-      const data = await Products.create(body);
-      return res.status(201).json({
-        data,
-        success: true,
-        message: msg.create
-      });
+      const data = await models.Products.create(body);
+      return super.success(res, msg.create, 201, data)
     } catch (error) {
       return super.error(res, super.envErrors(error), 500);
     }
@@ -59,9 +53,12 @@ class ProductController extends Response {
       params: { id }
     } = req;
     try {
-      const data = await Products.update(id, body);
-      return data.length
-        ? super.success(res, msg.updated, 200, data)
+      const [exitCode, [product]] = await models.Products.update(body, {
+        returning: true,
+        where: { id }
+      });
+      return exitCode
+        ? super.success(res, msg.updated, 200, product)
         : super.error(res, msg.notFound, 404);
     } catch (error) {
       return super.error(res, super.envErrors(error), 500);
@@ -71,7 +68,9 @@ class ProductController extends Response {
   static async delete(req, res) {
     const { id } = req.params;
     try {
-      const exitCode = await Products.delete(id);
+      const exitCode = await models.Products.destroy({
+        where: { id }
+      });
       return exitCode
         ? super.success(res, msg.delete, 200)
         : super.error(res, msg.notFound, 404);

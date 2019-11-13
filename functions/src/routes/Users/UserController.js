@@ -1,4 +1,4 @@
-const { Users } = require('../../models');
+const { Users } = require('../../db/models');
 const Response = require('../../helpers/Response')
 
 const msg = {

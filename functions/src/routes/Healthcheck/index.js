@@ -1,9 +1,9 @@
-const db = require('../../../db');
+const { sequelize } = require('../../db/models');
 
 module.exports = function(_, res) {
-  db
-    .raw('SELECT current_database()')
-    .then(({ rows: [{ current_database }] }) => {
+  sequelize
+    .query('SELECT current_database()')
+    .then(current_database => {
       return res.send({
         message: 'Welcome to Mephys Physiotherapy mothership',
         current_database,

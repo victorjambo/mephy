@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
-import rs from '../helpers/Response';
-import re from '../helpers/regex';
-import { VALIDATION_MSG } from '../helpers/constants';
+const rs = require('../helpers/Response');
+const re = require('../helpers/regex');
+const { VALIDATION_MSG } = require('../helpers/constants');
 
 const statusCode = 400;
 
@@ -21,7 +21,7 @@ class Validator {
         req.checkBody(item, VALIDATION_MSG.required.format(item)).notEmpty();
       });
       const errors = req.validationErrors();
-      if (errors) {
+      if (!errors.isEmpty()) {
         return rs.error(res, errors, statusCode);
       }
       next();
@@ -45,4 +45,4 @@ class Validator {
   }
 }
 
-export default Validator;
+module.exports = Validator;
