@@ -33,3 +33,5 @@
 - [] sidebar search
 - [] header align anatomy with types
 - [] header add search modal
+- [] remove ratings on all products page
+- [] header view all for each type

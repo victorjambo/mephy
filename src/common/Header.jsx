@@ -101,6 +101,7 @@ class Header extends React.Component {
                         </li>
                         <li><Link to="/contact">Contact</Link></li>
                         <li><Link className="appointment" to="/appointment">Appointment</Link></li>
+                        <li><a href="https://mephy-admin.firebaseapp.com/" className="admin">Admin</a></li>
                       </ul>
                     </div>
                   </nav>

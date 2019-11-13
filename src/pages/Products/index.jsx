@@ -84,3 +84,19 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Products);
+
+/**
+ * Not sure what I was doing here
+ *
+  componentDidMount() {
+    const { getProducts, match: { params: { id } } } = this.props;
+    console.log(getProducts(id));
+  }
+
+  componentWillReceiveProps(prevProps) {
+    const { getProducts, match: { params: { id } } } = this.props;
+    if (id !== prevProps.match.params.id) {
+      getProducts(id);
+    }
+  }
+ */
